@@ -6,11 +6,32 @@ import { FaChevronDown } from 'react-icons/fa';
 import { FaUserFriends } from 'react-icons/fa';
 import { IoIosHeartHalf } from "react-icons/io";
 import { IoChatbubblesSharp } from "react-icons/io5";
-
+import { BsTelephone } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
+import { IoIosTimer } from "react-icons/io";
+import { RiCalendarEventLine } from "react-icons/ri";
+import { LiaPhoneVolumeSolid } from "react-icons/lia";
+import { MdOutlineMail } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import cat from "../assets/cat.svg";
+import logo2 from "../assets/logo-white.svg";
 import person1 from '../assets/man.svg';
 import person2 from "../assets/woman.svg"
+import { FaFacebook, FaWhatsapp, FaEnvelope,FaHome } from 'react-icons/fa';
+
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import character1 from "../assets/person1.svg"
+import character2 from "../assets/person2.svg"
+import character3 from "../assets/person3.svg"
+import { useNavigate } from 'react-router-dom';
+import HomeMobile from '../components/HomeMobile';
+import HomeDesktop from '../components/HomeDesktop';
 
 function Home () {
+    const navigate = useNavigate();
     const features = [
         {
             icon: <FaUserFriends className='w-12 h-12'/>,
@@ -45,83 +66,92 @@ function Home () {
         },
     ];
 
-    return (
-        <div className='flex flex-col items-center justify-center px-4'>
-            <div className="pb-6 border-b border-gray-300 flex flex-col items-center justify-center">
-                <h2 className="text-36 font-[700] font-roboto md:text-48 leading-52 max-w-[320px] md:max-w-[600px] mb-5">
-                    En <span className="text-color2 leading-52">Psicomed</span>, queremos que te sientas <span className="text-color2">en casa</span>.
-                </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
-                    En nuestro espacio, la confianza y la comodidad son fundamentales. Aquí, te recibimos con los brazos abiertos, comprometidos no solo a ofrecer servicios de bienestar de calidad, sino a construir un refugio donde encuentres seguridad, comprensión y apoyo.
-                </p>
-                <img src={house} alt="HOUSE" className='w-[328px] border-b-stone-600'/>
-            </div>
+    const testimonials = [
+        {
+            image: character1, 
+            name: 'Ambar Ramírez',
+            feedback: 'Psicomed se ha convertido en mi lugar de paz, el Dr. Nogales me hizo sentir escuchada y apoyada en todo momento. Además, el lugar está muy bonito y las terapias me han ayudado a mejorar mi bienestar emocional. ¡Los recomiendo altamente!'
+        },
+        {
+            image: character2, 
+            name: 'Erick Magallán',
+            feedback: 'Mi experiencia en Psicomed fue excepcional. El enfoque integral en la salud mental y emocional me permitió encontrar equilibrio en mi vida. Además el personal es cálido y altamente capacitado, sin lugar a dudas lo recomiendo a mis amigos y familiares.'
+        },
+        {
+            image: character3, 
+            name: 'Julieta González',
+            feedback: 'Psicomed ha sido mi guía en el viaje hacia el equilibrio emocional. La combinación de terapias innovadoras y un equipo amable me hizo sentir respaldado en todo momento. Este centro en Colima es la respuesta perfecta para quienes buscan mejorar su salud mental.'
+        },
+    ];
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: "linear"
+    };
 
-            <div className="pt-6 border-b border-gray-300 flex flex-col items-center justify-center pb-12">
-                <h2 className="text-36 font-[700] font-roboto md:text-48 leading-52 max-w-[320px] md:max-w-[600px]">
-                Estimulación Magnética <span className="text-color2 leading-52">Transcraneal</span>.
-                </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
-                    En nuestro espacio, la confianza y la comodidad son fundamentales. Aquí, te recibimos con los brazos abiertos, comprometidos no solo a ofrecer servicios de bienestar de calidad, sino a construir un refugio donde encuentres seguridad, comprensión y apoyo.
-                </p>
-                <img src={service1} alt="HOUSE" className='w-[328px] border-b-stone-600 mb-5'/>
+    const contactInfo = [
+        {
+            icon: <FaWhatsapp className='w-9 h-9' />,
+            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
+            method: 'Vía Whatsapp',
+            details: '(+52) 312 339 93 14',
+            day: 'Lunes a Viernes',
+            hour: '9am a 8pm'
+        },
+        {
+            icon: <BsTelephone className='w-9 h-9' />,
+            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
+            method: 'Vía telefónica',
+            details: '(312) 312 33 50 75 / 312 312 98 93',
+            day: 'Lunes a Viernes',
+            hour: '9am a 8pm'
+        },
+        {
+            icon: <MdOutlineEmail className='w-9 h-9' />,
+            secondIcon: <MdOutlineMail className='w-4 h-4'/>,
+            method: 'Vía email',
+            details: 'drnogalesgalvan@gmail.com',
+            day: 'Lunes a Viernes',
+            hour: '9am a 8pm'
+        },
+        {
+            icon: <FaHome className='w-9 h-9' />,
+            secondIcon: <IoLocationOutline className='w-6 h-6'/>,
+            method: 'Nuestro domicilio',
+            details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
+            day: 'Lunes a Viernes',
+            hour: '9am a 8pm'
+        },
+      ];
 
-                <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato pb-12'>
-                    Lee más sobre esto
-                    <FaArrowRight />
-                </p>
+      return (
+        <>
+            <div className="block md:hidden">
+                <HomeMobile 
+                    features={features}
+                    experts={experts}
+                    testimonials={testimonials}
+                    contactInfo={contactInfo}
+                    settings={settings}
+                />
             </div>
-
-            <div className='mt-12 max-w-[320px] '>
-                <h2 className="text-36 font-[700] font-roboto text-color6 mb-6">Nuestros <span className="text-color2 leading-40">servicios</span>.</h2>
-                <ul className="space-y-4">
-                    {['Psicoterapia individual y de parejas', 'Estimulación Magnética Transcraneal', 'Asesoría Nutricional y Educación en Diabetes', 'Medicina Genómica', 'Terapias Holísticas'].map((service, index) => (
-                    <li key={index} className="bg-white rounded-lg shadow-md p-4 flex justify-between items-center">
-                        <span className="font-[700] font-lato text-20 leading-20 text-color7">{service}</span>
-                        <FaChevronDown />
-                    </li>
-                    ))}
-                </ul>
-                <img src={services} alt="SERVICES" className='mt-8 pb-12 border-b border-gray-300 w-[328px] m-auto'/>
+            <div className="hidden md:block">
+                <HomeDesktop 
+                    features={features}
+                    experts={experts}
+                    testimonials={testimonials}
+                    contactInfo={contactInfo}
+                    settings={settings}
+                />
             </div>
-
-            <div className='mt-12 max-w-[320px] pb-12 border-b border-gray-300'>
-                <h2 className="text-36 font-[700] font-roboto text-color6 mb-6 max-w-[320px]">¿Por qué elegir a <span className="text-color2 leading-40">Psicomed</span>?</h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-12 max-w-[320px]">
-                    Elegir el apoyo adecuado es esencial en el camino hacia el bienestar. En Psicomed, estamos comprometidos a ser ese aliado confiable y experto que buscas.
-                </p>
-                <ul className="space-y-4">
-                    {features.map((feature, index) => (
-                        <li key={index} className="bg-white rounded-lg p-4 flex flex-col items-start gap-2">
-                            <p className='text-color2'>
-                                {feature.icon}
-                            </p>
-                            <h3 className="font-[700] font-lato text-20 leading-20 ml-2 text-color6 mb-2">{feature.title}</h3>
-                            <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4">
-                                {feature.description}
-                            </p>
-                            <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'>
-                                {feature.linkText}
-                                <FaArrowRight />
-                            </p>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            <div className='mt-12 max-w-[320px] mb-16'>
-                <h2 className="text-36 font-[700] font-roboto text-color6 mb-12 max-w-[320px]">Nuestros <span className="text-color2 leading-40">Expertos</span>.</h2>
-                
-                {experts.map((expert, index) => (
-                    <div key={index} className="bg-white rounded-lg mb-12">
-                        <img src={expert.img} alt={expert.name} className='w-full h-auto rounded-lg mb-4' />
-                        <h3 className="font-[700] font-lato text-20 leading-20 text-color6 text-center">{expert.name}</h3>
-                        <p className="font-lato font-normal text-16 leading-20 text-[#697077] text-center mt-1">{expert.title}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
+        </>
     )
+    
 }
 
 export default Home

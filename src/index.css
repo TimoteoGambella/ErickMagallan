@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom-arrow {
+    z-index: 2;
+    color: #000; /* Cambia al color del ícono que necesites */
+    border-radius: 50%;
+    width: 40px; /* Ajusta al tamaño que necesites */
+    height: 40px; /* Ajusta al tamaño que necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-arrow {
+    right: 25px; /* Ajusta la posición derecha */
+}
+
+.prev-arrow {
+    left: 25px; /* Ajusta la posición izquierda */
+}
+
+.custom-arrow:hover {
+    color: #333; /* Cambia al color del ícono al pasar el mouse */
+}
+
+.slick-slider{
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
