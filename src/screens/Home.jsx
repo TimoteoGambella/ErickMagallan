@@ -1,14 +1,8 @@
 import { FaUserFriends } from 'react-icons/fa';
 import { IoIosHeartHalf } from "react-icons/io";
 import { IoChatbubblesSharp } from "react-icons/io5";
-import { BsTelephone } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
-import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import { MdOutlineMail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
 import person1 from '../assets/man.svg';
 import person2 from "../assets/woman.svg"
-import { FaWhatsapp,FaHome } from 'react-icons/fa';
 
 import character1 from "../assets/person1.svg"
 import character2 from "../assets/person2.svg"
@@ -79,41 +73,6 @@ function Home () {
         cssEase: "linear"
     };
 
-    const contactInfo = [
-        {
-            icon: <FaWhatsapp className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
-            method: 'Vía Whatsapp',
-            details: '(+52) 312 339 93 14',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <BsTelephone className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
-            method: 'Vía telefónica',
-            details: '(312) 312 33 50 75 / 312 312 98 93',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <MdOutlineEmail className='w-9 h-9' />,
-            secondIcon: <MdOutlineMail className='w-4 h-4'/>,
-            method: 'Vía email',
-            details: 'drnogalesgalvan@gmail.com',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <FaHome className='w-9 h-9' />,
-            secondIcon: <IoLocationOutline className='w-6 h-6'/>,
-            method: 'Nuestro domicilio',
-            details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-    ];
-
       return (
         <>
             <div className="block md:hidden">
@@ -121,7 +80,6 @@ function Home () {
                     features={features}
                     experts={experts}
                     testimonials={testimonials}
-                    contactInfo={contactInfo}
                     settings={settings}
                 />
             </div>
@@ -130,7 +88,6 @@ function Home () {
                     features={features}
                     experts={experts}
                     testimonials={testimonials}
-                    contactInfo={contactInfo}
                     settings={settings}
                 />
             </div>

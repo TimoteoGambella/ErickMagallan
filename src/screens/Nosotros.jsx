@@ -19,40 +19,6 @@ import univa from "../assets/univa.svg"
 import uni_tolima from "../assets/uni-tolima.svg"
 
 function Nosotros () {
-    const contactInfo = [
-        {
-            icon: <FaWhatsapp className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
-            method: 'Vía Whatsapp',
-            details: '(+52) 312 339 93 14',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <BsTelephone className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
-            method: 'Vía telefónica',
-            details: '(312) 312 33 50 75 / 312 312 98 93',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <MdOutlineEmail className='w-9 h-9' />,
-            secondIcon: <MdOutlineMail className='w-4 h-4'/>,
-            method: 'Vía email',
-            details: 'drnogalesgalvan@gmail.com',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <FaHome className='w-9 h-9' />,
-            secondIcon: <IoLocationOutline className='w-6 h-6'/>,
-            method: 'Nuestro domicilio',
-            details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-    ];
     const features = [
         {
             icon: <FaUserFriends className='w-12 h-12'/>,
@@ -93,18 +59,12 @@ function Nosotros () {
                 <NosotrosMobile 
                     features={features}
                     experts={experts}
-                    // testimonials={testimonials}
-                    contactInfo={contactInfo}
-                    // settings={settings}
                 />
             </div>
             <div className="hidden md:block">
                 <NosotrosDesktop 
                     features={features}
                     experts={experts}
-                    // testimonials={testimonials}
-                    contactInfo={contactInfo}
-                    // settings={settings}
                 />
             </div>
         </>

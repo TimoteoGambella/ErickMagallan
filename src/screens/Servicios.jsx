@@ -20,40 +20,6 @@ import ServiciosDesktop from "../components/ServiciosDesktop";
 
 function Servicios () {
     const [nav, setNav] = useState("emt");
-    const contactInfo = [
-        {
-            icon: <FaWhatsapp className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
-            method: 'Vía Whatsapp',
-            details: '(+52) 312 339 93 14',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <BsTelephone className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
-            method: 'Vía telefónica',
-            details: '(312) 312 33 50 75 / 312 312 98 93',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <MdOutlineEmail className='w-9 h-9' />,
-            secondIcon: <MdOutlineMail className='w-4 h-4'/>,
-            method: 'Vía email',
-            details: 'drnogalesgalvan@gmail.com',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-        {
-            icon: <FaHome className='w-9 h-9' />,
-            secondIcon: <IoLocationOutline className='w-6 h-6'/>,
-            method: 'Nuestro domicilio',
-            details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
-            day: 'Lunes a Viernes',
-            hour: '9am a 8pm'
-        },
-    ];
     const tms = [
           {
             title: "Enfermedad de Parkinson",
@@ -104,7 +70,16 @@ function Servicios () {
             icon: logo8
           }
     ]     
-
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      cssEase: "linear"
+    };
     return(
         <>
             <div className="bg-white flex items-center justify-center gap-4 py-4 flex-col md:flex-row text-center">
@@ -115,13 +90,13 @@ function Servicios () {
             <div className="block md:hidden">
                 <ServiciosMobile 
                     tms={tms}
-                    contactInfo={contactInfo}
+                    settings={settings}
                 />
             </div>
             <div className="hidden md:block">
                 <ServiciosDesktop 
                     tms={tms}
-                    contactInfo={contactInfo}
+                    settings={settings}
                 />
             </div>
         </>
