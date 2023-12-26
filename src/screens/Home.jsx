@@ -1,37 +1,22 @@
-import house from '../assets/home-1.svg';
-import service1 from '../assets/home-2.svg';
-import services from '../assets/home-3.svg';
-import { FaArrowRight } from "react-icons/fa6";
-import { FaChevronDown } from 'react-icons/fa';
 import { FaUserFriends } from 'react-icons/fa';
 import { IoIosHeartHalf } from "react-icons/io";
 import { IoChatbubblesSharp } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
-import { IoIosTimer } from "react-icons/io";
-import { RiCalendarEventLine } from "react-icons/ri";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import cat from "../assets/cat.svg";
-import logo2 from "../assets/logo-white.svg";
 import person1 from '../assets/man.svg';
 import person2 from "../assets/woman.svg"
-import { FaFacebook, FaWhatsapp, FaEnvelope,FaHome } from 'react-icons/fa';
-
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { FaWhatsapp,FaHome } from 'react-icons/fa';
 
 import character1 from "../assets/person1.svg"
 import character2 from "../assets/person2.svg"
 import character3 from "../assets/person3.svg"
-import { useNavigate } from 'react-router-dom';
 import HomeMobile from '../components/HomeMobile';
 import HomeDesktop from '../components/HomeDesktop';
 
 function Home () {
-    const navigate = useNavigate();
     const features = [
         {
             icon: <FaUserFriends className='w-12 h-12'/>,
@@ -127,7 +112,7 @@ function Home () {
             day: 'Lunes a Viernes',
             hour: '9am a 8pm'
         },
-      ];
+    ];
 
       return (
         <>

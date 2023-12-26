@@ -10,10 +10,8 @@
     import { FaFacebook, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
     import Slider from 'react-slick';
-    import "slick-carousel/slick/slick.css";
-    import "slick-carousel/slick/slick-theme.css";
-
     import { useNavigate } from 'react-router-dom';
+    import banner from "../assets/banner.svg";
 
     function HomeDesktop ({ features, experts, testimonials, contactInfo, settings}) {
         const navigate = useNavigate();
@@ -47,8 +45,32 @@
                 </div>
             );
         }
+
+        const scrollNav = (link) =>{
+            navigate(link)
+            window.scrollTo({
+                top:0,
+                behavior:"smooth"
+            })
+        }
+
         return (
             <div className='flex flex-col items-center justify-center'>
+                
+                <div className='w-full flex flex-col items-center justify-center h-[736px] gap-8 text-center mb-20' style={{
+                    backgroundImage: `url(${banner})`,
+                    backgroundPosition: "center",
+                    backgroundRepeat:"no-repeat",
+                    backgroundSize:"cover"
+                }}>
+                    <h1 className='font-[700] text-[64px] text-color5 leading-[70px] font-lato max-w-[780px]'>
+                        Tu espacio de salud mental y bienestar emocional.
+                    </h1>
+                    <h2 className='font-[400] text-[22px] text-color5 leading-32 font-lato'>
+                        En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
+                    </h2>
+                </div>
+
                 <div className='flex flex-col items-center justify-center px-4'>
                     <div className="border-b border-gray-300 flex items-center justify-center flex-wrap">
                         <div className='flex flex-col gap-5'>
@@ -101,12 +123,12 @@
                             </p>
                         </div>
                         {features.map((feature, index) => (
-                            <li key={index} className="bg-white rounded-lg flex flex-col items-start gap-2 max-w-[272px]">
+                            <li key={index} className="bg-white rounded-lg flex flex-col items-start gap-2 max-w-[272px] mr-4">
                                 <p className='text-color2'>
                                     {feature.icon}
                                 </p>
                                 <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2 pt-4">{feature.title}</h3>
-                                <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4">
+                                <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4 max-w-[240px]">
                                     {feature.description}
                                 </p>
                                 <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'>
@@ -128,6 +150,10 @@
                                 </div>
                             ))}
                         </div>
+                        <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'>
+                            Conoce al equipo
+                            <FaArrowRight />
+                        </p>
                     </div>
 
                 </div>
@@ -220,14 +246,14 @@
                 </div>
                 <div className='bg-color6 w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
                     <div className='flex items-center justify-between w-full px-20 max-w-[1280px]'>
-                        <img src={logo2} alt="LOGO" className='w-[181px]'/>
+                        <img onClick={()=>scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]'/>
                         <nav className="mb-4 w-[383px] flex items-center justify-center">
                             <ul className="flex space-x-4 w-[383px] items-center justify-center">
-                                <li><p onClick={()=>navigate("/")} className="hover:underline">Inicio</p></li>
-                                <li><p onClick={()=>navigate("/")} className="hover:underline">TMS</p></li>
-                                <li><p onClick={()=>navigate("/servicios")} className="hover:underline">Servicios</p></li>
-                                <li><p onClick={()=>navigate("/nosotros")} className="hover:underline">Nosotros</p></li>
-                                <li><p onClick={()=>navigate("/nosotros")} className="hover:underline">Blog</p></li>
+                                <li><p onClick={()=>scrollNav("/")} className="hover:underline">Inicio</p></li>
+                                <li><p onClick={()=>scrollNav("/")} className="hover:underline">TMS</p></li>
+                                <li><p onClick={()=>scrollNav("/servicios")} className="hover:underline">Servicios</p></li>
+                                <li><p onClick={()=>scrollNav("/nosotros")} className="hover:underline">Nosotros</p></li>
+                                <li><p onClick={()=>scrollNav("/nosotros")} className="hover:underline">Blog</p></li>
                             </ul>
                         </nav>
                         <div className="flex space-x-4 mb-4 w-[181px]">

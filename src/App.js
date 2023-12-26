@@ -1,6 +1,10 @@
 import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./screens/Home";
 import NavBar from "./components/NavBar";
+import Nosotros from "./screens/Nosotros";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Servicios from "./screens/Servicios";
 
 function App() {
   return (
@@ -9,6 +13,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/servicios" element={<Servicios />} />
         </Routes>
       </BrowserRouter>
     </>

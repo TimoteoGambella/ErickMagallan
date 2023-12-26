@@ -36,8 +36,8 @@ const Navbar = () => {
                             <li key={index} className='md:mr-5'>
                                 <p
                                     onClick={() => navigate(item.link)}
-                                    className={`block py-2 pr-4 pl-3 cursor-pointer text-color6 hover:color2 md:hover:bg-transparent text-16 ${
-                                        item.link === window.location.pathname ? 'md:text-color2' : ''
+                                    className={`block py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${
+                                        item.link === window.location.pathname ? 'text-color2' : 'text-color6'
                                     }`}
                                     aria-current={item.link === window.location.pathname ? 'page' : undefined}
                                 >
