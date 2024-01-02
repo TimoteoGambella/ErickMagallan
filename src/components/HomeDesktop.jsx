@@ -81,7 +81,15 @@ import FooterDesktop from './FooterDesktop';
                             <p className="text-20 font-lato font-normal leading-32 text-color7 mb-8 max-w-[550px]">
                                 En nuestro espacio, la confianza y la comodidad son fundamentales. Aquí, te recibimos con los brazos abiertos, comprometidos no solo a ofrecer servicios de bienestar de calidad, sino a construir un refugio donde encuentres seguridad, comprensión y apoyo.
                             </p>
-                            <p className='flex items-center justify-start gap-2 text-color2 font-[700] leading-20 font-lato pb-12'>
+                            <p className='flex items-center justify-start gap-2 text-color2 font-[700] leading-20 font-lato pb-12'
+                                onClick={() => {
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth'
+                                    })
+                                    navigate('/servicios/emt')
+                                }}
+                            >
                                 Lee más sobre esto
                                 <FaArrowRight />
                             </p>
@@ -119,7 +127,15 @@ import FooterDesktop from './FooterDesktop';
                                 <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4 max-w-[240px]">
                                     {feature.description}
                                 </p>
-                                <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'>
+                                <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'
+                                    onClick={()=>{
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: 'smooth'
+                                        })
+                                        navigate(feature.link)
+                                    }}                                    
+                                >
                                     {feature.linkText}
                                     <FaArrowRight />
                                 </p>
@@ -138,7 +154,9 @@ import FooterDesktop from './FooterDesktop';
                                 </div>
                             ))}
                         </div>
-                        <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'>
+                        <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'
+                            onClick={()=>navigate('/nosotros')}
+                        >
                             Conoce al equipo
                             <FaArrowRight />
                         </p>

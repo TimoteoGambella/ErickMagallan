@@ -9,7 +9,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const menu = [
         { name: 'Inicio', link: '/' },
-        { name: 'Servicios', link: '/servicios' },
+        { name: 'Servicios', link: '/servicios/emt' },
         { name: 'Nosotros', link: '/nosotros' },
     ];
 

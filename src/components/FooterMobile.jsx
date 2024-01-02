@@ -111,7 +111,7 @@ function FooterMobile () {
                 <nav className="mb-4">
                     <ul className="flex space-x-4">
                         <li><p onClick={()=>scrollNav("/")} className="hover:underline">Inicio</p></li>
-                        <li><p onClick={()=>scrollNav("/servicios")} className="hover:underline">Servicios</p></li>
+                        <li><p onClick={()=>scrollNav("/servicios/emt")} className="hover:underline">Servicios</p></li>
                         <li><p onClick={()=>scrollNav("/nosotros")} className="hover:underline">Nosotros</p></li>
                     </ul>
                 </nav>

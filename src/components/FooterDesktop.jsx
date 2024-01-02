@@ -138,7 +138,7 @@ function FooterDesktop () {
                         <ul className="flex space-x-4 w-[383px] items-center justify-center">
                             <li><p onClick={()=>scrollNav("/")} className="hover:underline">Inicio</p></li>
                             <li><p onClick={()=>scrollNav("/")} className="hover:underline">TMS</p></li>
-                            <li><p onClick={()=>scrollNav("/servicios")} className="hover:underline">Servicios</p></li>
+                            <li><p onClick={()=>scrollNav("/servicios/emt")} className="hover:underline">Servicios</p></li>
                             <li><p onClick={()=>scrollNav("/nosotros")} className="hover:underline">Nosotros</p></li>
                             <li><p onClick={()=>scrollNav("/nosotros")} className="hover:underline">Blog</p></li>
                         </ul>

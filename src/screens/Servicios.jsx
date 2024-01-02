@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ServiciosMobile from "../components/ServiciosMobile";
 
 import logo1 from "../assets/emt/trending-up-outline.svg"
@@ -11,9 +11,19 @@ import logo7 from "../assets/emt/partly-sunny-outline.svg"
 import logo8 from "../assets/emt/balloon-outline.svg"
 
 import ServiciosDesktop from "../components/ServiciosDesktop";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Servicios () {
+    const params = useParams()
     const [nav, setNav] = useState("emt");
+    const navigate = useNavigate()
+
+    useEffect(() => {
+      if(params){
+        setNav(params.type)
+      }
+    }, [params]);
+
     const tms = [
           {
             title: "Enfermedad de Parkinson",
@@ -78,9 +88,18 @@ function Servicios () {
     return(
         <>
             <div className="bg-white flex items-center justify-center gap-4 py-4 flex-col md:flex-row text-center">
-                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "pip" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("pip")}>Psicoterapia Individual y de Pareja</p>
-                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "emt" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("emt")}>Estimulación Magnética Transcraneal</p>
-                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "nosotros" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("nosotros")}>Nosotros</p>
+                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "pip" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
+                  navigate("/servicios/pip")
+                  setNav("pip")
+                }}>Psicoterapia Individual y de Pareja</p>
+                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "emt" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
+                  navigate("/servicios/emt")
+                  setNav("emt")
+                  }}>Estimulación Magnética Transcraneal</p>
+                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "nosotros" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
+                  navigate("/nosotros")
+                  setNav("nosotros")
+                  }}>Nosotros</p>
             </div>
             <div className="block md:hidden">
                 <ServiciosMobile 

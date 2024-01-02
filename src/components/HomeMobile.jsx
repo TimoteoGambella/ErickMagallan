@@ -48,7 +48,15 @@ function HomeMobile ({ features, experts, testimonials, settings}) {
                     </p>
                     <img src={service1} alt="HOUSE" className='w-[328px] border-b-stone-600 mb-5'/>
 
-                    <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato pb-12'>
+                    <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato pb-12'
+                        onClick={() => {
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            })
+                            navigate('/servicios/emt')
+                        }}
+                    >
                         Lee más sobre esto
                         <FaArrowRight />
                     </p>
@@ -82,7 +90,15 @@ function HomeMobile ({ features, experts, testimonials, settings}) {
                                 <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4">
                                     {feature.description}
                                 </p>
-                                <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'>
+                                <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato'
+                                    onClick={()=>{
+                                        window.scrollTo({
+                                            top: 0,
+                                            behavior: 'smooth'
+                                        })
+                                        navigate(feature.link)
+                                    }}                                    
+                                >
                                     {feature.linkText}
                                     <FaArrowRight />
                                 </p>
