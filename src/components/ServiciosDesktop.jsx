@@ -11,7 +11,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { PiUserCircleFill } from "react-icons/pi";
 import { LuLanguages } from "react-icons/lu";
 
-function ServiciosDesktop ({tms}) {
+function ServiciosDesktop ({tms, nav}) {
     const navigate = useNavigate();
 
     return(
@@ -128,7 +128,7 @@ function ServiciosDesktop ({tms}) {
                                     <div className="flex items-center justify-start mt-4 gap-5">
                                         <div className="flex items-center justify-center gap-1">
                                             <CgFileDocument />
-                                            <p>PDF</p>
+                                            <p>{publi.problem}</p>
                                         </div>
                                         <div className="flex items-center justify-center gap-1">
                                             <PiUserCircleFill />

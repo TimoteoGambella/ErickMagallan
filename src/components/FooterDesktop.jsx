@@ -144,9 +144,9 @@ function FooterDesktop () {
                         </ul>
                     </nav>
                     <div className="flex space-x-4 mb-4 w-[181px]">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></a>
-                        <a href="https://wa.me/numero" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={24} /></a>
-                        <a href="mailto:email@example.com"><FaEnvelope size={24} /></a>
+                        <a href="https://www.facebook.com/C.B.I.Psicomed" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></a>
+                        <a href="https://w.app/psicomed" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={24} /></a>
+                        <a href="mailto:drnogalesgalvan@gmail.com"><FaEnvelope size={24} /></a>
                     </div>
                 </div>
                 <p className='w-full max-w-[383px] text-center'>Psicomed © 2023. All rights reserved.</p>

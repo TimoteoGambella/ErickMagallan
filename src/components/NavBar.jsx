@@ -47,7 +47,7 @@ const Navbar = () => {
                         ))}
                         <li>
                             <button
-                                onClick={() => navigate('/cita')}
+                                onClick={() => window.open("https://w.app/psicomed", "_blank")}
                                 className='bg-color1 hover:bg-color2 text-color6 font-lato font-[700] py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 md:mt-0 flex gap-1 items-center justify-center text-16 leading-16'
                             >
                                 <AiOutlineMessage className='w-4 h-4'/>

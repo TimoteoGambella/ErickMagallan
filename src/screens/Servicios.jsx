@@ -10,12 +10,6 @@ import logo6 from "../assets/emt/flower-outline.svg"
 import logo7 from "../assets/emt/partly-sunny-outline.svg"
 import logo8 from "../assets/emt/balloon-outline.svg"
 
-import { BsTelephone } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
-import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import { MdOutlineMail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaWhatsapp,FaHome } from 'react-icons/fa';
 import ServiciosDesktop from "../components/ServiciosDesktop";
 
 function Servicios () {
@@ -80,10 +74,11 @@ function Servicios () {
       autoplaySpeed: 3000,
       cssEase: "linear"
     };
+
     return(
         <>
             <div className="bg-white flex items-center justify-center gap-4 py-4 flex-col md:flex-row text-center">
-                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "nosotros" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("nosotros")}>Nosotros</p>
+                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "pip" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("pip")}>Psicoterapia Individual y de Pareja</p>
                 <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "emt" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("emt")}>Estimulación Magnética Transcraneal</p>
                 <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "nosotros" ? 'text-color2' : 'text-color6'}`} onClick={()=>setNav("nosotros")}>Nosotros</p>
             </div>
@@ -91,12 +86,14 @@ function Servicios () {
                 <ServiciosMobile 
                     tms={tms}
                     settings={settings}
+                    nav={nav}
                 />
             </div>
             <div className="hidden md:block">
                 <ServiciosDesktop 
                     tms={tms}
                     settings={settings}
+                    nav={nav}
                 />
             </div>
         </>
