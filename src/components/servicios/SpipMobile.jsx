@@ -1,5 +1,5 @@
-import banner from "../../assets/banner-servicios.svg";
-import emt1 from "../../assets/emt-1.svg";
+import banner from "../../assets/banner-servicios-2.svg";
+import pip1 from "../../assets/pip-1.svg";
 import emt2 from "../../assets/emt-2.svg";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { FaCircle } from "react-icons/fa";
@@ -18,18 +18,18 @@ function SpipMobile ({tms}) {
                     backgroundSize:"cover"
                 }}>
                     <h1 className='font-[700] text-48 text-color5 leading-52 font-lato max-w-[328px]'>
-                        Estimulación Magnética Transcraneal
+                        Psicoterapia Individual y de Pareja
                     </h1>
                 </div>
                 <div className='flex flex-col items-center justify-center px-4'>
                     <div className="pb-12 border-b border-gray-300 flex flex-col items-center justify-center mb-12">
                         <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
-                            ¿Qué es la <span className="text-color2 leading-52">Estimulación Magnética Transcraneal</span>?
+                            ¿Por qué elegir la <span className="text-color2 leading-52">psicoterapia</span>?
                         </h2>
                         <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
-                            La Estimulación Magnética Transcraneal (EMT) es una técnica no invasiva que utiliza campos magnéticos para modular la actividad cerebral. <br/><br/> Se aplica a través de una bobina colocada en el cuero cabelludo, generando corrientes eléctricas que afectan las neuronas, siendo utilizada en investigaciones y tratamientos neuropsiquiátricos.
+                            En nuestro espacio, la confianza y la comodidad son fundamentales. Aquí, te recibimos con los brazos abiertos, comprometidos no solo a ofrecer servicios de bienestar de calidad, sino a construir un refugio donde encuentres seguridad, comprensión y apoyo.
                         </p>
-                        <img src={emt1} alt="HOUSE" className='w-[328px] border-b-stone-600'/>
+                        <img src={pip1} alt="HOUSE" className='w-[328px] border-b-stone-600'/>
                     </div>
 
                     <div className="pb-12 border-b border-gray-300 flex flex-col items-center justify-center mb-12">
