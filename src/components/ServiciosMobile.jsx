@@ -1,13 +1,13 @@
 import SemtMobile from "./servicios/SemtMobile";
 import SpipMobile from "./servicios/SpipMobile";
 
-function ServiciosMobile ({tms, settings}) {
+function ServiciosMobile ({tms, settings, nav}) {
 
     return(
         <>
-            {tms === "emt" ?
+            {nav === "emt" ?
                 <SemtMobile tms={tms} settings={settings}/>
-                : tms === "pip" ?
+                : nav === "pip" ?
                 <SpipMobile tms={tms}/>
                 : <SemtMobile tms={tms} settings={settings}/>
             }

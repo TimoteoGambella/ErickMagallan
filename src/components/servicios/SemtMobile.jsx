@@ -15,7 +15,7 @@ function SemtMobile ({tms, settings}) {
 
     return(
         <>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center overflow-hidden'>
                 <div className='w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16' style={{
                     backgroundImage: `url(${banner})`,
                     backgroundPosition: "right",
@@ -110,11 +110,11 @@ function SemtMobile ({tms, settings}) {
                         </div>
                     </div>
 
-                    <div className="pb-12 pt-8 border-b border-gray-300 flex flex-col items-center justify-center">
+                    <div className="pb-12 pt-8 border-b border-gray-300 flex flex-col items-center justify-center max-w-[328px] overflow-hidden">
                         <h2 className="text-36 font-[700] font-roboto leading-40 max-w-[320px] mb-12">
                             Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
                         </h2>
-                        <div className="flex flex-col items-center justify-center max-w-[328px]">
+                        <div className="flex flex-col items-center justify-center max-w-[328px] overflow-hidden">
                             <Slider {...settings}>
                                 {publis_tms.map((publi, index) => (
                                     <div className="flex flex-col items-center justify-center pb-2" key={index}>
