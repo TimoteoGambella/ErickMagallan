@@ -96,10 +96,15 @@ function Servicios () {
                   navigate("/servicios/emt")
                   setNav("emt")
                   }}>Estimulación Magnética Transcraneal</p>
-                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "nosotros" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
-                  navigate("/nosotros")
-                  setNav("nosotros")
-                  }}>Nosotros</p>
+                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "an" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
+                  navigate("/servicios/an")
+                  setNav("an")
+                  }}>Asesoría Nutricional</p>
+                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "th" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
+                  navigate("/servicios/th")
+                  setNav("th")
+                  }}>Terapia Holística</p>
+  
             </div>
             <div className="block md:hidden">
                 <ServiciosMobile 

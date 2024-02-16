@@ -1,3 +1,4 @@
+import SanMobile from "./servicios/SanMobile";
 import SemtMobile from "./servicios/SemtMobile";
 import SpipMobile from "./servicios/SpipMobile";
 
@@ -9,7 +10,10 @@ function ServiciosMobile ({tms, settings, nav}) {
                 <SemtMobile tms={tms} settings={settings}/>
                 : nav === "pip" ?
                 <SpipMobile tms={tms}/>
-                : <SemtMobile tms={tms} settings={settings}/>
+                : nav === "an" ?
+                <SanMobile tms={tms}/>
+                :
+                <SemtMobile tms={tms} settings={settings}/>
             }
         </>
     )
