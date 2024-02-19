@@ -113,33 +113,33 @@ function SemtDesktop ({tms, nav}) {
                 </div>
 
                 <div className="pb-12 pt-20 border-b border-gray-300 flex flex-col items-center justify-center">
-                        <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] mb-12 text-center">
-                            Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
-                        </h2>
-                        <div className="flex flex-wrap items-center justify-center max-w-[1280px] gap-12 mt-6">
-                            {publis_tms.map((publi, index) => (
-                                <div className="flex flex-col items-start justify-start pb-2 w-[394px]" key={index}>
-                                    <img src={publi.photo} alt={publi.title} className="w-[394px] h-[300px]"/>
-                                    <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
-                                    <p className='font-[400] font-roboto text-16 leading-20 text-color6'>{publi.description}</p>
-                                    <div className="flex items-center justify-start mt-4 gap-5">
-                                        <div className="flex items-center justify-center gap-1">
-                                            <CgFileDocument />
-                                            <p>{publi.problem}</p>
-                                        </div>
-                                        <div className="flex items-center justify-center gap-1">
-                                            <PiUserCircleFill />
-                                            <p>Actipulse</p>
-                                        </div>
-                                        <div className="flex items-center justify-center gap-1">
-                                            <LuLanguages />
-                                            <p>{publi.language}</p>
-                                        </div>
+                    <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] mb-12 text-center">
+                        Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
+                    </h2>
+                    <div className="flex flex-wrap items-center justify-center max-w-[1280px] gap-12 mt-6">
+                        {publis_tms.map((publi, index) => (
+                            <div className="flex flex-col items-start justify-start pb-2 w-[394px]" key={index}>
+                                <img src={publi.photo} alt={publi.title} className="w-[394px] h-[300px]"/>
+                                <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
+                                <p className='font-[400] font-roboto text-16 leading-20 text-color6'>{publi.description}</p>
+                                <div className="flex items-center justify-start mt-4 gap-5">
+                                    <div className="flex items-center justify-center gap-1">
+                                        <CgFileDocument />
+                                        <p>{publi.problem}</p>
+                                    </div>
+                                    <div className="flex items-center justify-center gap-1">
+                                        <PiUserCircleFill />
+                                        <p>Actipulse</p>
+                                    </div>
+                                    <div className="flex items-center justify-center gap-1">
+                                        <LuLanguages />
+                                        <p>{publi.language}</p>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
                     </div>
+                </div>
 
                 <div className='w-full px-4 py-8 pt-20 pb-0 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
                     <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">

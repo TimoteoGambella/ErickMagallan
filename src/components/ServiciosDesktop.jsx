@@ -1,3 +1,4 @@
+import SanDesktop from "./servicios/SanDesktop";
 import SemtDesktop from "./servicios/SemtDesktop";
 import SpipDesktop from "./servicios/SpipDesktop";
 
@@ -9,7 +10,10 @@ function ServiciosDesktop ({tms, nav}) {
                 <SemtDesktop tms={tms} />
                 : nav === "pip" ?
                 <SpipDesktop tms={tms} />
-                : <SemtDesktop tms={tms} />
+                : nav === "an" ?
+                <SanDesktop tms={tms}/>
+                :
+                <></>
             }
         </> 
     )

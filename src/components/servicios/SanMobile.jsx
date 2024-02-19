@@ -39,38 +39,38 @@ function SanMobile ({tms, settings}) {
 
                     <div className="pb-12 border-b border-gray-300 flex flex-col items-center justify-center mb-12">
                         <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
-                            ¿Cuáles son los <span className="text-color2 leading-52">beneficios</span>?
+                            ¿Qué puedo <span className="text-color2 leading-52">aprender</span>?
                         </h2>
                         <div className="flex items-center justify-center mb-4 gap-2">
                             <div className="w-[24px]">
                                 <IoHeartCircleOutline style={{height:"24px", width:"24px"}} color="#B18431"/>
                             </div>
-                            <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                                Tratamiento de trastornos mentales como la depresión, el TOC y la esquizofrenia.
+                            <p className="min-w-[288px] max-w-[288px] text-16 font-lato font-[400] leading-20 text-color7 lg:max-w-[320px]">
+                                Importancia del monitoreo regular de niveles de glucosa.
                             </p>
                         </div>
                         <div className="flex items-center justify-center mb-4 gap-2">
                             <div className="w-[24px]">
                                 <IoHeartCircleOutline style={{height:"24px", width:"24px"}} color="#B18431"/>
                             </div>
-                            <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                                Mejora de funciones cognitivas como la memoria y la atención.
+                            <p className="min-w-[288px] max-w-[288px] text-16 font-lato font-[400] leading-20 text-color7 lg:max-w-[320px]">
+                                Administración adecuada de insulina.
                             </p>
                         </div>
                         <div className="flex items-center justify-center mb-4 gap-2">
                             <div className="w-[24px]">
                                 <IoHeartCircleOutline style={{height:"24px", width:"24px"}} color="#B18431"/>
                             </div>
-                            <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                                Es una terapia no invasiva, por lo que no requiere romper la piel ni provocar dolor de ningún tipo.
+                            <p className="min-w-[288px] max-w-[288px] text-16 font-lato font-[400] leading-20 text-color7 lg:max-w-[320px]">
+                                Planificación de comidas saludables.
                             </p>
                         </div>
                         <div className="flex items-center justify-center mb-4 gap-2">
                             <div className="w-[24px]">
                                 <IoHeartCircleOutline style={{height:"24px", width:"24px"}} color="#B18431"/>
                             </div>
-                            <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                                Sin medicamentos ni efectos secundarios graves en los pacientes.
+                            <p className="min-w-[288px] max-w-[288px] text-16 font-lato font-[400] leading-20 text-color7 lg:max-w-[320px]">
+                                Factores de riesgo y complicaciones asociadas con la diabetes.
                             </p>
                         </div>
 
