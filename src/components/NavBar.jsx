@@ -14,7 +14,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-800'>
+        <nav className='bg-white px-2 sm:px-4 py-2.5'>
             <div className='container flex flex-wrap justify-between items-center mx-auto'>
                 <div className='flex items-center cursor-pointer' onClick={() => navigate("/")}>
                     <img 

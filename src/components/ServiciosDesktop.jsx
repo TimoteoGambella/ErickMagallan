@@ -1,6 +1,7 @@
 import SanDesktop from "./servicios/SanDesktop";
 import SemtDesktop from "./servicios/SemtDesktop";
 import SpipDesktop from "./servicios/SpipDesktop";
+import SthDesktop from "./servicios/SthDesktop";
 
 function ServiciosDesktop ({tms, nav}) {
 
@@ -13,7 +14,7 @@ function ServiciosDesktop ({tms, nav}) {
                 : nav === "an" ?
                 <SanDesktop tms={tms}/>
                 :
-                <></>
+                <SthDesktop tms={tms} />
             }
         </> 
     )

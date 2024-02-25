@@ -1,7 +1,8 @@
 import { FaUserFriends } from 'react-icons/fa';
 import { IoIosHeartHalf } from "react-icons/io";
 import { IoChatbubblesSharp } from "react-icons/io5";
-import person1 from '../assets/man.svg';
+import pip7 from '../assets/pip-7.svg';
+import pip10 from '../assets/pip-10.svg';
 import person2 from "../assets/woman.svg"
 
 import character1 from "../assets/person1.svg"
@@ -37,12 +38,12 @@ function Home () {
 
     const experts = [
         {
-            img: person1,
+            img: pip7,
             name: 'Dr. José Luis Nogales Galván',
             title: 'Doctorado en Psicoterapia Individual y de Pareja.',
         },
         {
-            img: person2,
+            img: pip10,
             name: 'M.C. Rocío González Saucedo',
             title: 'Maestría en Ciencias Médicas.',
         },
@@ -66,14 +67,14 @@ function Home () {
         },
     ];
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        cssEase: "linear"
+        cssEase: "linear",
     };
 
       return (

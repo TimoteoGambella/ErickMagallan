@@ -2,7 +2,7 @@ import banner from "../../assets/banner-servicios-3.svg";
 import an1 from "../../assets/an-1.svg";
 import an2 from "../../assets/an-2.svg";
 import pip3 from "../../assets/pip-3.svg";
-import { GoPlus } from "react-icons/go";
+import { GoDash, GoPlus } from "react-icons/go";
 import FooterDesktop from "../FooterDesktop";
 import ben1 from "../../assets/beneficio-1.svg"
 import ben2 from "../../assets/beneficio-1.svg"
@@ -16,14 +16,30 @@ import circleCheck from "../../assets/circle-check.svg";
 import circlePerson from "../../assets/circle-person.svg";
 import circleCalendar from "../../assets/circle-calendar.svg";
 import line from "../../assets/circle-line.svg";
-import { FaArrowRight, FaCircle } from "react-icons/fa";
+import { FaArrowRight, FaCircle, FaRegArrowAltCircleDown } from "react-icons/fa";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { publis_tms } from "../../publis";
 import { CgFileDocument } from "react-icons/cg";
 import { PiUserCircleFill } from "react-icons/pi";
 import { LuLanguages } from "react-icons/lu";
+import { useState } from "react";
 
 function SanDesktop ({tms, nav}) {
+    const [visiblePublications, setVisiblePublications] = useState(6);
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
+    const handleToggle = (index) => {
+        if (expandedIndex === index) {
+            setExpandedIndex(null);
+        } else {
+            setExpandedIndex(index);
+        }
+    };
+
+    const handleLoadMore = () => {
+        setVisiblePublications(prevCount => prevCount + 6);
+    };
+
     const beneficios = [
         {
             photo: ben1,
@@ -58,6 +74,83 @@ function SanDesktop ({tms, nav}) {
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
         },
     ]
+
+    const preguntas = [
+        {
+            title: "¿Cuáles son las contraindicaciones?",
+            description: [
+                "Existen 3 contraindicaciones definitivas al uso de estimulación transcraneal:",
+                ['Antecedentes de epilepsia (de cualquier tipo, incluyendo crisis de ausencia', 'Dispositivos de metal en el cráneo como placas o clips en el cerebro', 'Existencia de implantes cocleares o marcapasos']
+            ]
+        },
+        {
+            title: "¿Cómo puedo agendar una cita?",
+            description: [
+                "Primero comunícate con nosotros a través de nuestros números telefónicos, o bien, mándanos un mensaje vía whatsapp solicitando una cita. Después indícanos el servicio que necesitas y nuestro equipo te agendará en el día y horario más cercano.",
+                "No olvides asistir a tu cita en tiempo y forma, de lo contrario, procura cancelar con al menos 24 horas de anticipación."
+            ]
+        },
+        {
+            title: "¿Tiene efectos secundarios?",
+            description: [
+                "En pacientes sin contraindicaciones, los efectos secundarios de la terapia magnética transcraneal son mínimos y regularmente disminuyen con el paso de las sesiones. Estos incluyen:",
+                ['Cefalea transitoria', 'Mareo', 'Somnolencia'],
+                "(Se presentan en menos del 2% de pacientes)"
+            ]
+        },
+        {
+            title: "¿Qué pasa si no puedo asistir a mi cita?",
+            description: [(
+                <p>
+                    En caso de tener alguna complicación que te impida asistir, te pedimos que canceles con al menos 24 horas de anticipación. De lo contrario, se te pedirá que <span className="font-bold">cubras el 50% del costo</span> de tu cita.
+                </p>
+            ),
+                "Cancelar tu cita con anticipación nos permite utilizar ese horario para alguna persona que también lo necesite."
+            ]
+        },
+        {
+            title: "¿A partir de cuánto tiempo empiezan a observarse las mejoras?",
+            description: [
+                "Las mejoras obtenidas con el uso de la estimulación magnética transcraneal pueden presentarse a partir de las sesión 5. No obstante para que las mejoras sean totalmente visibles y se mantenga el efecto terapéutico se requiere en promedio entre 15 y 20 sesiones."
+            ]
+        },
+        {
+            title: "¿Lo que hable en mi terapia es confidencial?",
+            description: [
+                "Así es, nuestros expertos siempre respetarán la confidencialidad paciente - terapeuta, por lo que nada de lo que hables en la terapia será divulgado fuera de ella sin tu consentimiento."
+            ]
+        },
+        {
+            title: "¿Cuál es el seguimiento que un paciente requiere?",
+            description: [
+                "Dependiendo de la respuesta clínica de cada paciente se considera que una buena estrategía de seguimiento a mediano o largo plazo es continuar aplicando sesiones de estimulación transcraneal periódicas de mantenimiento con la frecuencia que la revaluación de paciente requiera para mantener o modificar los efectos terapéuticos obtenidos."
+            ]
+        },
+        {
+            title: "¿Qué debo llevar para mi primer cita?",
+            description: [
+                "Solo necesitas venir con disposición de recibir el tratamiento indicado. Nuestras instalaciones te harán sentir como en casa, así que ven con confianza y seguridad."
+                ]
+        },
+        {
+            title: "¿La terapia es dolorosa?",
+            description: [(
+                <p>
+                    No, al ser una terapia <span className="font-bold">no invasiva</span>, no requiere romper la piel ni provocar dolor de ningún tipo al paciente.
+                </p>
+            )]
+        },
+        {
+            title: "¿Aceptan todas las formas de pago?",
+            description: [
+                "Aceptamos las siguientes formas de pago:",
+                ['Efectivo.', 'Transferencia bancaria.', 'Tarjeta de débito o crédito.'],
+                "Si requieres factura, por favor comentalo a la hora de realizar el pago."
+            ]
+        },
+        
+    ];
+    
     return(
         <>
             <div className='flex flex-col items-center justify-center'>
@@ -160,147 +253,73 @@ function SanDesktop ({tms, nav}) {
                     </div>
 
                     <div className="pb-12 pt-20 border-b border-gray-300 flex flex-col items-center justify-center">
-                        <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] mb-12 text-center">
-                            Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
-                        </h2>
-                        <div className="flex flex-wrap items-center justify-center max-w-[1280px] gap-12 mt-6">
-                            {publis_tms.map((publi, index) => (
-                                <div className="flex flex-col items-start justify-start pb-2 w-[394px]" key={index}>
-                                    <img src={publi.photo} alt={publi.title} className="w-[394px] h-[300px]"/>
-                                    <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
-                                    <p className='font-[400] font-roboto text-16 leading-20 text-color6'>{publi.description}</p>
-                                    <div className="flex items-center justify-start mt-4 gap-5">
-                                        <div className="flex items-center justify-center gap-1">
-                                            <CgFileDocument />
-                                            <p>{publi.problem}</p>
-                                        </div>
-                                        <div className="flex items-center justify-center gap-1">
-                                            <PiUserCircleFill />
-                                            <p>Actipulse</p>
-                                        </div>
-                                        <div className="flex items-center justify-center gap-1">
-                                            <LuLanguages />
-                                            <p>{publi.language}</p>
-                                        </div>
+                    <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] mb-12 text-center">
+                        Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
+                    </h2>
+                    <div className="flex flex-wrap items-center justify-center max-w-[1280px] gap-12 mt-6">
+                        {publis_tms.slice(0, visiblePublications).map((publi, index) => (
+                            <div className="flex flex-col items-start justify-start pb-2 w-[394px]" key={index}>
+                                <img src={publi.photo} alt={publi.title} className="w-[394px] h-[300px]" />
+                                <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
+                                <p className='font-[400] font-roboto text-16 leading-20 text-color6'>{publi.description}</p>
+                                <div className="flex items-center justify-start mt-4 gap-5">
+                                    <div className="flex items-center justify-center gap-1">
+                                        <CgFileDocument />
+                                        <p>{publi.problem}</p>
+                                    </div>
+                                    <div className="flex items-center justify-center gap-1">
+                                        <PiUserCircleFill />
+                                        <p>Actipulse</p>
+                                    </div>
+                                    <div className="flex items-center justify-center gap-1">
+                                        <LuLanguages />
+                                        <p>{publi.language}</p>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
                     </div>
+                    {visiblePublications < publis_tms.length && (
+                        <p className='flex cursor-pointer items-center justify-center gap-4 text-20 text-color2 font-[700] leading-20 font-lato my-20 border rounded-lg border-color2 px-8 py-5' onClick={handleLoadMore}>
+                            Cargar más
+                            <FaRegArrowAltCircleDown size={22.75} />
+                        </p>
+                    )}
+                </div>
                 </div>
 
                 <div className='w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
-                    <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+                <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
                         Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
                     </h2>
-                    <div className="flex flex-col gap-4 w-full max-w-[900px]">
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Cuándo acudir a terapia individual?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Cuándo acudir a terapia de pareja?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Por qué acudir a terapia de pareja con un profesional?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Cuál es la finalidad de la terapia de pareja?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Qué hago si mi pareja no quiere o no puede ir a terapia?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Cómo puedo agendar una cita?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Qué pasa si no puedo asistir a mi cita?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Lo que hable en mi terapia es confidencial?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Qué debo llevar para mi primer cita?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                        <div className="p-4 border border-gray-500 w-full max-w-[900px] rounded-md">
-                            <button className="flex justify-between items-center w-full text-left">
-                                <span className="text-20 font-roboto font-[700] w-full leading-20 text-color7">
-                                    ¿Aceptan todas las formas de pago?
-                                </span>
-                                <GoPlus size={20}/>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col justify-center items-center pb-32 mt-32 border-b border-gray">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
-                            Tu terapeuta.
-                        </h2>       
-                        <div className="flex justify-center items-center flex-wrap gap-20">
-                            <img src={terapeuta} alt="" className="w-[600px] mb-8"/>
-                            <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
-                                <h3 className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6" style={{letterSpacing:"1px"}}>
-                                    Dr. José Luis Nogales Galván
-                                </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
-                                    Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y de Pareja.
-                                </h4>
-                                <p className="text-16 font-[400] text-color7 font-lato mb-12">
-                                    Lorem ipsum dolor sit amet consectetur. Pretium tellus leo elit et et amet. Tristique volutpat vel aenean lectus a dapibus euismod turpis amet.
-                                    <br/><br/>
-                                    Tellus commodo sit quis feugiat dui et pellentesque quis. Gravida velit nunc mi aliquam. Nullam leo sit faucibus tincidunt velit. Tellus in porta ornare faucibus tempus vel amet sed faucibus.
-                                </p>
-                                <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
-                                    <img src={unam} alt="" />
-                                    <img src={u_colima} alt="" />
-                                    <img src={imp} alt="" />
-                                </div>
+                    <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
+                        {preguntas.map((pregunta, index) => (
+                            <div key={index} className="py-6 px-4 border border-color8 rounded-md h-fit">
+                                <button onClick={() => handleToggle(index)} className="flex justify-between items-center w-full text-left">
+                                    <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                                        {pregunta.title}
+                                    </span>
+                                    {expandedIndex === index ? <GoDash size={20}/> : <GoPlus size={20}/>}
+                                </button>
+                                {expandedIndex === index && (
+                                    <div className="mt-4">
+                                        {pregunta.description.map((item, idx) => (
+                                            <div key={idx} className="mb-2">
+                                                {Array.isArray(item) ? (
+                                                    <ul className="list-disc pl-4">
+                                                        {item.map((subItem, subIdx) => (
+                                                            <li key={subIdx}>{subItem}</li>
+                                                        ))}
+                                                    </ul>
+                                                ) : (
+                                                    <p className="text-color7">{item}</p>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
-                        </div>  
+                        ))}
                     </div>
 
                     <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px]">
@@ -331,7 +350,7 @@ function SanDesktop ({tms, nav}) {
                                 </div>
                             </div>
 
-                            <p className='flex items-center justify-center gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24'
+                            <p className='flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24'
                                 onClick={() => window.open("https://w.app/psicomed", "_blank")}
                             >
                                 Agenda una cita
