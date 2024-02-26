@@ -224,7 +224,7 @@ function SpipDesktop ({tms, nav}) {
                     </div>
                 </div>
 
-                <div className='w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
+                <div className='px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
                     <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
                         Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
                     </h2>
@@ -284,9 +284,9 @@ function SpipDesktop ({tms, nav}) {
                                 </div>
                             </div>
                         </div>  
-                    </div>
+                    
 
-                    {/* <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px]">
+                    <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px]">
                         <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
                             ¿Cómo agendo mi cita?
                         </h2>         
@@ -314,14 +314,15 @@ function SpipDesktop ({tms, nav}) {
                                 </div>
                             </div>
 
-                            <p className='flex items-center justify-center gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24'
+                            <p className='flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12'
                                 onClick={() => window.open("https://w.app/psicomed", "_blank")}
                             >
                                 Agenda una cita
                                 <FaArrowRight />
                             </p>
                         </div>
-                    </div> */}
+                    </div>
+                    </div>
                 <FooterDesktop />
             </div>
         </>
