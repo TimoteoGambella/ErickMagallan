@@ -12,6 +12,7 @@ import ben2 from "../../assets/beneficio-1.svg";
 import ben3 from "../../assets/beneficio-1.svg";
 import terapeuta from "../../assets/man.svg";
 import { FaArrowRight } from "react-icons/fa6";
+import { useState } from "react";
 
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
@@ -22,7 +23,6 @@ import circleCheck from "../../assets/circle-check.svg";
 import circlePerson from "../../assets/circle-person.svg";
 import circleCalendar from "../../assets/circle-calendar.svg";
 import line from "../../assets/circle-line.svg";
-import { useState } from "react";
 
 function SpipMobile({ tms }) {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -143,6 +143,7 @@ function SpipMobile({ tms }) {
       ],
     },
   ];
+
   const beneficios = [
     {
       photo: heart,
@@ -199,7 +200,7 @@ function SpipMobile({ tms }) {
                         Psicoterapia Individual y de Pareja
                     </h1> */}
         </div>
-        <div className=" w-[328px]">
+        <div className="w-[328px]">
           <div className="flex flex-col items-center justify-center px-4 w-full">
             <div className="pb-12 flex flex-col items-center justify-center mb-12">
               <h2 className="text-36 font-[700] font-roboto  leading-52 mb-5 text-center">
@@ -220,7 +221,7 @@ function SpipMobile({ tms }) {
               />
             </div>
 
-            <div className="border-b border-gray-300 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">
+            <div className="border-b border-gray-300 flex items-center justify-center mb-12 w-[328px] gap-20 flex-wrap">
               <h2 className="text-36 font-[700] font-roboto leading-40 text-center">
                 ¿Qué <span className="text-color2 leading-52">terapia</span> es
                 para mí?
@@ -246,10 +247,10 @@ function SpipMobile({ tms }) {
                     return (
                       <div
                         key={index}
-                        className="flex mb-4 flex-col justify-center items-center"
+                        className="flex mb-4 flex-col justify-center items-center w-[328px]"
                       >
                         <img src={beneficio.photo} alt="" className="mb-5" />
-                        <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                        <div className="flex flex-col items-center justify-center mb-8">
                           <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                             {beneficio.title}
                           </h3>
@@ -262,7 +263,7 @@ function SpipMobile({ tms }) {
                   })}
                 </div>
               </div>
-              <div className="flex flex-wrap gap-20 justify-center items-center w-full">
+              <div className="flex flex-wrap gap-20 justify-center items-center w-[328px]">
                 <img src={pip2} alt="" className="w-full" />
                 <div className="flex flex-col items-start">
                   <h2 className="text-32 font-[700] font-roboto leading-9 mb-8 text-center h-9">
@@ -296,7 +297,7 @@ function SpipMobile({ tms }) {
               </div>
             </div>
           </div>
-          <img src={pip3} alt="" className="px-4 w-full" />
+          <img src={pip3} alt="" className="px-4 w-[328px]" />
 
           <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
             <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
@@ -348,8 +349,8 @@ function SpipMobile({ tms }) {
             <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
               Tu terapeuta.
             </h2>
-            <img src={pip7} alt="" className="w-full px-4 mb-8" />
-            <div className="w-full flex flex-col items-start justify-center">
+            <img src={pip7} alt="" className="w-[328px] mb-8" />
+            <div className="w-[328px] flex flex-col items-start justify-center">
               <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
                 Dr. José Luis Nogales Galván
               </h3>
@@ -378,44 +379,62 @@ function SpipMobile({ tms }) {
               </div>
             </div>
           </div>
+          <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
+        <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+          ¿Cómo agendo mi cita?
+        </h2>
+        <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">
+          <div className="flex flex-col w-full justify-evenly items-center gap-8">
+            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+              <img src={circleWhap} alt="" />
+              <h4 className="text-24 text-color6 font-[700] leading-24">
+                Paso 1
+              </h4>
+              <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                Contáctanos por teléfono o vía Whatsapp.
+              </p>
+            </div>
+            <img src={line} alt="" />
+            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+              <img src={circleCheck} alt="" />
+              <h4 className="text-24 text-color6 font-[700] leading-24">
+                Paso 2
+              </h4>
+              <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                Agenda una cita en el horario y día que más te convenga.
+              </p>
+            </div>
+            <img src={line} alt="" />
+            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+              <img src={circlePerson} alt="" />
+              <h4 className="text-24 text-color6 font-[700] leading-24">
+                Paso 3
+              </h4>
+              <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                Asiste a tu cita en el horario y día acordado.
+              </p>
+            </div>
+            <img src={line} alt="" />
+            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+              <img src={circleCalendar} alt="" />
+              <h4 className="text-24 text-color6 font-[700] leading-24">
+                Paso 4
+              </h4>
+              <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                Realiza el pago y agenda tu siguiente cita.
+              </p>
+            </div>
+          </div>
 
-          {/* <div className="flex flex-col justify-center items-center">
-                    <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
-                        ¿Cómo agendo mi cita?
-                    </h2>         
-                    <div className="flex flex-col justify-center items-center w-[213px] gap-8">
-                        <div className="flex flex-col gap-4 justify-center items-center">
-                            <img src={circleWhap} alt="" />
-                            <h4 className="text-24 text-color6 font-[700] leading-24">Paso 1</h4>
-                            <p className="text-16 text-color7 font-[400] leading-16 text-center">Contáctanos por teléfono o vía Whatsapp.</p>
-                        </div>
-                        <img src={line} alt="" />
-                        <div className="flex flex-col gap-4 justify-center items-center">
-                            <img src={circleCheck} alt="" />
-                            <h4 className="text-24 text-color6 font-[700] leading-24">Paso 2</h4>
-                            <p className="text-16 text-color7 font-[400] leading-16 text-center">Agenda una cita en el horario y día que más te convenga.</p>
-                        </div>
-                        <img src={line} alt="" />
-                        <div className="flex flex-col gap-4 justify-center items-center">
-                            <img src={circlePerson} alt="" />
-                            <h4 className="text-24 text-color6 font-[700] leading-24">Paso 3</h4>
-                            <p className="text-16 text-color7 font-[400] leading-16 text-center">Asiste a tu cita en el horario y día acordado.</p>
-                        </div>
-                        <img src={line} alt="" />
-                        <div className="flex flex-col gap-4 justify-center items-center">
-                            <img src={circleCalendar} alt="" />
-                            <h4 className="text-24 text-color6 font-[700] leading-24">Paso 4</h4>
-                            <p className="text-16 text-color7 font-[400] leading-16 text-center">Realiza el pago y agenda tu siguiente cita.</p>
-                        </div>
-
-                        <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato mt-12 mb-24'
-                            onClick={() => window.open("https://w.app/psicomed", "_blank")}
-                        >
-                            Agenda una cita
-                            <FaArrowRight />
-                        </p>
-                    </div>
-                </div> */}
+          <p
+            className="flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24"
+            onClick={() => window.open("https://w.app/psicomed", "_blank")}
+          >
+            Agenda una cita
+            <FaArrowRight />
+          </p>
+        </div>
+      </div>
         </div>
         <FooterMobile />
       </div>

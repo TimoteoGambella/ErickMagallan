@@ -286,7 +286,7 @@ function SthMobil({ tms, settings }) {
             Estimulación Magnética Transcraneal
           </h1> */}
         </div>
-        <div className="flex flex-col items-center justify-center px-4 text-center">
+        <div className="flex flex-col items-center justify-center text-center">
           <div className="pb-12 flex flex-col items-center justify-center mb-12">
             <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
               ¿Por qué elegir{" "}
@@ -317,7 +317,7 @@ function SthMobil({ tms, settings }) {
             </h2>
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
             <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Terapia con <span className="text-color2">Terahercios</span>.
             </h2>
@@ -335,7 +335,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -354,8 +354,8 @@ function SthMobil({ tms, settings }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-32 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
+            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Aromaterapia
             </h2>
             <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px] mb-12">
@@ -372,7 +372,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -391,8 +391,8 @@ function SthMobil({ tms, settings }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-32 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
+            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Terapia con{" "}
               <span className="text-color2 leading-52">Terahercios</span>.
             </h2>
@@ -410,7 +410,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -429,8 +429,8 @@ function SthMobil({ tms, settings }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-32 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
+            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Flores de <span className="text-color2 leading-52">Bach</span>.
             </h2>
             <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px] mb-12">
@@ -445,7 +445,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -464,8 +464,8 @@ function SthMobil({ tms, settings }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-32 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
+            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Thetahealing.
             </h2>
             <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px] mb-12">
@@ -484,7 +484,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -503,8 +503,8 @@ function SthMobil({ tms, settings }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-32 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
+            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Reiki.
             </h2>
             <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px] mb-12">
@@ -521,7 +521,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -540,8 +540,8 @@ function SthMobil({ tms, settings }) {
             />
           </div>
 
-          <div className="flex flex-col items-center justify-center mb-12">
-            <h2 className="text-32 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
+            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
               Numerología
             </h2>
             <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px] mb-12">
@@ -558,7 +558,7 @@ function SthMobil({ tms, settings }) {
                   className="flex mb-4 flex-col justify-center items-center"
                 >
                   <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col ml-5 items-center justify-center mb-8">
+                  <div className="flex flex-col items-center justify-center mb-8">
                     <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
                       {beneficio.title}
                     </h3>
@@ -578,12 +578,12 @@ function SthMobil({ tms, settings }) {
           </div>
         </div>
 
-        <div className="w-[328px] px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
+        <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
           <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
             Preguntas <span className="text-color2 leading-52">Frecuentes</span>
             .
           </h2>
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full">
             {preguntas.map((pregunta, index) => (
               <div
                 key={index}
@@ -627,7 +627,7 @@ function SthMobil({ tms, settings }) {
           <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
             Tu terapeuta.
           </h2>
-          <img src={man} alt="" className="w-full px-4 mb-8" />
+          <img src={man} alt="" className="w-[328px] mb-8" />
           <div className="w-[328px] flex flex-col items-start justify-center">
             <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
               Dr. José Luis Nogales Galván
@@ -658,11 +658,11 @@ function SthMobil({ tms, settings }) {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px] border-b border-gray">
+        <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
           <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
             ¿Cómo agendo mi cita?
           </h2>
-          <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">
+          <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">
             <div className="flex flex-col w-full justify-evenly items-center gap-8">
               <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
                 <img src={circleWhap} alt="" />

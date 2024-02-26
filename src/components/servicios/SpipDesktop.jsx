@@ -259,7 +259,7 @@ function SpipDesktop ({tms, nav}) {
                     </div>
                 </div>
 
-                    <div className="flex flex-col justify-center items-center pb-32 mt-32 border-b border-gray">
+                    <div className="flex flex-col justify-center items-center pb-32 mt-32 border-b border-gray-300">
                         <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
                             Tu terapeuta.
                         </h2>       
@@ -286,7 +286,9 @@ function SpipDesktop ({tms, nav}) {
                         </div>  
                     
 
-                    <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px]">
+                    
+                    </div>
+                    <div className="flex flex-col justify-center items-center mt-16 w-full py-16">
                         <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
                             ¿Cómo agendo mi cita?
                         </h2>         
@@ -321,7 +323,6 @@ function SpipDesktop ({tms, nav}) {
                                 <FaArrowRight />
                             </p>
                         </div>
-                    </div>
                     </div>
                 <FooterDesktop />
             </div>

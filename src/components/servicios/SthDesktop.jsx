@@ -183,9 +183,15 @@ function SthDesktop({ tms, nav }) {
       title: "¿Cual es la finalidad de las terapias holísticas?",
       description: [
         <p>
-          La finalidad de las <span className="font-bold">Terapias Holísticas</span> es abordar el bienestar integral de una persona, considerando la conexión entre mente, cuerpo y espíritu. Estas terapias buscan no solo aliviar síntomas físicos, emocionales o mentales, sino también promover la armonía, la autoconciencia y el equilibrio en todos los aspectos de la vida.
+          La finalidad de las{" "}
+          <span className="font-bold">Terapias Holísticas</span> es abordar el
+          bienestar integral de una persona, considerando la conexión entre
+          mente, cuerpo y espíritu. Estas terapias buscan no solo aliviar
+          síntomas físicos, emocionales o mentales, sino también promover la
+          armonía, la autoconciencia y el equilibrio en todos los aspectos de la
+          vida.
         </p>,
-        "Además, buscan una aproximación integral y personalizada, tratando a la persona en su totalidad en lugar de centrarse únicamente en los síntomas aislados."
+        "Además, buscan una aproximación integral y personalizada, tratando a la persona en su totalidad en lugar de centrarse únicamente en los síntomas aislados.",
       ],
     },
     {
@@ -218,7 +224,7 @@ function SthDesktop({ tms, nav }) {
       title: "¿Cuánto tiempo duran las sesiones?",
       description: [
         "La duración puede fluctuar entre hora y media y dos horas, aunque este periodo se adapta según las necesidades individuales. Se busca personalizar la experiencia terapéutica para asegurar que se aborden de manera adecuada las preocupaciones específicas y se promueva un bienestar integral.",
-        "La flexibilidad en la duración de las sesiones permite ajustarse a las particularidades de cada paciente."
+        "La flexibilidad en la duración de las sesiones permite ajustarse a las particularidades de cada paciente.",
       ],
     },
     {
@@ -228,10 +234,11 @@ function SthDesktop({ tms, nav }) {
       ],
     },
     {
-      title: "¿Hay alguna preparación específica antes de acudir a las sesiones?",
+      title:
+        "¿Hay alguna preparación específica antes de acudir a las sesiones?",
       description: [
         "Te recomendamos vestir ropa cómoda, mantenerse hidratado y evitar comidas pesadas antes de tu sesión. Recuerda informar al terapeuta sobre condiciones de salud y te agradecemos estar dispuesto a mantener una mente abierta para contribuir a una experiencia terapéutica más efectiva y personalizada.",
-        "Si tienes alguna duda específica o inquietudes, comunícate con tu terapeuta."
+        "Si tienes alguna duda específica o inquietudes, comunícate con tu terapeuta.",
       ],
     },
     {
@@ -244,7 +251,10 @@ function SthDesktop({ tms, nav }) {
       title: "¿Porqué elegir las terapias holísticas?",
       description: [
         <p>
-          Los enfoques de la <span className="font-bold">Terapia Holística</span> abordan el bienestar en múltiples niveles, considerando la conexión entre mente, cuerpo y espíritu. 
+          Los enfoques de la{" "}
+          <span className="font-bold">Terapia Holística</span> abordan el
+          bienestar en múltiples niveles, considerando la conexión entre mente,
+          cuerpo y espíritu.
         </p>,
         "Se destacan por su capacidad para adaptarse a las necesidades individuales de cada paciente, proporcionando un tratamiento personalizado e integral al mismo.",
       ],
@@ -265,7 +275,7 @@ function SthDesktop({ tms, nav }) {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center">
+      <div className="w-full">
         <div
           className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center"
           style={{
@@ -279,401 +289,386 @@ function SthDesktop({ tms, nav }) {
                         Asesoría nutricional y Educación en Diabetes
                     </h1> */}
         </div>
-        <div className="flex flex-col items-center justify-center px-4 py-20">
-          <div className="pt-12 flex items-center justify-center w-full gap-20 flex-wrap">
-            <div className="flex flex-col max-w-[700px] max-h-[438px]">
-              <h2 className="text-48 font-[700] font-roboto leading-52 mb-5 text-center">
-                ¿Por qué elegir{" "}
-                <span className="text-color2 leading-52">
-                  Terapias Holísticas
-                </span>
-                ?
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[700px] text-center">
-                Las terapias holísticas adoptan un enfoque integral que
-                considera la conexión entre cuerpo, mente y espíritu, buscando
-                equilibrar y fortalecer todos los aspectos de la persona. Con
-                énfasis en la prevención y el bienestar general, estas terapias
-                identifican causas subyacentes de los problemas de salud.
-                Utilizando enfoques naturales, buscan minimizar efectos
-                secundarios y promover la autorresponsabilidad en el
-                autocuidado.
-              </p>
-            </div>
-            <img
-              src={th1}
-              alt="HOUSE"
-              className="w-[500px] h-[500px]"
-            />
-          </div>
-        </div>
-        <div>
-          <div className="flex flex-col items-center justify-center max-w-[1280px]">
-            <h2 className="text-[54px] font-[700] font-roboto leading-[60px] mb-12 mt-24 text-center">
-              ¿Qué <span className="text-color2 leading-52">terapia</span> es
-              para mí?
-            </h2>
-          </div>
-
-          <div className="pt-24 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <div className="flex flex-col max-w-[600px] ">
-              <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
-                Terapia con{" "}
-                <span className="text-color2 leading-52">Terahercios</span>.
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
-                Terapia de frecuencia que utiliza tecnología de terahercios para
-                influir positivamente en la salud y el bienestar de tu cuerpo.
-                Emite ondas que interactúan con las células y huesos. Ayuda a
-                restaurar y mantener el equilibrio bioenergético de tu
-                organismo.
-              </p>
-              {beneficios.map((beneficio, index) => {
-                return (
-                  <div key={index} className="flex mb-4 items-start">
-                    <img src={beneficio.photo} alt="" />
-                    <div className="flex flex-col ml-5">
-                      <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
-                        {beneficio.title}
-                      </h3>
-                      <p className="text-20 font-lato font-[400] leading-28 text-color7">
-                        {beneficio.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <img
-              src={th2}
-              alt="HOUSE"
-              className="w-[520px]"
-            />
-          </div>
-
-          <div className="pt-24 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <img
-              src={th3}
-              alt="HOUSE"
-              className="w-[520px] border-b-stone-600"
-            />
-            <div className="flex flex-col max-w-[600px] ">
-              <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
-              Aromaterapia.
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
-              Práctica terapéutica que utiliza aceites esenciales extraídos de plantas para mejorar el bienestar físico, emocional y mental. Estos aceites se inhalan o aplican sobre la piel. Sus aromas y propiedades pueden influir en el estado de ánimo, aliviar el estrés, mejorar el sueño y ofrecer beneficios para la salud.
-              </p>
-              {beneficios2.map((beneficio, index) => {
-                return (
-                  <div key={index} className="flex mb-4 items-start">
-                    <img src={beneficio.photo} alt="" />
-                    <div className="flex flex-col ml-5">
-                      <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
-                        {beneficio.title}
-                      </h3>
-                      <p className="text-20 font-lato font-[400] leading-28 text-color7">
-                        {beneficio.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="pt-24 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <div className="flex flex-col max-w-[600px] ">
-              <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
-              Flores de{" "}
-                <span className="text-color2 leading-52">Bach</span>.
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
-              Terapia complementaria con 38 esencias florales.  Las propiedades de las flores de Bach ayudan a armonizar y corregir alteraciones mentales físicas y emocionales.
-              </p>
-              {beneficios3.map((beneficio, index) => {
-                return (
-                  <div key={index} className="flex mb-4 items-start">
-                    <img src={beneficio.photo} alt="" />
-                    <div className="flex flex-col ml-5">
-                      <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
-                        {beneficio.title}
-                      </h3>
-                      <p className="text-20 font-lato font-[400] leading-28 text-color7">
-                        {beneficio.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <img
-              src={th4}
-              alt="HOUSE"
-              className="w-[520px]"
-            />
-          </div>
-
-          <div className="pt-24 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <img
-              src={th5}
-              alt="HOUSE"
-              className="w-[520px] border-b-stone-600"
-            />
-            <div className="flex flex-col max-w-[600px] ">
-              <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
-              Thetahealing.
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
-              Técnica de meditación que se enfoca en llegar al estado Theta, para conectar con el subconsciente, donde se retienen memorias y sentimientos. 
-              ThetaHealing se utiliza para abordar una variedad de temas, como la mejora de la salud física y emocional, la superación de bloqueos emocionales, la manifestación de metas y el desarrollo personal y espiritual.
-              </p>
-              {beneficios4.map((beneficio, index) => {
-                return (
-                  <div key={index} className="flex mb-4 items-start">
-                    <img src={beneficio.photo} alt="" />
-                    <div className="flex flex-col ml-5">
-                      <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
-                        {beneficio.title}
-                      </h3>
-                      <p className="text-20 font-lato font-[400] leading-28 text-color7">
-                        {beneficio.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className="pt-24 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <div className="flex flex-col max-w-[600px] ">
-              <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
-              Reiki.
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
-              El Reiki es una terapia energética originaria de Japón que se centra en canalizar la energía vital universal a través de la imposición de manos para equilibrar y armonizar la energía en los centros de chakras del cuerpo. La práctica busca promover la relajación profunda y facilitar la curación física y emocional.
-              </p>
-              {beneficios5.map((beneficio, index) => {
-                return (
-                  <div key={index} className="flex mb-4 items-start">
-                    <img src={beneficio.photo} alt="" />
-                    <div className="flex flex-col ml-5">
-                      <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
-                        {beneficio.title}
-                      </h3>
-                      <p className="text-20 font-lato font-[400] leading-28 text-color7">
-                        {beneficio.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            <img
-              src={th6}
-              alt="HOUSE"
-              className="w-[520px]"
-            />
-          </div>
-
-          <div className="pt-24 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <img
-              src={th7}
-              alt="HOUSE"
-              className="w-[520px] border-b-stone-600"
-            />
-            <div className="flex flex-col max-w-[600px] ">
-              <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
-              Numerología.
-              </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
-              La numerología es un sistema metafísico que estudia la relación entre los números y diversos aspectos de la vida. Se basa en la creencia de que los números tienen significados simbólicos y energéticos que pueden influir en la personalidad, el comportamiento y el destino de una persona.
-              </p>
-              {beneficios6.map((beneficio, index) => {
-                return (
-                  <div key={index} className="flex mb-4 items-start">
-                    <img src={beneficio.photo} alt="" />
-                    <div className="flex flex-col ml-5">
-                      <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
-                        {beneficio.title}
-                      </h3>
-                      <p className="text-20 font-lato font-[400] leading-28 text-color7">
-                        {beneficio.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          </div>
-
-
-        <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
-          <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
-            Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
-          </h2>
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
-            {preguntas.map((pregunta, index) => (
-              <div
-                key={index}
-                className="py-6 px-4 border border-color8 rounded-md h-fit"
-              >
-                <button
-                  onClick={() => handleToggle(index)}
-                  className="flex justify-between items-center w-full text-left"
-                >
-                  <span className="text-20 font-roboto font-[700] leading-20 text-color7">
-                    {pregunta.title}
+        <div className="flex flex-col items-center justify-center mx-20">
+          <div className="flex flex-col items-center justify-between px-4">
+            <div className="pt-12 flex items-center justify-between flex-wrap">
+              <div className="flex flex-col max-w-[700px] max-h-[438px]">
+                <h2 className="text-48 font-[700] font-roboto leading-52 mb-5 text-center">
+                  ¿Por qué elegir{" "}
+                  <span className="text-color2 leading-52">
+                    Terapias Holísticas
                   </span>
-                  {expandedIndex === index ? (
-                    <GoDash size={20} />
-                  ) : (
-                    <GoPlus size={20} />
-                  )}
-                </button>
-                {expandedIndex === index && (
-                  <div className="mt-4">
-                    {pregunta.description.map((item, idx) => (
-                      <div key={idx} className="mb-2">
-                        {Array.isArray(item) ? (
-                          <ul className="list-disc pl-4">
-                            {item.map((subItem, subIdx) => (
-                              <li key={subIdx}>{subItem}</li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p className="text-color7">{item}</p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                )}
+                  ?
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[700px] text-center">
+                  Las terapias holísticas adoptan un enfoque integral que
+                  considera la conexión entre cuerpo, mente y espíritu, buscando
+                  equilibrar y fortalecer todos los aspectos de la persona. Con
+                  énfasis en la prevención y el bienestar general, estas
+                  terapias identifican causas subyacentes de los problemas de
+                  salud. Utilizando enfoques naturales, buscan minimizar efectos
+                  secundarios y promover la autorresponsabilidad en el
+                  autocuidado.
+                </p>
               </div>
-            ))}
+              <img src={th1} alt="HOUSE" className="w-[500px] h-[500px]" />
+            </div>
           </div>
-        
+          <div>
+            <div className="flex flex-col items-center justify-center max-w-[1280px]">
+              <h2 className="text-[54px] font-[700] font-roboto leading-[60px] mb-12 mt-24 text-center">
+                ¿Qué <span className="text-color2 leading-52">terapia</span> es
+                para mí?
+              </h2>
+            </div>
 
-          <div className="flex flex-col justify-center items-center pb-32 mt-32 border-b border-gray">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
-                            Tu terapeuta.
-                        </h2>       
-                        <div className="flex justify-center items-center flex-wrap gap-20">
-                            <img src={pip10} alt="" className="w-[600px] mb-8"/>
-                            <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
-                                <h3 className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6" style={{letterSpacing:"1px"}}>
-                                M.C. Rocío González Saucedo
-                                </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
-                                Ingeniera Bioquímica, Diplomada en Nutrición Clínica y Educación en Diabetes, y Maestra en Ciencias Médicas y Nutrición Clínica.
-                                </h4>
-                                <p className="text-16 font-[400] text-color7 font-lato mb-12">
-                                Ingeniera Bioquímica con especialidad en Medio Ambiente y Sustentabilidad quién, al percatarse de la relación entre el entorno y la salud humana, decide cursar la maestría en Ciencias Médicas. Su fascinación por la influencia directa de la nutrición en la salud la llevó a profundizar en el estudio de la Nutrición Clínica, con un enfoque particular en personas que viven con Diabetes.
-                                    <br/><br/>
-                                    Gracias a su formación como Terapeuta Holística, ha estudiado diversas técnicas de autoconocimiento y gestión emocional que complementan su enfoque clínico y permiten abordar a cada persona de manera integral, reconociendo la interconexión entre cuerpo, mente y espíritu.
-                                </p>
-                                <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
-                                    <img src={unam} alt="" />
-                                    <img src={u_colima} alt="" />
-                                    <img src={imp} alt="" />
-                                </div>
-                            </div>
-                        </div>  
+            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+              <div className="flex flex-col max-w-[600px] ">
+                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                  Terapia con{" "}
+                  <span className="text-color2 leading-52">Terahercios</span>.
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                  Terapia de frecuencia que utiliza tecnología de terahercios
+                  para influir positivamente en la salud y el bienestar de tu
+                  cuerpo. Emite ondas que interactúan con las células y huesos.
+                  Ayuda a restaurar y mantener el equilibrio bioenergético de tu
+                  organismo.
+                </p>
+                {beneficios.map((beneficio, index) => {
+                  return (
+                    <div key={index} className="flex mb-4 items-start">
+                      <img src={beneficio.photo} alt="" />
+                      <div className="flex flex-col ml-5">
+                        <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
+                          {beneficio.title}
+                        </h3>
+                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                          {beneficio.description}
+                        </p>
+                      </div>
                     </div>
-
-          <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px] border-b border-gray">
-            <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
-              ¿Cómo agendo mi cita?
-            </h2>
-            <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">
-              <div className="flex w-full justify-evenly items-center">
-                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                  <img src={circleWhap} alt="" />
-                  <h4 className="text-24 text-color6 font-[700] leading-24">
-                    Paso 1
-                  </h4>
-                  <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                    Contáctanos por teléfono o vía Whatsapp.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                  <img src={circleCheck} alt="" />
-                  <h4 className="text-24 text-color6 font-[700] leading-24">
-                    Paso 2
-                  </h4>
-                  <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                    Agenda una cita en el horario y día que más te convenga.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                  <img src={circlePerson} alt="" />
-                  <h4 className="text-24 text-color6 font-[700] leading-24">
-                    Paso 3
-                  </h4>
-                  <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                    Asiste a tu cita en el horario y día acordado.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                  <img src={circleCalendar} alt="" />
-                  <h4 className="text-24 text-color6 font-[700] leading-24">
-                    Paso 4
-                  </h4>
-                  <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                    Realiza el pago y agenda tu siguiente cita.
-                  </p>
-                </div>
+                  );
+                })}
               </div>
+              <img src={th2} alt="HOUSE" className="w-[520px]" />
+            </div>
 
-              <p
-                className="flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24"
-                onClick={() => window.open("https://w.app/psicomed", "_blank")}
-              >
-                Agenda una cita
-                <FaArrowRight />
-              </p>
+            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+              <img
+                src={th3}
+                alt="HOUSE"
+                className="w-[520px] border-b-stone-600"
+              />
+              <div className="flex flex-col max-w-[600px] ">
+                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                  Aromaterapia.
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                  Práctica terapéutica que utiliza aceites esenciales extraídos
+                  de plantas para mejorar el bienestar físico, emocional y
+                  mental. Estos aceites se inhalan o aplican sobre la piel. Sus
+                  aromas y propiedades pueden influir en el estado de ánimo,
+                  aliviar el estrés, mejorar el sueño y ofrecer beneficios para
+                  la salud.
+                </p>
+                {beneficios2.map((beneficio, index) => {
+                  return (
+                    <div key={index} className="flex mb-4 items-start">
+                      <img src={beneficio.photo} alt="" />
+                      <div className="flex flex-col ml-5">
+                        <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
+                          {beneficio.title}
+                        </h3>
+                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                          {beneficio.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+              <div className="flex flex-col max-w-[600px] ">
+                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                  Flores de <span className="text-color2 leading-52">Bach</span>
+                  .
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                  Terapia complementaria con 38 esencias florales. Las
+                  propiedades de las flores de Bach ayudan a armonizar y
+                  corregir alteraciones mentales físicas y emocionales.
+                </p>
+                {beneficios3.map((beneficio, index) => {
+                  return (
+                    <div key={index} className="flex mb-4 items-start">
+                      <img src={beneficio.photo} alt="" />
+                      <div className="flex flex-col ml-5">
+                        <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
+                          {beneficio.title}
+                        </h3>
+                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                          {beneficio.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <img src={th4} alt="HOUSE" className="w-[520px]" />
+            </div>
+
+            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+              <img
+                src={th5}
+                alt="HOUSE"
+                className="w-[520px] border-b-stone-600"
+              />
+              <div className="flex flex-col max-w-[600px] ">
+                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                  Thetahealing.
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                  Técnica de meditación que se enfoca en llegar al estado Theta,
+                  para conectar con el subconsciente, donde se retienen memorias
+                  y sentimientos. ThetaHealing se utiliza para abordar una
+                  variedad de temas, como la mejora de la salud física y
+                  emocional, la superación de bloqueos emocionales, la
+                  manifestación de metas y el desarrollo personal y espiritual.
+                </p>
+                {beneficios4.map((beneficio, index) => {
+                  return (
+                    <div key={index} className="flex mb-4 items-start">
+                      <img src={beneficio.photo} alt="" />
+                      <div className="flex flex-col ml-5">
+                        <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
+                          {beneficio.title}
+                        </h3>
+                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                          {beneficio.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+              <div className="flex flex-col max-w-[600px] ">
+                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                  Reiki.
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                  El Reiki es una terapia energética originaria de Japón que se
+                  centra en canalizar la energía vital universal a través de la
+                  imposición de manos para equilibrar y armonizar la energía en
+                  los centros de chakras del cuerpo. La práctica busca promover
+                  la relajación profunda y facilitar la curación física y
+                  emocional.
+                </p>
+                {beneficios5.map((beneficio, index) => {
+                  return (
+                    <div key={index} className="flex mb-4 items-start">
+                      <img src={beneficio.photo} alt="" />
+                      <div className="flex flex-col ml-5">
+                        <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
+                          {beneficio.title}
+                        </h3>
+                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                          {beneficio.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <img src={th6} alt="HOUSE" className="w-[520px]" />
+            </div>
+
+            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+              <img
+                src={th7}
+                alt="HOUSE"
+                className="w-[520px] border-b-stone-600"
+              />
+              <div className="flex flex-col max-w-[600px] ">
+                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                  Numerología.
+                </h2>
+                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                  La numerología es un sistema metafísico que estudia la
+                  relación entre los números y diversos aspectos de la vida. Se
+                  basa en la creencia de que los números tienen significados
+                  simbólicos y energéticos que pueden influir en la
+                  personalidad, el comportamiento y el destino de una persona.
+                </p>
+                {beneficios6.map((beneficio, index) => {
+                  return (
+                    <div key={index} className="flex mb-4 items-start">
+                      <img src={beneficio.photo} alt="" />
+                      <div className="flex flex-col ml-5">
+                        <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
+                          {beneficio.title}
+                        </h3>
+                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                          {beneficio.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px]">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
-                            ¿Cómo agendo mi cita?
-                        </h2>         
-                        <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">
-                            <div className="flex w-full justify-evenly items-center">
-                                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                                    <img src={circleWhap} alt="" />
-                                    <h4 className="text-24 text-color6 font-[700] leading-24">Paso 1</h4>
-                                    <p className="text-16 text-color7 font-[400] leading-16 text-center">Contáctanos por teléfono o vía Whatsapp.</p>
-                                </div>
-                                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                                    <img src={circleCheck} alt="" />
-                                    <h4 className="text-24 text-color6 font-[700] leading-24">Paso 2</h4>
-                                    <p className="text-16 text-color7 font-[400] leading-16 text-center">Agenda una cita en el horario y día que más te convenga.</p>
-                                </div>
-                                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                                    <img src={circlePerson} alt="" />
-                                    <h4 className="text-24 text-color6 font-[700] leading-24">Paso 3</h4>
-                                    <p className="text-16 text-color7 font-[400] leading-16 text-center">Asiste a tu cita en el horario y día acordado.</p>
-                                </div>
-                                <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                                    <img src={circleCalendar} alt="" />
-                                    <h4 className="text-24 text-color6 font-[700] leading-24">Paso 4</h4>
-                                    <p className="text-16 text-color7 font-[400] leading-16 text-center">Realiza el pago y agenda tu siguiente cita.</p>
-                                </div>
-                            </div>
-
-                            <p className='flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24'
-                                onClick={() => window.open("https://w.app/psicomed", "_blank")}
-                            >
-                                Agenda una cita
-                                <FaArrowRight />
-                            </p>
+          <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
+            <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+              Preguntas{" "}
+              <span className="text-color2 leading-52">Frecuentes</span>.
+            </h2>
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
+              {preguntas.map((pregunta, index) => (
+                <div
+                  key={index}
+                  className="py-6 px-4 border border-color8 rounded-md h-fit"
+                >
+                  <button
+                    onClick={() => handleToggle(index)}
+                    className="flex justify-between items-center w-full text-left"
+                  >
+                    <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                      {pregunta.title}
+                    </span>
+                    {expandedIndex === index ? (
+                      <GoDash size={20} />
+                    ) : (
+                      <GoPlus size={20} />
+                    )}
+                  </button>
+                  {expandedIndex === index && (
+                    <div className="mt-4">
+                      {pregunta.description.map((item, idx) => (
+                        <div key={idx} className="mb-2">
+                          {Array.isArray(item) ? (
+                            <ul className="list-disc pl-4">
+                              {item.map((subItem, subIdx) => (
+                                <li key={subIdx}>{subItem}</li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <p className="text-color7">{item}</p>
+                          )}
                         </div>
+                      ))}
                     </div>
-        </div>
+                  )}
+                </div>
+              ))}
+            </div>
 
+            <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+              <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+                Tu terapeuta.
+              </h2>
+              <div className="flex justify-center items-center flex-wrap gap-20">
+                <img src={pip10} alt="" className="w-[600px] mb-8" />
+                <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
+                  <h3
+                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                    style={{ letterSpacing: "1px" }}
+                  >
+                    M.C. Rocío González Saucedo
+                  </h3>
+                  <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                    Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
+                    Educación en Diabetes, y Maestra en Ciencias Médicas y
+                    Nutrición Clínica.
+                  </h4>
+                  <p className="text-16 font-[400] text-color7 font-lato mb-12">
+                    Ingeniera Bioquímica con especialidad en Medio Ambiente y
+                    Sustentabilidad quién, al percatarse de la relación entre el
+                    entorno y la salud humana, decide cursar la maestría en
+                    Ciencias Médicas. Su fascinación por la influencia directa
+                    de la nutrición en la salud la llevó a profundizar en el
+                    estudio de la Nutrición Clínica, con un enfoque particular
+                    en personas que viven con Diabetes.
+                    <br />
+                    <br />
+                    Gracias a su formación como Terapeuta Holística, ha
+                    estudiado diversas técnicas de autoconocimiento y gestión
+                    emocional que complementan su enfoque clínico y permiten
+                    abordar a cada persona de manera integral, reconociendo la
+                    interconexión entre cuerpo, mente y espíritu.
+                  </p>
+                  <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
+                    <img src={unam} alt="" />
+                    <img src={u_colima} alt="" />
+                    <img src={imp} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center items-center mt-16 w-full pt-16">
+              <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+                ¿Cómo agendo mi cita?
+              </h2>
+              <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">
+                <div className="flex w-full justify-evenly items-center">
+                  <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+                    <img src={circleWhap} alt="" />
+                    <h4 className="text-24 text-color6 font-[700] leading-24">
+                      Paso 1
+                    </h4>
+                    <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                      Contáctanos por teléfono o vía Whatsapp.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+                    <img src={circleCheck} alt="" />
+                    <h4 className="text-24 text-color6 font-[700] leading-24">
+                      Paso 2
+                    </h4>
+                    <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                      Agenda una cita en el horario y día que más te convenga.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+                    <img src={circlePerson} alt="" />
+                    <h4 className="text-24 text-color6 font-[700] leading-24">
+                      Paso 3
+                    </h4>
+                    <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                      Asiste a tu cita en el horario y día acordado.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
+                    <img src={circleCalendar} alt="" />
+                    <h4 className="text-24 text-color6 font-[700] leading-24">
+                      Paso 4
+                    </h4>
+                    <p className="text-16 text-color7 font-[400] leading-16 text-center">
+                      Realiza el pago y agenda tu siguiente cita.
+                    </p>
+                  </div>
+                </div>
+
+                <p
+                  className="flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12"
+                  onClick={() =>
+                    window.open("https://w.app/psicomed", "_blank")
+                  }
+                >
+                  Agenda una cita
+                  <FaArrowRight />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <FooterDesktop />
       </div>
     </>
