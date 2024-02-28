@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import banner from "../assets/banner-nosotros.svg";
 
 import ins1 from "../assets/ins-1.svg"
@@ -7,7 +6,6 @@ import ins3 from "../assets/ins-3.svg"
 import FooterDesktop from "./FooterDesktop";
 
 function NosotrosDesktop ({features, experts}) {
-    const navigate = useNavigate();
 
     return (
         <div className='flex flex-col items-center justify-center'>

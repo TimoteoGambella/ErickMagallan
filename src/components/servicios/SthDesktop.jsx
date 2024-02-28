@@ -1,6 +1,4 @@
 import banner from "../../assets/banner-servicios-4.svg";
-import an1 from "../../assets/an-1.svg";
-import an2 from "../../assets/an-2.svg";
 import pip10 from "../../assets/pip-10.svg";
 import th1 from "../../assets/th-1.svg";
 import th2 from "../../assets/th-2.svg";
@@ -12,28 +10,16 @@ import th7 from "../../assets/th-7.svg";
 import heart from "../../assets/pip-4.svg";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterDesktop from "../FooterDesktop";
-import ben1 from "../../assets/beneficio-1.svg";
-import ben2 from "../../assets/beneficio-1.svg";
-import ben3 from "../../assets/beneficio-1.svg";
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
-import terapeuta from "../../assets/man.svg";
 import circleWhap from "../../assets/circle-whap.svg";
 import circleCheck from "../../assets/circle-check.svg";
 import circlePerson from "../../assets/circle-person.svg";
 import circleCalendar from "../../assets/circle-calendar.svg";
-import line from "../../assets/circle-line.svg";
 import {
   FaArrowRight,
-  FaCircle,
-  FaRegArrowAltCircleDown,
 } from "react-icons/fa";
-import { IoHeartCircleOutline } from "react-icons/io5";
-import { publis_tms } from "../../publis";
-import { CgFileDocument } from "react-icons/cg";
-import { PiUserCircleFill } from "react-icons/pi";
-import { LuLanguages } from "react-icons/lu";
 import { useState } from "react";
 
 function SthDesktop({ tms, nav }) {

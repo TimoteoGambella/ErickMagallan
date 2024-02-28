@@ -3,7 +3,6 @@ import { IoIosHeartHalf } from "react-icons/io";
 import { IoChatbubblesSharp } from "react-icons/io5";
 import pip7 from '../assets/pip-7.svg';
 import pip10 from '../assets/pip-10.svg';
-import person2 from "../assets/woman.svg"
 
 import character1 from "../assets/person1.svg"
 import character2 from "../assets/person2.svg"

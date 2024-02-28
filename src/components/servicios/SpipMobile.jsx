@@ -3,14 +3,9 @@ import pip1 from "../../assets/pip-1.svg";
 import pip2 from "../../assets/pip-2.svg";
 import pip3 from "../../assets/pip-3.svg";
 import heart from "../../assets/pip-4.svg";
-import pip5 from "../../assets/pip-5.svg";
 import pip7 from "../../assets/pip-7.svg";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterMobile from ".././FooterMobile";
-import ben1 from "../../assets/beneficio-1.svg";
-import ben2 from "../../assets/beneficio-1.svg";
-import ben3 from "../../assets/beneficio-1.svg";
-import terapeuta from "../../assets/man.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import { useState } from "react";
 

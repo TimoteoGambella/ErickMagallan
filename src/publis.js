@@ -8,11 +8,6 @@ import photo7 from "./assets/publis/picture-7.svg";
 import photo8 from "./assets/publis/picture-8.svg";
 import photo9 from "./assets/publis/picture-9.svg";
 import photo10 from "./assets/publis/picture-10.svg";
-import photo11 from "./assets/publis/picture-11.svg";
-import photo12 from "./assets/publis/picture-12.svg";
-import photo13 from "./assets/publis/picture-13.svg";
-import photo14 from "./assets/publis/picture-14.svg";
-import photo15 from "./assets/publis/picture-15.svg";
 
 export const publis_tms = [
     {
