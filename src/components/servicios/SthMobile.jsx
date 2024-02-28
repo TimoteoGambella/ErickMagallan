@@ -1,8 +1,6 @@
 import banner from "../../assets/banner-servicios-pip.svg";
-import emt1 from "../../assets/emt-1.svg";
 import pip2 from "../../assets/pip-2.svg";
 import th1 from "../../assets/th-1.svg";
-import th2 from "../../assets/th-2.svg";
 import th3 from "../../assets/th-3.svg";
 import th4 from "../../assets/th-4.svg";
 import th5 from "../../assets/th-5.svg";
@@ -22,16 +20,9 @@ import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
 
-import emt2 from "../../assets/emt-2.svg";
-import { IoHeartCircleOutline } from "react-icons/io5";
-import { FaArrowRight, FaCircle } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterMobile from ".././FooterMobile";
-import Slider from "react-slick";
-import { publis_tms } from "../../publis";
-import { CgFileDocument } from "react-icons/cg";
-import { PiUserCircleFill } from "react-icons/pi";
-import { LuLanguages } from "react-icons/lu";
 import { useState } from "react";
 import heart from "../../assets/pip-4.svg";
 

@@ -2,7 +2,6 @@ import house from "../assets/home-1.svg";
 import service1 from "../assets/home-2.svg";
 import services from "../assets/home-3.svg";
 import { FaArrowRight } from "react-icons/fa6";
-import { FaChevronDown } from "react-icons/fa";
 
 import Slider from "react-slick";
 

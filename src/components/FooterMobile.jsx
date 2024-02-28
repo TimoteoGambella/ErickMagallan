@@ -89,6 +89,7 @@ function FooterMobile () {
                             {info.method === "Nuestro domicilio" && 
                                 <div className='w-[296px] h-[296px]'>
                                     <iframe 
+                                        title="Psicomed"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.6899168049385!2d-103.70856388117558!3d19.2523412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ab827db651d%3A0x9a66c57a12de163e!2sPsicomed!5e0!3m2!1ses!2sar!4v1703428549214!5m2!1ses!2sar" 
                                         width="100%" 
                                         height="100%" 

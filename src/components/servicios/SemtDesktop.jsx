@@ -2,7 +2,7 @@ import banner from "../../assets/banner-servicios.svg";
 import emt1 from "../../assets/emt-1.svg";
 import emt2 from "../../assets/emt-2.svg";
 import { IoHeartCircleOutline } from "react-icons/io5";
-import { FaArrowAltCircleDown, FaCircle, FaRegArrowAltCircleDown } from "react-icons/fa";
+import { FaCircle, FaRegArrowAltCircleDown } from "react-icons/fa";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterDesktop from ".././FooterDesktop";
 import { publis_tms } from "../../publis";
@@ -15,7 +15,6 @@ import circleCheck from "../../assets/circle-check.svg";
 import circlePerson from "../../assets/circle-person.svg";
 import circleCalendar from "../../assets/circle-calendar.svg";
 import { FaArrowRight } from "react-icons/fa";
-import { BsArrow90DegDown } from "react-icons/bs";
 
 function SemtDesktop({ tms, nav }) {
     const [expandedIndex, setExpandedIndex] = useState(null);

@@ -3,12 +3,6 @@ import NosotrosMobile from "../components/NosotrosMobile"
 import { FaUserFriends } from 'react-icons/fa';
 import { IoIosHeartHalf } from "react-icons/io";
 import { IoChatbubblesSharp } from "react-icons/io5";
-import { BsTelephone } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
-import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import { MdOutlineMail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaWhatsapp,FaHome } from 'react-icons/fa';
 import person1 from '../assets/man.svg';
 import person2 from "../assets/woman.svg"
 
