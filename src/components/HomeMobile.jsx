@@ -156,7 +156,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
           </p>
         </div>
 
-        <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
+        <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
           <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
             Preguntas <span className="text-color2 leading-52">Frecuentes</span>
             .
@@ -200,7 +200,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
               </div>
             ))}
           </div>
-          <div className="w-[328px] mt-8 ">
+          <div className="w-[328px] mt-8">
             <img
               src={services}
               alt="SERVICES"

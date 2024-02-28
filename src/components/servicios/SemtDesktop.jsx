@@ -281,7 +281,7 @@ function SemtDesktop({ tms, nav }) {
                         </div>
                     </div>
 
-                    <div className="flex flex-col justify-center items-center mt-16 w-full pt-64">
+                    <div className="flex flex-col justify-center items-center mt-16 w-full">
                         <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
                             ¿Cómo agendo mi cita?
                         </h2>

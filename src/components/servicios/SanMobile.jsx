@@ -259,7 +259,7 @@ function SanMobile({ tms, settings }) {
             </div>
           </div>
 
-          <div className="w-[328px] px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
+          <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
             <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
               Preguntas{" "}
               <span className="text-color2 leading-52">Frecuentes</span>.
