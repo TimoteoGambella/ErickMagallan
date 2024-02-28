@@ -7,7 +7,6 @@ import FooterMobile from "./FooterMobile";
 
 function NosotrosMobile ({features, experts}) {
 
-
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16' style={{
