@@ -1,9 +1,9 @@
 import banner from "../../assets/banner-servicios-pip.svg";
-import pip1 from "../../assets/pip-1.svg";
-import pip2 from "../../assets/pip-2.svg";
+import pip1 from "../../assets/pip/¿Por que asistir a una psicoterapia_ (1).jpg";
+import pip2 from "../../assets/pip/Psicoterapia de Pareja (1).jpg";
 import pip3 from "../../assets/pip-3.svg";
 import heart from "../../assets/pip-4.svg";
-import pip7 from "../../assets/pip-7.svg";
+import pip7 from "../../assets/professionals/Dr-José-Luis.jpg";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterMobile from ".././FooterMobile";
 import { FaArrowRight } from "react-icons/fa6";
@@ -159,6 +159,7 @@ function SpipMobile({ tms }) {
         "La psicoterapia brinda herramientas para adaptarse y gestionar cambios en la vida, construyendo resiliencia y capacidad de afrontamiento.",
     },
   ];
+
   const beneficios2 = [
     {
       photo: heart,
@@ -212,7 +213,7 @@ function SpipMobile({ tms }) {
               <img
                 src={pip1}
                 alt="HOUSE"
-                className="w-full border-b-stone-600"
+                className="w-full border-b-stone-600 rounded-xl"
               />
             </div>
 
@@ -221,6 +222,7 @@ function SpipMobile({ tms }) {
                 ¿Qué <span className="text-color2 leading-52">terapia</span> es
                 para mí?
               </h2>
+              <img src={pip3} alt="" className="w-full h-[328px] rounded-xl object-cover" />
               <div className="flex flex-wrap gap-8 justify-center items-center">
                 {/* <img src={pip2} alt="" className="w-full"/> */}
                 <div className="flex flex-col items-center justify-center">
@@ -259,7 +261,7 @@ function SpipMobile({ tms }) {
                 </div>
               </div>
               <div className="flex flex-wrap gap-20 justify-center items-center w-[328px]">
-                <img src={pip2} alt="" className="w-full" />
+                <img src={pip2} alt="" className="w-full h-[328px] rounded-xl object-cover" />
                 <div className="flex flex-col items-start">
                   <h2 className="text-32 font-[700] font-roboto leading-9 mb-8 text-center h-9">
                     Psicoterapia de{" "}
@@ -292,7 +294,6 @@ function SpipMobile({ tms }) {
               </div>
             </div>
           </div>
-          <img src={pip3} alt="" className="px-4 w-[328px]" />
 
           <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
             <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
@@ -344,7 +345,7 @@ function SpipMobile({ tms }) {
             <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
               Tu terapeuta.
             </h2>
-            <img src={pip7} alt="" className="w-[328px] mb-8" />
+            <img src={pip7} alt="" className="w-[328px] max-h-[400px] rounded-xl object-cover mb-4"  />
             <div className="w-[328px] flex flex-col items-start justify-center">
               <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
                 Dr. José Luis Nogales Galván

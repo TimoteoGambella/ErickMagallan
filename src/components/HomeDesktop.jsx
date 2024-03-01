@@ -1,6 +1,6 @@
 import house from '../assets/home-1.svg';
-import service1 from '../assets/home-2.svg';
-import services from '../assets/home-3.svg';
+import service1 from '../assets/home/TMS.jpg';
+import services from '../assets/home/Nuestros servicios.jpeg';
 import { FaArrowRight } from "react-icons/fa6";
 
 import circleWhap from "../assets/circle-whap.svg";
@@ -10,7 +10,7 @@ import circleCalendar from "../assets/circle-calendar.svg";
 
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
-import banner from "../assets/banner.svg";
+import banner from "../assets/home/banner-home.jpg";
 import FooterDesktop from './FooterDesktop';
 import { useState } from 'react';
 import { GoDash, GoPlus } from 'react-icons/go';
@@ -114,19 +114,23 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
     return (
         <div className='flex flex-col items-center justify-center'>
 
-            <div className='w-full flex flex-col items-center justify-center h-[736px] gap-8 text-center mb-20' style={{
-                backgroundImage: `url(${banner})`,
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover"
-            }}>
-                <h1 className='font-[700] text-[64px] text-color5 leading-[70px] font-lato max-w-[780px]'>
-                    Tu espacio de salud mental y bienestar emocional.
-                </h1>
-                <h2 className='font-[400] text-[22px] text-color5 leading-32 font-lato'>
-                    En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
-                </h2>
-            </div>
+<div
+  className="w-full flex flex-col items-center justify-center h-[736px] gap-8 text-center mb-20 relative"
+  style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
+  }}
+>
+  <h1 className="font-[700] text-[64px] text-color5 leading-[70px] font-lato max-w-[780px]">
+    Tu espacio de salud mental y bienestar emocional.
+  </h1>
+  <h2 className="font-[400] text-[22px] text-color5 leading-32 font-lato">
+    En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
+  </h2>
+</div>
+
 
             <div className='flex flex-col items-center justify-center px-4'>
                 <div className="border-b border-gray-300 flex items-center justify-center flex-wrap w-full">
@@ -142,7 +146,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 </div>
 
                 <div className="pt-20 border-b border-gray-300 flex items-center justify-center pb-12 gap-20 flex-wrap">
-                    <img src={service1} alt="HOUSE" className='w-full max-w-[600px]  border-b-stone-600 mb-5' />
+                    <img src={service1} alt="HOUSE" className='w-full max-w-[600px]  border-b-stone-600 mb-5 rounded-xl' />
                     <div className='flex flex-col gap-5'>
                         <h2 className="text-48 font-[700] font-roboto leading-52 max-w-[550px] mb-5">
                             Estimulación Magnética <span className="text-color2 leading-52">Transcraneal</span>.
@@ -200,7 +204,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                             </ul>
                         </div>
                         <div className='w-[630px]'>
-                            <img src={services} alt="SERVICES" className=' w-full max-w-[630px] m-auto' />
+                            <img src={services} alt="SERVICES" className=' w-full max-w-[630px] max-h-[630px] m-auto rounded-xl' />
                         </div>
                     </div>
                     <div className='my-12 pt-12 border-b border-gray-300 flex items-top justify-center flex-wrap'></div>
@@ -243,7 +247,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                     <div className='flex items-top justify-center gap-24'>
                         {experts.map((expert, index) => (
                             <div key={index} className={`bg-white rounded-lg ${index === 0 && "mb-12"}`}>
-                                <img src={expert.img} alt={expert.name} className=' h-[398px] rounded-lg mb-4 w-full max-w-[418px]' />
+                                <img src={expert.img} alt={expert.name} className=' h-[500px] rounded-lg mb-4 w-[400px]' />
                                 <h3 className="font-[700] font-lato text-24 leading-20 text-color6 text-center mt-4">{expert.name}</h3>
                                 <p className="font-lato font-normal text-[18px] leading-20 text-[#697077] text-center mt-1">{expert.title}</p>
                             </div>

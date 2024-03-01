@@ -1,6 +1,6 @@
 import house from "../assets/home-1.svg";
-import service1 from "../assets/home-2.svg";
-import services from "../assets/home-3.svg";
+import service1 from "../assets/home/TMS.jpg";
+import services from "../assets/home/Nuestros servicios.jpeg";
 import { FaArrowRight } from "react-icons/fa6";
 
 import Slider from "react-slick";
@@ -12,7 +12,7 @@ import circleCalendar from "../assets/circle-calendar.svg";
 import line from "../assets/circle-line.svg";
 
 import { useNavigate } from "react-router-dom";
-import banner from "../assets/banner.svg";
+import banner from "../assets/home/banner-home.jpg";
 import FooterMobile from "./FooterMobile";
 import { useState } from "react";
 import { GoDash, GoPlus } from "react-icons/go";
@@ -85,24 +85,24 @@ function HomeMobile({ features, experts, testimonials, settings }) {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">  
       <div
-        className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16"
-        style={{
-          backgroundImage: `url(${banner})`,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
-        <h1 className="font-[700] text-48 text-color5 leading-52 font-lato max-w-[328px]">
-          Tu espacio de salud mental y bienestar emocional.
-        </h1>
-        <h2 className="font-[400] text-16 text-color5 leading-24 font-lato max-w-[328px]">
-          En Psicomed estamos para acompañarte en tu camino hacia una vida
-          plena.
-        </h2>
-      </div>
+  className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16 relative"
+  style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  }}
+>
+  <h1 className="font-[700] text-48 text-color5 leading-52 font-lato max-w-[328px]">
+    Tu espacio de salud mental y bienestar emocional.
+  </h1>
+  <h2 className="font-[400] text-16 text-color5 leading-24 font-lato max-w-[328px]">
+    En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
+  </h2>
+</div>
+
       <div className="flex flex-col items-center justify-center px-4">
         <div className="pb-6 border-b border-gray-300 flex flex-col items-center justify-center">
           <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
@@ -137,7 +137,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
           <img
             src={service1}
             alt="HOUSE"
-            className="w-[328px] border-b-stone-600 mb-5"
+            className="w-[328px] border-b-stone-600 mb-5 rounded-xl"
           />
 
           <p
@@ -203,7 +203,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
             <img
               src={services}
               alt="SERVICES"
-              className=" w-full max-w-[328px] m-auto"
+              className=" w-full max-w-[328px] h-full rounded-xl m-auto"
             />
           </div>
         </div>
