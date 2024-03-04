@@ -1,12 +1,15 @@
-import banner from "../../assets/banner-servicios-4.svg";
-import pip10 from "../../assets/pip-10.svg";
+import banner from "../../assets/th/camille-brodard-AVi4lkHl5L4-unsplash.jpg";
+import t1 from "../../assets/professionals/MC-Rocío-González.jpg";
 import th1 from "../../assets/th-1.svg";
-import th2 from "../../assets/th-2.svg";
-import th3 from "../../assets/th-3.svg";
-import th4 from "../../assets/th-4.svg";
-import th5 from "../../assets/th-5.svg";
-import th6 from "../../assets/th-6.svg";
-import th7 from "../../assets/th-7.svg";
+import th2 from "../../assets/th/i710024-6.jpg";
+import th3 from "../../assets/th/chelsea-shapouri-r40EYKVyutI-unsplash.jpg";
+import th4 from "../../assets/th/christin-hume-0MoF-Fe0w0A-unsplash.jpg";
+import th5 from "../../assets/th/motoki-tonn-X00q3RXcyZ4-unsplash.jpg";
+import th6 from "../../assets/th/toa-heftiba-a9pFSC8dTlo-unsplash.jpg";
+import th7 from "../../assets/th/unseen-studio-s9CC2SKySJM-unsplash.jpg";
+
+import uni from "../../assets/univa.svg";
+
 import heart from "../../assets/pip-4.svg";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterDesktop from "../FooterDesktop";
@@ -23,7 +26,6 @@ import {
 import { useState } from "react";
 
 function SthDesktop({ tms, nav }) {
-  const [visiblePublications, setVisiblePublications] = useState(6);
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -32,10 +34,6 @@ function SthDesktop({ tms, nav }) {
     } else {
       setExpandedIndex(index);
     }
-  };
-
-  const handleLoadMore = () => {
-    setVisiblePublications((prevCount) => prevCount + 6);
   };
 
   const beneficios = [
@@ -262,18 +260,16 @@ function SthDesktop({ tms, nav }) {
   return (
     <>
       <div className="w-full">
-        <div
-          className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center"
-          style={{
-            backgroundImage: `url(${banner})`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-          {/* <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
-                        Asesoría nutricional y Educación en Diabetes
-                    </h1> */}
+      <div className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover"
+                    }}>
+          <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
+          Terapias Holísticas
+                    </h1>
         </div>
         <div className="flex flex-col items-center justify-center mx-20">
           <div className="flex flex-col items-center justify-between px-4">
@@ -337,14 +333,14 @@ function SthDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={th2} alt="HOUSE" className="w-[520px]" />
+              <img src={th2} alt="HOUSE" className="w-[600px] rounded-xl" />
             </div>
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th3}
                 alt="HOUSE"
-                className="w-[520px] border-b-stone-600"
+                className="w-[600px] rounded-xl"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
@@ -403,14 +399,14 @@ function SthDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={th4} alt="HOUSE" className="w-[520px]" />
+              <img src={th4} alt="HOUSE" className="w-[600px] rounded-lg" />
             </div>
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th5}
                 alt="HOUSE"
-                className="w-[520px] border-b-stone-600"
+                className="w-[600px] h-[600px] rounded-lg object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
@@ -471,14 +467,14 @@ function SthDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={th6} alt="HOUSE" className="w-[520px]" />
+              <img src={th6} alt="HOUSE" className="w-[600px] h-[600px] rounded-lg object-cover" />
             </div>
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th7}
                 alt="HOUSE"
-                className="w-[520px] border-b-stone-600"
+                className="w-[600px] h-[600px] rounded-lg object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
@@ -509,6 +505,50 @@ function SthDesktop({ tms, nav }) {
               </div>
             </div>
           </div>
+
+          <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+              <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+                Tu terapeuta.
+              </h2>
+              <div className="flex justify-center items-center flex-wrap gap-20">
+                <img src={t1} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover object-top" />
+                <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
+                  <h3
+                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                    style={{ letterSpacing: "1px" }}
+                  >
+                    M.C. Rocío González Saucedo
+                  </h3>
+                  <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                    Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
+                    Educación en Diabetes, y Maestra en Ciencias Médicas y
+                    Nutrición Clínica.
+                  </h4>
+                  <p className="text-16 font-[400] text-color7 font-lato mb-12">
+                    Ingeniera Bioquímica con especialidad en Medio Ambiente y
+                    Sustentabilidad quién, al percatarse de la relación entre el
+                    entorno y la salud humana, decide cursar la maestría en
+                    Ciencias Médicas. Su fascinación por la influencia directa
+                    de la nutrición en la salud la llevó a profundizar en el
+                    estudio de la Nutrición Clínica, con un enfoque particular
+                    en personas que viven con Diabetes.
+                    <br />
+                    <br />
+                    Gracias a su formación como Terapeuta Holística, ha
+                    estudiado diversas técnicas de autoconocimiento y gestión
+                    emocional que complementan su enfoque clínico y permiten
+                    abordar a cada persona de manera integral, reconociendo la
+                    interconexión entre cuerpo, mente y espíritu.
+                  </p>
+                  <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
+                    <img src={unam} alt="" />
+                    <img src={u_colima} alt="" />
+                    <img src={imp} alt="" />
+                    <img src={uni} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
           <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
             <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
@@ -553,49 +593,6 @@ function SthDesktop({ tms, nav }) {
                   )}
                 </div>
               ))}
-            </div>
-
-            <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-              <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
-                Tu terapeuta.
-              </h2>
-              <div className="flex justify-center items-center flex-wrap gap-20">
-                <img src={pip10} alt="" className="w-[600px] mb-8" />
-                <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
-                  <h3
-                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
-                    style={{ letterSpacing: "1px" }}
-                  >
-                    M.C. Rocío González Saucedo
-                  </h3>
-                  <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
-                    Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
-                    Educación en Diabetes, y Maestra en Ciencias Médicas y
-                    Nutrición Clínica.
-                  </h4>
-                  <p className="text-16 font-[400] text-color7 font-lato mb-12">
-                    Ingeniera Bioquímica con especialidad en Medio Ambiente y
-                    Sustentabilidad quién, al percatarse de la relación entre el
-                    entorno y la salud humana, decide cursar la maestría en
-                    Ciencias Médicas. Su fascinación por la influencia directa
-                    de la nutrición en la salud la llevó a profundizar en el
-                    estudio de la Nutrición Clínica, con un enfoque particular
-                    en personas que viven con Diabetes.
-                    <br />
-                    <br />
-                    Gracias a su formación como Terapeuta Holística, ha
-                    estudiado diversas técnicas de autoconocimiento y gestión
-                    emocional que complementan su enfoque clínico y permiten
-                    abordar a cada persona de manera integral, reconociendo la
-                    interconexión entre cuerpo, mente y espíritu.
-                  </p>
-                  <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
-                    <img src={unam} alt="" />
-                    <img src={u_colima} alt="" />
-                    <img src={imp} alt="" />
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div className="flex flex-col justify-center items-center mt-16 w-full pt-16">

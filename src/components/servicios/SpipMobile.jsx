@@ -1,7 +1,7 @@
-import banner from "../../assets/banner-servicios-pip.svg";
+import banner from "../../assets/pip/Banner-Psicoterapias.jpg";
 import pip1 from "../../assets/pip/¿Por que asistir a una psicoterapia_ (1).jpg";
 import pip2 from "../../assets/pip/Psicoterapia de Pareja (1).jpg";
-import pip3 from "../../assets/pip-3.svg";
+import pip3 from "../../assets/pip/Psicoterapia individual (1).jpg";
 import heart from "../../assets/pip-4.svg";
 import pip7 from "../../assets/professionals/Dr-José-Luis.jpg";
 import { GoDash, GoPlus } from "react-icons/go";
@@ -186,15 +186,15 @@ function SpipMobile({ tms }) {
         <div
           className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16"
           style={{
-            backgroundImage: `url(${banner})`,
-            backgroundPosition: "right",
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+            backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         >
-          {/* <h1 className='font-[700] text-48 text-color5 leading-52 font-lato max-w-full'>
+          <h1 className='font-[700] text-48 text-color5 leading-52 font-lato max-w-full'>
                         Psicoterapia Individual y de Pareja
-                    </h1> */}
+                    </h1>
         </div>
         <div className="w-[328px]">
           <div className="flex flex-col items-center justify-center px-4 w-full">
@@ -222,9 +222,8 @@ function SpipMobile({ tms }) {
                 ¿Qué <span className="text-color2 leading-52">terapia</span> es
                 para mí?
               </h2>
-              <img src={pip3} alt="" className="w-full h-[328px] rounded-xl object-cover" />
               <div className="flex flex-wrap gap-8 justify-center items-center">
-                {/* <img src={pip2} alt="" className="w-full"/> */}
+              <img src={pip3} alt="" className="w-full h-[328px] rounded-xl object-cover" />
                 <div className="flex flex-col items-center justify-center">
                   <h2 className="text-32 font-[700] font-roboto leading-32 mb-8 text-center">
                     Psicoterapia{" "}

@@ -114,22 +114,22 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
     return (
         <div className='flex flex-col items-center justify-center'>
 
-<div
-  className="w-full flex flex-col items-center justify-center h-[736px] gap-8 text-center mb-20 relative"
-  style={{
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
-  }}
->
-  <h1 className="font-[700] text-[64px] text-color5 leading-[70px] font-lato max-w-[780px]">
-    Tu espacio de salud mental y bienestar emocional.
-  </h1>
-  <h2 className="font-[400] text-[22px] text-color5 leading-32 font-lato">
-    En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
-  </h2>
-</div>
+            <div
+                className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
+                style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                }}
+            >
+                <h1 className="font-[700] text-[64px] text-color5 leading-[70px] font-lato max-w-[780px]">
+                    Tu espacio de salud mental y bienestar emocional.
+                </h1>
+                <h2 className="font-[400] text-[22px] text-color5 leading-32 font-lato">
+                    En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
+                </h2>
+            </div>
 
 
             <div className='flex flex-col items-center justify-center px-4'>
@@ -247,7 +247,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                     <div className='flex items-top justify-center gap-24'>
                         {experts.map((expert, index) => (
                             <div key={index} className={`bg-white rounded-lg ${index === 0 && "mb-12"}`}>
-                                <img src={expert.img} alt={expert.name} className=' h-[500px] rounded-lg mb-4 w-[400px]' />
+                                <img src={expert.img} alt={expert.name} className="w-[400px] h-[500px] border-b-stone-600 rounded-xl object-cover object-top" />
                                 <h3 className="font-[700] font-lato text-24 leading-20 text-color6 text-center mt-4">{expert.name}</h3>
                                 <p className="font-lato font-normal text-[18px] leading-20 text-[#697077] text-center mt-1">{expert.title}</p>
                             </div>

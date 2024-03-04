@@ -1,22 +1,26 @@
-import banner from "../../assets/banner-servicios-3.svg";
-import an1 from "../../assets/an-1.svg";
-import an2 from "../../assets/an-2.svg";
+import banner from "../../assets/an/sweet-life-bPRZiasA8SM-unsplash.jpg";
+import an1 from "../../assets/an/sweet-life-uaN7SjUfWv0-unsplash.jpg";
+import an2 from "../../assets/an/sweet-life-iIDY3j_Gnjc-unsplash.jpg";
+import an3 from "../../assets/an/dose-juice-sTPy-oeA3h0-unsplash (2).jpg";
+import an4 from "../../assets/an/derick-mckinney-__QqvTI5Edc-unsplash.jpg";
+
+import unam from "../../assets/unam.svg";
+import u_colima from "../../assets/u-de-colima.svg";
+import imp from "../../assets/imp.svg";
+import uni from "../../assets/univa.svg";
+import t2 from "../../assets/professionals/MC-Rocío-González.jpg";
+
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterDesktop from "../FooterDesktop";
 import circleWhap from "../../assets/circle-whap.svg";
 import circleCheck from "../../assets/circle-check.svg";
 import circlePerson from "../../assets/circle-person.svg";
 import circleCalendar from "../../assets/circle-calendar.svg";
-import { FaArrowRight, FaCircle, FaRegArrowAltCircleDown } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { IoHeartCircleOutline } from "react-icons/io5";
-import { publis_tms } from "../../publis";
-import { CgFileDocument } from "react-icons/cg";
-import { PiUserCircleFill } from "react-icons/pi";
-import { LuLanguages } from "react-icons/lu";
 import { useState } from "react";
 
 function SanDesktop({ tms, nav }) {
-    const [visiblePublications, setVisiblePublications] = useState(6);
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     const handleToggle = (index) => {
@@ -25,10 +29,6 @@ function SanDesktop({ tms, nav }) {
         } else {
             setExpandedIndex(index);
         }
-    };
-
-    const handleLoadMore = () => {
-        setVisiblePublications(prevCount => prevCount + 6);
     };
 
     const preguntas = [
@@ -110,12 +110,13 @@ function SanDesktop({ tms, nav }) {
     return (
         <>
             <div className="w-full">
-                <div className='w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16' style={{
-                    backgroundImage: `url(${banner})`,
-                    backgroundPosition: "right",
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover"
-                }}>
+                <div className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
+                    style={{
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover"
+                    }}>
                     <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
                         Asesoría nutricional y Educación en Diabetes
                     </h1>
@@ -125,123 +126,116 @@ function SanDesktop({ tms, nav }) {
                         <div className="pb-12 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[700px]">
                                 <h2 className="text-48 font-[700] font-roboto leading-52 mb-5">
-                                    ¿Qué es la <span className="text-color2 leading-52">Educación en Diabetes</span>?
+                                ¿Por qué tomar <span className="text-color2 leading-52">Educación en Diabetes</span>?
                                 </h2>
                                 <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[600px]">
-                                    La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar diabetes de manera efectiva en la vida diaria.<br /><br />
-                                    El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
+                                La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar la diabetes de manera efectiva en la vida diaria.<br /><br />
+                                El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
                                 </p>
                             </div>
-                            <img src={an1} alt="HOUSE" className='w-[500px] border-b-stone-600' />
+                            <img src={an1} alt="HOUSE" className='w-[500px] border-b-stone-600 rounded-xl' />
+                        </div>
+
+                        <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+                            <img src={an2} alt="HOUSE" className='w-[520px] border-b-stone-600 rounded-xl' />
+                            <div className="flex flex-col max-w-[600px]">
+                                <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
+                                ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
+                                </h2>
+                                <div className="flex items-center justify-start mb-4 gap-2">
+                                    <div className="w-[40px]">
+                                        <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
+                                    </div>
+                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
+                                    Importancia del monitoreo regular de niveles de glucosa.
+                                    </p>
+                                </div>
+                                <div className="flex items-center justify-start mb-4 gap-2">
+                                    <div className="w-[40px]">
+                                        <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
+                                    </div>
+                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
+                                    Administración adecuada de insulina.
+                                    </p>
+                                </div>
+                                <div className="flex items-center justify-start mb-4 gap-2">
+                                    <div className="w-[40px]">
+                                        <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
+                                    </div>
+                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
+                                    Planificación de comidas saludables.
+                                    </p>
+                                </div>
+                                <div className="flex items-center justify-start mb-4 gap-2">
+                                    <div className="w-[40px]">
+                                        <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
+                                    </div>
+                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
+                                    Factores de riesgo y complicaciones asociadas con la diabetes.
+                                    </p>
+                                </div>
+                                <div className="flex items-center justify-start mb-4 gap-2">
+                                    <div className="w-[40px]">
+                                        <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
+                                    </div>
+                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
+                                    Habitos para implementar en la vida diaria.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+                            <div className="flex flex-col max-w-[600px]">
+                                <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
+                                ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
+                                </h2>
+                                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[600px]">
+                                Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
+                                </p>
+                            </div>
+                            <img src={an3} alt="HOUSE" className='w-[520px] border-b-stone-600 rounded-xl' />
                         </div>
 
                         <div className="pb-36 border-b border-gray-300 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
-                            <img src={an2} alt="HOUSE" className='w-[520px] border-b-stone-600' />
+                            <img src={an4} alt="HOUSE" className='w-[520px] border-b-stone-600 rounded-xl' />
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
-                                    ¿Cuáles son los <span className="text-color2 leading-52">beneficios</span>?
+                                ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
                                 </h2>
-                                <div className="flex items-center justify-center mb-4 gap-2">
+                                <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
                                     <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                        Tratamiento de trastornos mentales como la depresión, el TOC y la esquizofrenia.
+                                    Planificación de comidas equilibradas.
                                     </p>
                                 </div>
-                                <div className="flex items-center justify-center mb-4 gap-2">
+                                <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
                                     <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                        Mejora de funciones cognitivas como la memoria y la atención.
+                                        Mejora de funciones cognitivas como la memoria y la atención.Estrategias para implementar cambios positivos en tu estilo de vida
                                     </p>
                                 </div>
-                                <div className="flex items-center justify-center mb-4 gap-2">
+                                <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
                                     <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                        Es una terapia no invasiva, por lo que no requiere romper la piel ni provocar dolor de ningún tipo.
+                                    Entendimiento de etiquetas nutrimentales.
                                     </p>
                                 </div>
-                                <div className="flex items-center justify-center mb-4 gap-2">
+                                <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
                                     <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                        Sin medicamentos ni efectos secundarios graves en los pacientes.
+                                    Control de porciones para equilibrar la ingesta calórica.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div className="pb-20 border-b border-gray-300 flex flex-col items-center justify-center max-w-[1280px]">
-                            <h2 className="text-[54px] font-[700] font-roboto leading-[60px] mb-12 mt-24 text-center">
-                                Aplicación <span className="text-color2 leading-52">Clínica</span> del TMS.
-                            </h2>
-
-                            <div className="flex flex-wrap items-center justify-center gap-8">
-                                {tms.map((tms, index) => (
-                                    <div className="border border-color2 flex flex-col w-full h-[294px] max-w-[616px] p-8 items-start" style={{ borderRadius: "20px" }}>
-                                        <img src={tms.icon} alt="Logo" className="w-[40px] mb-5 mt-4" />
-                                        <h3 className="text-28 font-[700] font-lato leading-32 mb-4">
-                                            {tms.title}
-                                        </h3>
-                                        <div className="flex items-top justify-start gap-4 mb-3">
-                                            <div className="w-[6px] pt-2">
-                                                <FaCircle className="w-2 h-2" />
-                                            </div>
-                                            <p className="text-20 font-lato font-[500] leading-24 text-color7 flex items-center justify-center gap-3">
-                                                {tms.p1}
-                                            </p>
-                                        </div>
-                                        <div className="flex items-top justify-center gap-4">
-                                            <div className="w-[6px] pt-2">
-                                                <FaCircle className="w-2 h-2" />
-                                            </div>
-                                            <p className="text-20 font-lato font-[500] leading-24 text-color7 flex items-center justify-center gap-3">
-                                                {tms.p2}
-                                            </p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="pb-12 pt-20 border-b border-gray-300 flex flex-col items-center justify-center">
-                            <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] mb-12 text-center">
-                                Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
-                            </h2>
-                            <div className="flex flex-wrap items-center justify-center max-w-[1280px] gap-12 mt-6">
-                                {publis_tms.slice(0, visiblePublications).map((publi, index) => (
-                                    <div className="flex flex-col items-start justify-start pb-2 w-[394px]" key={index}>
-                                        <img src={publi.photo} alt={publi.title} className="w-[394px] h-[300px]" />
-                                        <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
-                                        <p className='font-[400] font-roboto text-16 leading-20 text-color6'>{publi.description}</p>
-                                        <div className="flex items-center justify-start mt-4 gap-5">
-                                            <div className="flex items-center justify-center gap-1">
-                                                <CgFileDocument />
-                                                <p>{publi.problem}</p>
-                                            </div>
-                                            <div className="flex items-center justify-center gap-1">
-                                                <PiUserCircleFill />
-                                                <p>Actipulse</p>
-                                            </div>
-                                            <div className="flex items-center justify-center gap-1">
-                                                <LuLanguages />
-                                                <p>{publi.language}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                            {visiblePublications < publis_tms.length && (
-                                <p className='flex cursor-pointer items-center justify-center gap-4 text-20 text-color2 font-[700] leading-20 font-lato my-20 border rounded-lg border-color2 px-8 py-5' onClick={handleLoadMore}>
-                                    Cargar más
-                                    <FaRegArrowAltCircleDown size={22.75} />
-                                </p>
-                            )}
                         </div>
                     </div>
 
@@ -277,6 +271,49 @@ function SanDesktop({ tms, nav }) {
                                     )}
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                    <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+                        <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[360px] mb-12 text-center">
+                            Tu terapeuta.
+                        </h2>
+                        <div className="flex justify-center items-center flex-wrap gap-20">
+                            <img src={t2} alt="" className="w-[600px] h-[600px] mb-8  object-cover object-top rounded-xl" />
+                            <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
+                                <h3
+                                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                                    style={{ letterSpacing: "1px" }}
+                                >
+                                    M.C. Rocío González Saucedo
+                                </h3>
+                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                                    Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
+                                    Educación en Diabetes, y Maestra en Ciencias Médicas y
+                                    Nutrición Clínica.
+                                </h4>
+                                <p className="text-16 font-[400] text-color7 font-lato mb-12">
+                                    Ingeniera Bioquímica con especialidad en Medio Ambiente y
+                                    Sustentabilidad quién, al percatarse de la relación entre el
+                                    entorno y la salud humana, decide cursar la maestría en
+                                    Ciencias Médicas. Su fascinación por la influencia directa
+                                    de la nutrición en la salud la llevó a profundizar en el
+                                    estudio de la Nutrición Clínica, con un enfoque particular
+                                    en personas que viven con Diabetes.
+                                    <br />
+                                    <br />
+                                    Gracias a su formación como Terapeuta Holística, ha
+                                    estudiado diversas técnicas de autoconocimiento y gestión
+                                    emocional que complementan su enfoque clínico y permiten
+                                    abordar a cada persona de manera integral, reconociendo la
+                                    interconexión entre cuerpo, mente y espíritu.
+                                </p>
+                                <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
+                                    <img src={unam} alt="" />
+                                    <img src={u_colima} alt="" />
+                                    <img src={imp} alt="" />
+                                    <img src={uni} alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
 

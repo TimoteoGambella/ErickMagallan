@@ -1,4 +1,4 @@
-import banner from "../../assets/pip-9.svg";
+import banner from "../../assets/pip/Banner-Psicoterapias.jpg";
 import heart from "../../assets/pip-4.svg";
 import pip5 from "../../assets/pip/Psicoterapia individual (1).jpg";
 import pip6 from "../../assets/pip/Psicoterapia de Pareja (1).jpg";
@@ -181,17 +181,16 @@ function SpipDesktop({ tms, nav }) {
     <>
       <div className="flex flex-col items-center justify-center">
         <div
-          className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16"
+          className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
           style={{
-            backgroundImage: `url(${banner})`,
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-          {/* <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+              backgroundPosition: "top -10px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover"
+          }}>
+          <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
                         Psicoterapia Individual y de Pareja
-                    </h1> */}
+                    </h1> 
         </div>
         <div className="flex flex-col items-center justify-center px-4">
           <div className="pb-12 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">

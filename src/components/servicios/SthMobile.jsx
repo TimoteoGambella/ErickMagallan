@@ -1,14 +1,12 @@
-import banner from "../../assets/banner-servicios-pip.svg";
-import pip2 from "../../assets/pip-2.svg";
+import banner from "../../assets/th/camille-brodard-AVi4lkHl5L4-unsplash.jpg";
+import t1 from "../../assets/professionals/MC-Rocío-González.jpg";
 import th1 from "../../assets/th-1.svg";
-import th3 from "../../assets/th-3.svg";
-import th4 from "../../assets/th-4.svg";
-import th5 from "../../assets/th-5.svg";
-import th6 from "../../assets/th-6.svg";
-import th7 from "../../assets/th-7.svg";
-import th11 from "../../assets/th-11.svg";
-
-import man from "../../assets/man.svg";
+import th2 from "../../assets/th/i710024-6.jpg";
+import th3 from "../../assets/th/chelsea-shapouri-r40EYKVyutI-unsplash.jpg";
+import th4 from "../../assets/th/christin-hume-0MoF-Fe0w0A-unsplash.jpg";
+import th5 from "../../assets/th/motoki-tonn-X00q3RXcyZ4-unsplash.jpg";
+import th6 from "../../assets/th/toa-heftiba-a9pFSC8dTlo-unsplash.jpg";
+import th7 from "../../assets/th/unseen-studio-s9CC2SKySJM-unsplash.jpg";
 
 import circleWhap from "../../assets/circle-whap.svg";
 import circleCheck from "../../assets/circle-check.svg";
@@ -19,6 +17,7 @@ import line from "../../assets/circle-line.svg";
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
+import uni from "../../assets/univa.svg";
 
 import { FaArrowRight } from "react-icons/fa";
 import { GoDash, GoPlus } from "react-icons/go";
@@ -265,17 +264,17 @@ function SthMobil({ tms, settings }) {
     <>
       <div className="flex flex-col items-center justify-center overflow-hidden">
         <div
-          className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16"
+          className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-16 relative"
           style={{
-            backgroundImage: `url(${banner})`,
-            backgroundPosition: "right",
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+            backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
         >
-          {/* <h1 className="font-[700] text-48 text-color5 leading-52 font-lato max-w-[328px]">
-            Estimulación Magnética Transcraneal
-          </h1> */}
+          <h1 className="font-[700] text-48 text-color5 leading-52 font-lato max-w-[328px]">
+          Terapias Holísticas
+          </h1>
         </div>
         <div className="flex flex-col items-center justify-center text-center">
           <div className="pb-12 flex flex-col items-center justify-center mb-12">
@@ -298,7 +297,7 @@ function SthMobil({ tms, settings }) {
             <img
               src={th1}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
 
@@ -339,9 +338,9 @@ function SthMobil({ tms, settings }) {
             })}
 
             <img
-              src={pip2}
+              src={th2}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
 
@@ -378,45 +377,7 @@ function SthMobil({ tms, settings }) {
             <img
               src={th3}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
-            />
-          </div>
-
-          <div className="flex flex-col items-center justify-center mb-12 max-w-[320px]">
-            <h2 className="text-32 font-[700] font-roboto max-w-[320px] mb-12 text-center">
-              Terapia con{" "}
-              <span className="text-color2 leading-52">Terahercios</span>.
-            </h2>
-            <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px] mb-12">
-              Terapia de frecuencia que utiliza tecnología de terahercios para
-              influir positivamente en la salud y el bienestar de tu cuerpo.
-              Emite ondas que interactúan con las células y huesos.<br></br>
-              Ayuda a restaurar y mantener el equilibrio bioenergético de tu
-              organismo.
-            </p>
-            {beneficios.map((beneficio, index) => {
-              return (
-                <div
-                  key={index}
-                  className="flex mb-4 flex-col justify-center items-center"
-                >
-                  <img src={beneficio.photo} alt="" className="mb-5" />
-                  <div className="flex flex-col items-center justify-center mb-8">
-                    <h3 className="text-20 font-lato font-[700] leading-28 text-color6 text-center">
-                      {beneficio.title}
-                    </h3>
-                    <p className="text-20 font-lato font-[400] leading-28 text-color7 text-center w-full">
-                      {beneficio.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-
-            <img
-              src={th11}
-              alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
 
@@ -451,7 +412,7 @@ function SthMobil({ tms, settings }) {
             <img
               src={th4}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
 
@@ -490,7 +451,7 @@ function SthMobil({ tms, settings }) {
             <img
               src={th5}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
 
@@ -527,7 +488,7 @@ function SthMobil({ tms, settings }) {
             <img
               src={th6}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
 
@@ -564,12 +525,39 @@ function SthMobil({ tms, settings }) {
             <img
               src={th7}
               alt="HOUSE"
-              className="w-[328px] border-b-stone-600"
+              className="w-[328px] rounded-xl"
             />
           </div>
         </div>
 
-        <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
+        <div className="flex flex-col justify-center items-center pb-32 mb-32 border-b border-gray-300">
+            <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+              Tu terapeuta.
+            </h2>
+            <img src={t1} alt="" className="w-[328px] max-h-[400px] rounded-xl object-cover object-top mb-4"  />
+            <div className="w-[328px] flex flex-col items-start justify-center">
+              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
+              M.C. Rocío González Saucedo
+              </h3>
+              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+              Ingeniera Bioquímica, Diplomada en Nutrición Clínica y Educación en Diabetes, y Maestra en Ciencias Médicas y Nutrición Clínica.
+              </h4>
+              <p className="text-16 font-[400] text-color7 font-lato mb-12">
+              Ingeniera Bioquímica con especialidad en Medio Ambiente y Sustentabilidad quién, al percatarse de la relación entre el entorno y la salud humana, decide cursar la maestría en Ciencias Médicas. Su fascinación por la influencia directa de la nutrición en la salud la llevó a profundizar en el estudio de la Nutrición Clínica, con un enfoque particular en personas que viven con Diabetes.
+                <br />
+                <br />
+                Gracias a su formación como Terapeuta Holística, ha estudiado diversas técnicas de autoconocimiento y gestión emocional que complementan su enfoque clínico y permiten abordar a cada persona de manera integral, reconociendo la interconexión entre cuerpo, mente y espíritu.
+              </p>
+              <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
+                <img src={unam} alt="" />
+                <img src={u_colima} alt="" />
+                <img src={imp} alt="" />
+                <img src={uni} alt="" />
+              </div>
+            </div>
+          </div>
+
+        <div className="w-[328px] mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
           <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
             Preguntas <span className="text-color2 leading-52">Frecuentes</span>
             .
@@ -612,40 +600,6 @@ function SthMobil({ tms, settings }) {
                 )}
               </div>
             ))}
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center mb-32">
-          <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
-            Tu terapeuta.
-          </h2>
-          <img src={man} alt="" className="w-[328px] mb-8" />
-          <div className="w-[328px] flex flex-col items-start justify-center">
-            <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
-              Dr. José Luis Nogales Galván
-            </h3>
-            <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
-              Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
-              de Pareja.
-            </h4>
-            <p className="text-16 font-[400] text-color7 font-lato mb-12">
-              Médico con especialidad en Psiquiatría, egresado de la Universidad
-              Nacional Autónoma de México, así como Maestría y Doctorado en
-              Psicoterapia Inidividual y de Pareja, se ha convertido en un
-              experto tanto en el abordaje individual como en el trabajo con
-              parejas.
-              <br />
-              <br />
-              Su enfoque se basa en una perspectiva sistémica centrada en las
-              emociones, influenciada por la psicología de Jung. Su dedicación a
-              comprender las complejidades emocionales y su formación
-              especializada le permiten ofrecer un apoyo integral, adaptado a
-              las necesidades únicas de cada individuo y relación.
-            </p>
-            <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
-              <img src={unam} alt="" />
-              <img src={u_colima} alt="" />
-              <img src={imp} alt="" />
-            </div>
           </div>
         </div>
 
