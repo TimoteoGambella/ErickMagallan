@@ -294,6 +294,41 @@ function SpipMobile({ tms }) {
             </div>
           </div>
 
+          <div className="flex flex-col justify-center items-center mb-32">
+            <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+              Tu terapeuta.
+            </h2>
+            <img src={pip7} alt="" className="w-[328px] max-h-[400px] rounded-xl object-cover mb-4"  />
+            <div className="w-[328px] flex flex-col items-start justify-center">
+              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
+                Dr. José Luis Nogales Galván
+              </h3>
+              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
+                de Pareja.
+              </h4>
+              <p className="text-16 font-[400] text-color7 font-lato mb-12">
+                Médico con especialidad en Psiquiatría, egresado de la
+                Universidad Nacional Autónoma de México, así como Maestría y
+                Doctorado en Psicoterapia Inidividual y de Pareja, se ha
+                convertido en un experto tanto en el abordaje individual como en
+                el trabajo con parejas.
+                <br />
+                <br />
+                Su enfoque se basa en una perspectiva sistémica centrada en las
+                emociones, influenciada por la psicología de Jung. Su dedicación
+                a comprender las complejidades emocionales y su formación
+                especializada le permiten ofrecer un apoyo integral, adaptado a
+                las necesidades únicas de cada individuo y relación.
+              </p>
+              <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
+                <img src={unam} alt="" />
+                <img src={u_colima} alt="" />
+                <img src={imp} alt="" />
+              </div>
+            </div>
+          </div>
+
           <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
             <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
               Preguntas{" "}
@@ -340,40 +375,6 @@ function SpipMobile({ tms }) {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center mb-32">
-            <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
-              Tu terapeuta.
-            </h2>
-            <img src={pip7} alt="" className="w-[328px] max-h-[400px] rounded-xl object-cover mb-4"  />
-            <div className="w-[328px] flex flex-col items-start justify-center">
-              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
-                Dr. José Luis Nogales Galván
-              </h3>
-              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
-                Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
-                de Pareja.
-              </h4>
-              <p className="text-16 font-[400] text-color7 font-lato mb-12">
-                Médico con especialidad en Psiquiatría, egresado de la
-                Universidad Nacional Autónoma de México, así como Maestría y
-                Doctorado en Psicoterapia Inidividual y de Pareja, se ha
-                convertido en un experto tanto en el abordaje individual como en
-                el trabajo con parejas.
-                <br />
-                <br />
-                Su enfoque se basa en una perspectiva sistémica centrada en las
-                emociones, influenciada por la psicología de Jung. Su dedicación
-                a comprender las complejidades emocionales y su formación
-                especializada le permiten ofrecer un apoyo integral, adaptado a
-                las necesidades únicas de cada individuo y relación.
-              </p>
-              <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
-                <img src={unam} alt="" />
-                <img src={u_colima} alt="" />
-                <img src={imp} alt="" />
-              </div>
-            </div>
-          </div>
           <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
             <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
               ¿Cómo agendo mi cita?
