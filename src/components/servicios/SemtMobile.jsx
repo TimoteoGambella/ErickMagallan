@@ -142,14 +142,14 @@ function SemtMobile({ tms, settings }) {
         <div className="w-[328px]">
           <div className="flex flex-col items-center justify-center px-4">
             <div className="pb-12 border-b border-gray-300 flex flex-col items-center justify-center mb-12">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
+              <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-5">
                 ¿Qué es la{" "}
                 <span className="text-color2 leading-52">
                   Estimulación Magnética Transcraneal
                 </span>
                 ?
               </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
+              <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
                 La Estimulación Magnética Transcraneal (EMT) es una técnica no
                 invasiva que utiliza campos magnéticos para modular la actividad
                 cerebral. <br />
@@ -166,7 +166,7 @@ function SemtMobile({ tms, settings }) {
             </div>
 
             <div className="pb-12 border-b border-gray-300 flex flex-col items-center justify-center mb-12">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+              <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-12 text-center">
                 ¿Cuáles son los{" "}
                 <span className="text-color2 leading-52">beneficios</span>?
               </h2>
@@ -226,7 +226,7 @@ function SemtMobile({ tms, settings }) {
             </div>
 
             <div className="pb-12 border-b border-gray-300 flex flex-col items-center justify-center">
-              <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] max-w-[320px] mb-12 text-center">
+              <h2 className="text-[54px] font-[700] font-lato  leading-[60px] max-w-[320px] mb-12 text-center">
                 Aplicación{" "}
                 <span className="text-color2 leading-52">Clínica</span> del TMS.
               </h2>
@@ -263,7 +263,7 @@ function SemtMobile({ tms, settings }) {
             </div>
 
             <div className="pb-12 pt-8 border-b border-gray-300 flex flex-col items-center justify-center max-w-full overflow-hidden">
-              <h2 className="text-36 font-[700] font-roboto leading-40 max-w-[320px] mb-12">
+              <h2 className="text-36 font-[700] font-lato leading-40 max-w-[320px] mb-12">
                 Publicaciones{" "}
                 <span className="text-color2 leading-40">científicas</span>{" "}
                 sobre <span className="text-color2 leading-40">TMS</span>.
@@ -279,10 +279,10 @@ function SemtMobile({ tms, settings }) {
                       alt={publi.title}
                       className="w-full h-[300px]"
                     />
-                    <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4">
+                    <h3 className="font-[700] font-lato text-24 leading-24 text-color6 mb-4">
                       {publi.title}
                     </h3>
-                    <p className="font-[400] font-roboto text-16 leading-20 text-color6 max-w-[320px] m-auto">
+                    <p className="font-[400] font-lato text-16 leading-20 text-color6 max-w-[320px] m-auto">
                       {publi.description}
                     </p>
                     <div className="flex items-center justify-start mt-4 gap-5">
@@ -307,7 +307,7 @@ function SemtMobile({ tms, settings }) {
 
 
           <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
-            <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+            <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
               Preguntas{" "}
               <span className="text-color2 leading-52">Frecuentes</span>.
             </h2>
@@ -321,7 +321,7 @@ function SemtMobile({ tms, settings }) {
                     onClick={() => handleToggle(index)}
                     className="flex justify-between items-center w-full text-left"
                   >
-                    <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                    <span className="text-20 font-lato font-[700] leading-20 text-color7">
                       {pregunta.title}
                     </span>
                     {expandedIndex === index ? (
@@ -352,15 +352,15 @@ function SemtMobile({ tms, settings }) {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mb-32">
-            <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+            <h2 className="text-36 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
               Tus terapeutas.
             </h2>
             <img src={t2} alt="" className="w-[328px] h-[328px] object-cover object-top mb-8 rounded-xl" />
             <div className="w-[328px] flex flex-col items-start justify-center">
-              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
+              <h3 className="text-36 leading-36 text-color6 font-lato font-[700] mb-6">
                 M.C. Rocío González Saucedo
               </h3>
-              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+              <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                 Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
                 Educación en Diabetes, y Maestra en Ciencias Médicas y
                 Nutrición Clínica.
@@ -392,10 +392,10 @@ function SemtMobile({ tms, settings }) {
           <div className="flex flex-col justify-center items-center">
             <img src={t1} alt="" className="w-[328px] h-[328px] mb-8 object-cover object-top rounded-xl" />
             <div className="w-[328px] flex flex-col items-start justify-center">
-              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
+              <h3 className="text-36 leading-36 text-color6 font-lato font-[700] mb-6">
                 Dr. José Luis Nogales Galván
               </h3>
-              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+              <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                 Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
                 de Pareja.
               </h4>
@@ -421,7 +421,7 @@ function SemtMobile({ tms, settings }) {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
-            <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+            <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
               ¿Cómo agendo mi cita?
             </h2>
             <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">

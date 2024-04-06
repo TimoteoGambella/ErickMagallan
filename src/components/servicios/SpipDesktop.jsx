@@ -195,11 +195,11 @@ function SpipDesktop({ tms, nav }) {
         <div className="flex flex-col items-center justify-center px-4">
           <div className="pb-12 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">
             <div className="flex flex-col max-w-[700px]">
-              <h2 className="text-48 font-[700] font-roboto leading-52 mb-5">
+              <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                 ¿Por qué elegir la{" "}
                 <span className="text-color2 leading-52">psicoterapia</span>?
               </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8">
+              <p className="text-16 font-lato leading-20 text-color7 mb-8">
                 En nuestro espacio, la confianza y la comodidad son
                 fundamentales. Aquí, te recibimos con los brazos abiertos,
                 comprometidos no solo a ofrecer servicios de bienestar de
@@ -215,18 +215,18 @@ function SpipDesktop({ tms, nav }) {
           </div>
 
           <div className="pb-36 border-b border-gray-300 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
-            <h2 className="text-48 font-[700] font-roboto leading-52 mb-8 text-center">
+            <h2 className="text-48 font-[700] font-lato leading-52 mb-8 text-center">
               ¿Qué <span className="text-color2 leading-52">terapia</span> es
               para mí?
             </h2>
             <div className="flex flex-wrap gap-20 justify-between items-center">
               <img src={pip5} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover"/>
               <div className="flex flex-col w-[600px] items-start">
-                <h2 className="text-48 font-[700] font-roboto leading-52 mb-8 text-center">
+                <h2 className="text-48 font-[700] font-lato leading-52 mb-8 text-center">
                   Psicoterapia{" "}
                   <span className="text-color2 leading-52">Individual</span>.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8">
+                <p className="text-16 font-lato leading-20 text-color7 mb-8">
                   Proceso donde un profesional de la salud mental trabaja en
                   privado con el paciente para abordar desafíos emocionales o
                   mentales. Se exploran pensamientos y emociones para promover
@@ -254,11 +254,11 @@ function SpipDesktop({ tms, nav }) {
             </div>
             <div className="flex flex-wrap gap-20 justify-center items-center">
               <div className="flex flex-col w-[600px] items-start">
-                <h2 className="text-48 font-[700] font-roboto leading-52 mb-8 text-center">
+                <h2 className="text-48 font-[700] font-lato leading-52 mb-8 text-center">
                   Psicoterapia de{" "}
                   <span className="text-color2 leading-52">Pareja</span>.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8">
+                <p className="text-16 font-lato leading-20 text-color7 mb-8">
                   Proceso terapéutico que busca fortalecer relaciones, resolver
                   conflictos y mejorar la comunicación entre las parejas.
                   Proporciona herramientas para abordar desafíos y construir una
@@ -287,19 +287,19 @@ function SpipDesktop({ tms, nav }) {
         </div>
 
         <div className="flex flex-col justify-center items-center pb-32 mt-32 border-b border-gray-300">
-          <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+          <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
             Tu terapeuta.
           </h2>
           <div className="flex justify-center items-center flex-wrap gap-20">
             <img src={pip7} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover"/>
             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
               <h3
-                className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                 style={{ letterSpacing: "1px" }}
               >
                 Dr. José Luis Nogales Galván
               </h3>
-              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+              <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                 Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
                 de Pareja.
               </h4>
@@ -327,7 +327,7 @@ function SpipDesktop({ tms, nav }) {
         </div>
 
         <div className="px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
-          <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+          <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
             Preguntas <span className="text-color2 leading-52">Frecuentes</span>
             .
           </h2>
@@ -341,7 +341,7 @@ function SpipDesktop({ tms, nav }) {
                   onClick={() => handleToggle(index)}
                   className="flex justify-between items-center w-full text-left"
                 >
-                  <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                  <span className="text-20 font-lato font-[700] leading-20 text-color7">
                     {pregunta.title}
                   </span>
                   {expandedIndex === index ? (
@@ -373,7 +373,7 @@ function SpipDesktop({ tms, nav }) {
         </div>
 
         <div className="flex flex-col justify-center items-center mt-16 w-full py-16">
-          <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+          <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
             ¿Cómo agendo mi cita?
           </h2>
           <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">

@@ -44,8 +44,8 @@ function NosotrosDesktop ({features, experts}) {
 
             <div className='mt-12 pb-12 border-b border-gray-300 flex items-top justify-center flex-wrap'>
                     <div className='flex flex-col mr-20'>
-                        <h2 className="text-48 font-[700] font-roboto leading-52 mb-8 max-w-[400px]">¿Por qué elegir a <span className="text-color2 leading-40">Psicomed</span>?</h2>
-                        <p className="text-[18px] font-lato font-normal leading-24 text-color7 mb-12 max-w-[384px]">
+                        <h2 className="text-48 font-[700] font-lato leading-52 mb-8 max-w-[400px]">¿Por qué elegir a <span className="text-color2 leading-40">Psicomed</span>?</h2>
+                        <p className="text-[18px] font-lato leading-24 text-color7 mb-12 max-w-[384px]">
                             Elegir el apoyo adecuado es esencial en el camino hacia el bienestar. En Psicomed, estamos comprometidos a ser ese aliado confiable y experto que buscas.
                         </p>
                     </div>
@@ -55,7 +55,7 @@ function NosotrosDesktop ({features, experts}) {
                                 {feature.icon}
                             </p>
                             <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2 pt-4">{feature.title}</h3>
-                            <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4 max-w-[240px] cursor-pointer">
+                            <p className="font-lato text-16 leading-20 text-color7 mb-4 max-w-[240px] cursor-pointer">
                                 {feature.description}
                             </p>
                             <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato cursor-pointer'
@@ -78,12 +78,12 @@ function NosotrosDesktop ({features, experts}) {
 
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                                 <h3
-                                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                                     style={{ letterSpacing: "1px" }}
                                 >
                                     Dr. José Luis Nogales Galván
                                 </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                                <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                                     Médico Psiquiatra con Maestría y Doctorado en Psicoterapia Individual y de Pareja.
                                 </h4>
                                 <p className="text-16 font-[400] text-color7 font-lato mb-12">
@@ -103,19 +103,19 @@ function NosotrosDesktop ({features, experts}) {
                         </div>
                     </div>
                 <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[400px] mb-12 text-center">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[400px] mb-12 text-center">
                             Conoce al <span className="text-color2 leading-52">equipo</span>.
                         </h2>
                         <div className="flex justify-center items-center flex-wrap gap-20">
                             <img src={t2} alt="" className="w-[600px] h-[600px] mb-8  object-cover object-top rounded-xl" />
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                                 <h3
-                                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                                     style={{ letterSpacing: "1px" }}
                                 >
                                     M.C. Rocío González Saucedo
                                 </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                                <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                                     Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
                                     Educación en Diabetes, y Maestra en Ciencias Médicas y
                                     Nutrición Clínica.
@@ -148,7 +148,7 @@ function NosotrosDesktop ({features, experts}) {
                     
 
             <div className='flex flex-col items-center border-b border-gray-300 justify-center px-4 py-16'>
-                <h2 className="text-48 font-[700] font-roboto  leading-36 mb-12">
+                <h2 className="text-48 font-[700] font-lato  leading-36 mb-12">
                     Conoce nuestras <span className="text-color2">instalaciones</span>.
                 </h2>
                 <img src={ins1} alt="" className="w-[1280px] h-[580px] rounded-xl object-cover"/>
@@ -159,7 +159,7 @@ function NosotrosDesktop ({features, experts}) {
             </div>
 
             <div className="flex flex-col justify-center items-center mt-16 w-full pt-16">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
                             ¿Cómo agendo mi cita?
                         </h2>
                         <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">

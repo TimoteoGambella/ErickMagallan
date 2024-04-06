@@ -199,11 +199,11 @@ function SpipMobile({ tms }) {
         <div className="w-[328px]">
           <div className="flex flex-col items-center justify-center px-4 w-full">
             <div className="pb-12 flex flex-col items-center justify-center mb-12">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 mb-5 text-center">
+              <h2 className="text-36 font-[700] font-lato  leading-52 mb-5 text-center">
                 ¿Por qué elegir la{" "}
                 <span className="text-color2 leading-52">psicoterapia</span>?
               </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 text-center">
+              <p className="text-16 font-lato leading-20 text-color7 mb-8 text-center">
                 En nuestro espacio, la confianza y la comodidad son
                 fundamentales. Aquí, te recibimos con los brazos abiertos,
                 comprometidos no solo a ofrecer servicios de bienestar de
@@ -218,18 +218,18 @@ function SpipMobile({ tms }) {
             </div>
 
             <div className="border-b border-gray-300 flex items-center justify-center mb-12 w-[328px] gap-20 flex-wrap">
-              <h2 className="text-36 font-[700] font-roboto leading-40 text-center">
+              <h2 className="text-36 font-[700] font-lato leading-40 text-center">
                 ¿Qué <span className="text-color2 leading-52">terapia</span> es
                 para mí?
               </h2>
               <div className="flex flex-wrap gap-8 justify-center items-center">
               <img src={pip3} alt="" className="w-full h-[328px] rounded-xl object-cover" />
                 <div className="flex flex-col items-center justify-center">
-                  <h2 className="text-32 font-[700] font-roboto leading-32 mb-8 text-center">
+                  <h2 className="text-32 font-[700] font-lato leading-32 mb-8 text-center">
                     Psicoterapia{" "}
                     <span className="text-color2 leading-52">Individual</span>.
                   </h2>
-                  <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 text-center">
+                  <p className="text-16 font-lato leading-20 text-color7 mb-8 text-center">
                     La psicoterapia individual es un proceso donde un
                     profesional de la salud mental trabaja en privado con el
                     paciente para abordar desafíos emocionales o mentales. Se
@@ -262,11 +262,11 @@ function SpipMobile({ tms }) {
               <div className="flex flex-wrap gap-20 justify-center items-center w-[328px]">
                 <img src={pip2} alt="" className="w-full h-[328px] rounded-xl object-cover" />
                 <div className="flex flex-col items-start">
-                  <h2 className="text-32 font-[700] font-roboto leading-9 mb-8 text-center h-9">
+                  <h2 className="text-32 font-[700] font-lato leading-9 mb-8 text-center h-9">
                     Psicoterapia de{" "}
                     <span className="text-color2 leading-9">Pareja</span>.
                   </h2>
-                  <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 text-center">
+                  <p className="text-16 font-lato leading-20 text-color7 mb-8 text-center">
                     Lorem ipsum dolor sit amet consectetur. Pretium tellus leo
                     elit et et amet. Tristique volutpat vel aenean lectus a
                     dapibus euismod turpis amet. Tellus commodo sit quis feugiat
@@ -295,15 +295,15 @@ function SpipMobile({ tms }) {
           </div>
 
           <div className="flex flex-col justify-center items-center mb-32">
-            <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+            <h2 className="text-36 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
               Tu terapeuta.
             </h2>
             <img src={pip7} alt="" className="w-[328px] max-h-[400px] rounded-xl object-cover mb-4"  />
             <div className="w-[328px] flex flex-col items-start justify-center">
-              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
+              <h3 className="text-36 leading-36 text-color6 font-lato font-[700] mb-6">
                 Dr. José Luis Nogales Galván
               </h3>
-              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+              <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                 Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
                 de Pareja.
               </h4>
@@ -330,7 +330,7 @@ function SpipMobile({ tms }) {
           </div>
 
           <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
-            <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+            <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
               Preguntas{" "}
               <span className="text-color2 leading-52">Frecuentes</span>.
             </h2>
@@ -344,7 +344,7 @@ function SpipMobile({ tms }) {
                     onClick={() => handleToggle(index)}
                     className="flex justify-between items-center w-full text-left"
                   >
-                    <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                    <span className="text-20 font-lato font-[700] leading-20 text-color7">
                       {pregunta.title}
                     </span>
                     {expandedIndex === index ? (
@@ -376,7 +376,7 @@ function SpipMobile({ tms }) {
           </div>
 
           <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
-            <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+            <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
               ¿Cómo agendo mi cita?
             </h2>
             <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">

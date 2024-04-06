@@ -101,14 +101,14 @@ function SanMobile({ tms, settings }) {
         <div className="w-[328px]">
           <div className="flex flex-col items-center justify-center px-4">
             <div className="pb-12 flex flex-col items-center justify-center mb-12">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
+              <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-5">
               ¿Por qué tomar{" "} 
                 <span className="text-color2 leading-52">
                   Educación en Diabetes{" "}
                 </span>
                 ?
               </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
+              <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
               La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar diabetes de manera efectiva en la vida diaria.<br />
                 <br />
                 El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
@@ -121,7 +121,7 @@ function SanMobile({ tms, settings }) {
             </div>
 
             <div className="pb-12 flex flex-col items-center justify-center mb-12">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+              <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-12 text-center">
               ¿Qué puedes{" "}
                 <span className="text-color2 leading-52">aprender</span>?
               </h2>
@@ -189,14 +189,14 @@ function SanMobile({ tms, settings }) {
             </div>
 
             <div className="pb-12 flex flex-col items-center justify-center mb-12">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
+              <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-5">
               ¿Por qué tomar{" "} 
                 <span className="text-color2 leading-52">
                 Asesoría Nutricional{" "}
                 </span>
                 ?
               </h2>
-              <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
+              <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
               Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
               </p>
               <img
@@ -207,7 +207,7 @@ function SanMobile({ tms, settings }) {
             </div>
 
             <div className="pb-12 flex flex-col items-center justify-center mb-12 border-b border-gray-300">
-              <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-12 text-center">
+              <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-12 text-center">
               ¿Qué puedes{" "}
                 <span className="text-color2 leading-52">aprender</span>?
               </h2>
@@ -264,7 +264,7 @@ function SanMobile({ tms, settings }) {
           </div>
 
           <div className="w-[328px] py-8 mb-12 flex flex-col items-center justify-center pb-12">
-            <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+            <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
               Preguntas{" "}
               <span className="text-color2 leading-52">Frecuentes</span>.
             </h2>
@@ -278,7 +278,7 @@ function SanMobile({ tms, settings }) {
                     onClick={() => handleToggle(index)}
                     className="flex justify-between items-center w-full text-left"
                   >
-                    <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                    <span className="text-20 font-lato font-[700] leading-20 text-color7">
                       {pregunta.title}
                     </span>
                     {expandedIndex === index ? (
@@ -310,15 +310,15 @@ function SanMobile({ tms, settings }) {
           </div>
 
           <div className="flex flex-col justify-center items-center pb-32 mb-32 border-b border-gray-300">
-            <h2 className="text-36 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+            <h2 className="text-36 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
               Tu terapeuta.
             </h2>
             <img src={t1} alt="" className="w-[328px] max-h-[400px] rounded-xl object-cover mb-4"  />
             <div className="w-[328px] flex flex-col items-start justify-center">
-              <h3 className="text-36 leading-36 text-color6 font-roboto font-[700] mb-6">
+              <h3 className="text-36 leading-36 text-color6 font-lato font-[700] mb-6">
               M.C. Rocío González Saucedo
               </h3>
-              <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+              <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
               Ingeniera Bioquímica, Diplomada en Nutrición Clínica y Educación en Diabetes, y Maestra en Ciencias Médicas y Nutrición Clínica.
               </h4>
               <p className="text-16 font-[400] text-color7 font-lato mb-12">
@@ -337,7 +337,7 @@ function SanMobile({ tms, settings }) {
           </div>
 
           <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
-            <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+            <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
               ¿Cómo agendo mi cita?
             </h2>
             <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">

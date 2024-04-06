@@ -62,10 +62,10 @@ function FooterDesktop() {
                 <div className='flex flex-col items-center justify-center border-t'>
                     <div className="pb-6 flex items-center justify-center mt-16 gap-8">
                         <div className='flex flex-col mb-8'>
-                            <h2 className="text-48 font-[700] font-roboto leading-52 mb-8">
+                            <h2 className="text-48 font-[700] font-lato leading-52 mb-8">
                                 Da el primer paso hacia <span className="text-color2">tu bienestar</span>.
                             </h2>
-                            <p className="text-20 font-lato font-normal leading-20 text-color7 mb-8">
+                            <p className="text-20 font-lato leading-20 text-color7 mb-8">
                                 Agenda tu cita vía Whatsapp ó llama a nuestros números de contacto.
                             </p>
                         </div>
@@ -139,22 +139,24 @@ function FooterDesktop() {
                     <div className="w-[300px]">
                     <img onClick={() => scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]' />
                     </div>
-                    <nav className="mb-4 flex items-center justify-center w-[300px]">
+                    <nav className="mb-4 flex flex-col items-center justify-center w-full">
+                        <ul className="flex space-x-4 items-center justify-center mb-4">
+                            <li><p onClick={() => scrollNav("/")} className="hover:cursor-pointer">Inicio</p></li>
+                            <li><p onClick={() => scrollNav("/nosotros")} className="hover:cursor-pointer">Nosotros</p></li>
+                            <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Estimulación Magnética Transcraneal</p></li>
+                            </ul>
                         <ul className="flex space-x-4 items-center justify-center">
-                            <li><p onClick={() => scrollNav("/")} className="hover:underline">Inicio</p></li>
-                            <li><p onClick={() => scrollNav("/")} className="hover:underline">TMS</p></li>
-                            <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:underline">Servicios</p></li>
-                            <li><p onClick={() => scrollNav("/nosotros")} className="hover:underline">Nosotros</p></li>
-                            <li><p onClick={() => scrollNav("/nosotros")} className="hover:underline">Blog</p></li>
+                            <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Psicoterapia Ind. y de Pareja</p></li>
+                            <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Asesoría Nutricional</p></li>
+                            <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Terapia Holística</p></li>
                         </ul>
                     </nav>
                     <div className="flex justify-end space-x-4 mb-4 w-[300px]">
                         <a href="https://www.facebook.com/C.B.I.Psicomed" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></a>
-                        <a href="https://w.app/psicomed" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={24} /></a>
                         <a href="mailto:drnogalesgalvan@gmail.com"><FaEnvelope size={24} /></a>
                     </div>
                 </div>
-                <p className='w-[1280px] mx-auto text-center'>Psicomed © 2023. All rights reserved.</p>
+                <p className='w-[1280px] mx-auto text-center'>Psicomed © 2023. Todos los derechos reservados.</p>
             </div>
         </div>
     )

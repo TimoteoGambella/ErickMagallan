@@ -112,7 +112,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
     ];
 
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center w-full'>
 
             <div
                 className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
@@ -135,10 +135,10 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
             <div className='flex flex-col items-center justify-center px-4'>
                 <div className="border-b border-gray-300 flex items-center justify-center flex-wrap w-full">
                     <div className='flex flex-col gap-5'>
-                        <h2 className="text-48 font-[700] font-roboto leading-52 max-w-[550px] mb-5 gap-20">
+                        <h2 className="text-48 font-[700] font-lato leading-52 max-w-[550px] mb-5 gap-20">
                             En <span className="text-color2 leading-52">Psicomed</span>, queremos que te sientas <span className="text-color2">en casa</span>.
                         </h2>
-                        <p className="text-20 font-lato font-normal leading-32 text-color7 mb-8 max-w-[550px]">
+                        <p className="text-20 font-lato leading-32 text-color7 mb-8 max-w-[550px]">
                             En nuestro espacio, la confianza y la comodidad son fundamentales. Aquí, te recibimos con los brazos abiertos, comprometidos no solo a ofrecer servicios de bienestar de calidad, sino a construir un refugio donde encuentres seguridad, comprensión y apoyo.
                         </p>
                     </div>
@@ -148,10 +148,10 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 <div className="pt-20 border-b border-gray-300 flex items-center justify-center pb-12 gap-20 flex-wrap">
                     <img src={service1} alt="HOUSE" className='w-full max-w-[600px]  border-b-stone-600 mb-5 rounded-xl' />
                     <div className='flex flex-col gap-5'>
-                        <h2 className="text-48 font-[700] font-roboto leading-52 max-w-[550px] mb-5">
+                        <h2 className="text-48 font-[700] font-lato leading-52 max-w-[550px] mb-5">
                             Estimulación Magnética <span className="text-color2 leading-52">Transcraneal</span>.
                         </h2>
-                        <p className="text-20 font-lato font-normal leading-32 text-color7 mb-8 max-w-[550px]">
+                        <p className="text-20 font-lato leading-32 text-color7 mb-8 max-w-[550px]">
                             En nuestro espacio, la confianza y la comodidad son fundamentales. Aquí, te recibimos con los brazos abiertos, comprometidos no solo a ofrecer servicios de bienestar de calidad, sino a construir un refugio donde encuentres seguridad, comprensión y apoyo.
                         </p>
                         <p className='flex items-center justify-start cursor-pointer gap-2 text-color2 font-[700] leading-20 font-lato pb-12'
@@ -170,14 +170,14 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 </div>
 
                 <div className='mt-20'>
-                    <h2 className="text-48 font-[700] font-roboto leading-52 mb-20 text-center">Nuestros <span className="text-color2 leading-40">servicios</span>.</h2>
-                    <div className='flex items-center gap-16 w-[1280px] h-[645px]'>
+                    <h2 className="text-48 font-[700] font-lato leading-52 mb-20 text-center">Nuestros <span className="text-color2 leading-40">servicios</span>.</h2>
+                    <div className='flex items-center gap-16 w-full h-[645px]'>
                         <div className='max-w-[630px]'>
                             <ul className="space-y-4">
                                 {preguntas.map((pregunta, index) => (
                                     <div key={index} className="block py-6 px-4 border border-color8 rounded-md h-full max-w-[600px]">
                                         <button onClick={() => handleToggle(index)} className="flex justify-between items-center w-full text-left">
-                                            <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                                            <span className="text-20 font-lato font-[700] leading-20 text-color7">
                                                 {pregunta.title}
                                             </span>
                                             {expandedIndex === index ? <GoDash size={20} /> : <GoPlus size={20} />}
@@ -212,8 +212,8 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
 
                 <div className='mt-12 pb-12 border-b border-gray-300 flex items-top justify-center flex-wrap'>
                     <div className='flex flex-col mr-20'>
-                        <h2 className="text-48 font-[700] font-roboto leading-52 mb-8 max-w-[400px]">¿Por qué elegir a <span className="text-color2 leading-40">Psicomed</span>?</h2>
-                        <p className="text-[18px] font-lato font-normal leading-24 text-color7 mb-12 max-w-[384px]">
+                        <h2 className="text-48 font-[700] font-lato leading-52 mb-8 max-w-[400px]">¿Por qué elegir a <span className="text-color2 leading-40">Psicomed</span>?</h2>
+                        <p className="text-[18px] font-lato leading-24 text-color7 mb-12 max-w-[384px]">
                             Elegir el apoyo adecuado es esencial en el camino hacia el bienestar. En Psicomed, estamos comprometidos a ser ese aliado confiable y experto que buscas.
                         </p>
                     </div>
@@ -223,7 +223,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                                 {feature.icon}
                             </p>
                             <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2 pt-4">{feature.title}</h3>
-                            <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4 max-w-[240px] cursor-pointer">
+                            <p className="font-lato text-16 leading-20 text-color7 mb-4 max-w-[240px] cursor-pointer">
                                 {feature.description}
                             </p>
                             <p className='flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato cursor-pointer'
@@ -243,13 +243,13 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 </div>
 
                 <div className='mt-12 mb-16'>
-                    <h2 className="text-48 font-[700] font-roboto text-color6 mb-12 text-center">Nuestros <span className="text-color2 leading-40">expertos</span>.</h2>
+                    <h2 className="text-48 font-[700] font-lato text-color6 mb-12 text-center">Nuestros <span className="text-color2 leading-40">expertos</span>.</h2>
                     <div className='flex items-top justify-center gap-24'>
                         {experts.map((expert, index) => (
                             <div key={index} className={`bg-white rounded-lg ${index === 0 && "mb-12"}`}>
                                 <img src={expert.img} alt={expert.name} className="w-[400px] h-[500px] border-b-stone-600 rounded-xl object-cover object-top" />
                                 <h3 className="font-[700] font-lato text-24 leading-20 text-color6 text-center mt-4">{expert.name}</h3>
-                                <p className="font-lato font-normal text-[18px] leading-20 text-[#697077] text-center mt-1">{expert.title}</p>
+                                <p className="font-lato text-[18px] leading-20 text-[#697077] text-center mt-1">{expert.title}</p>
                             </div>
                         ))}
                     </div>
@@ -263,7 +263,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
 
             </div>
             <div className='py-16 bg-[#FFF9ED] w-full flex flex-col items-center justify-center'>
-                <h2 className="text-48 font-[700] font-roboto text-color6 mb-12 text-center">Lo que dicen nuestros <span className="text-color2">pacientes.</span></h2>
+                <h2 className="text-48 font-[700] font-lato text-color6 mb-12 text-center">Lo que dicen nuestros <span className="text-color2">pacientes.</span></h2>
                 <div className='w-full h-auto overflow-hidden text-center'>
                     <Slider {...settings2}>
                         {testimonials.map((testimonial, index) => (
@@ -277,7 +277,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[1280px]">
-                <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+                <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
                     ¿Cómo agendo mi cita?
                 </h2>
                 <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">

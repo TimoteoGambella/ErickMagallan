@@ -125,10 +125,10 @@ function SanDesktop({ tms, nav }) {
                     <div className='flex flex-col items-center justify-between px-4'>
                         <div className="pb-12 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[700px]">
-                                <h2 className="text-48 font-[700] font-roboto leading-52 mb-5">
+                                <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                                 ¿Por qué tomar <span className="text-color2 leading-52">Educación en Diabetes</span>?
                                 </h2>
-                                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[600px]">
+                                <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[600px]">
                                 La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar la diabetes de manera efectiva en la vida diaria.<br /><br />
                                 El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
                                 </p>
@@ -139,7 +139,7 @@ function SanDesktop({ tms, nav }) {
                         <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
                             <img src={an2} alt="HOUSE" className='w-[520px] border-b-stone-600 rounded-xl' />
                             <div className="flex flex-col max-w-[600px]">
-                                <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
+                                <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
                                 ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
                                 </h2>
                                 <div className="flex items-center justify-start mb-4 gap-2">
@@ -187,10 +187,10 @@ function SanDesktop({ tms, nav }) {
 
                         <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[600px]">
-                                <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
+                                <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
                                 ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
                                 </h2>
-                                <p className="font-lato font-normal leading-20 text-color7 mb-8 max-w-[600px]">
+                                <p className="font-lato leading-20 text-color7 mb-8 max-w-[600px]">
                                 Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
                                 </p>
                             </div>
@@ -200,7 +200,7 @@ function SanDesktop({ tms, nav }) {
                         <div className="pb-36 border-b border-gray-300 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
                             <img src={an4} alt="HOUSE" className='w-[520px] h-[520px] rounded-xl object-cover' />
                             <div className="flex flex-col max-w-[600px]">
-                                <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
+                                <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
                                 ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
                                 </h2>
                                 <div className="flex items-center justify-start mb-4 gap-2">
@@ -240,14 +240,14 @@ function SanDesktop({ tms, nav }) {
                     </div>
 
                     <div className='px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
-                        <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+                        <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
                             Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
                         </h2>
                         <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
                             {preguntas.map((pregunta, index) => (
                                 <div key={index} className="py-6 px-4 border border-color8 rounded-md h-fit">
                                     <button onClick={() => handleToggle(index)} className="flex justify-between items-center w-full text-left">
-                                        <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                                        <span className="text-20 font-lato font-[700] leading-20 text-color7">
                                             {pregunta.title}
                                         </span>
                                         {expandedIndex === index ? <GoDash size={20} /> : <GoPlus size={20} />}
@@ -274,19 +274,19 @@ function SanDesktop({ tms, nav }) {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[360px] mb-12 text-center">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[360px] mb-12 text-center">
                             Tu terapeuta.
                         </h2>
                         <div className="flex justify-center items-center flex-wrap gap-20">
                             <img src={t2} alt="" className="w-[600px] h-[600px] mb-8  object-cover object-top rounded-xl" />
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                                 <h3
-                                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                                     style={{ letterSpacing: "1px" }}
                                 >
                                     M.C. Rocío González Saucedo
                                 </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                                <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                                     Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
                                     Educación en Diabetes, y Maestra en Ciencias Médicas y
                                     Nutrición Clínica.
@@ -318,7 +318,7 @@ function SanDesktop({ tms, nav }) {
                     </div>
 
                     <div className="flex flex-col justify-center items-center mt-16 w-full pt-16">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
                             ¿Cómo agendo mi cita?
                         </h2>
                         <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">

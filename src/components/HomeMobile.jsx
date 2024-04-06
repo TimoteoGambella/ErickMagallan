@@ -105,12 +105,12 @@ function HomeMobile({ features, experts, testimonials, settings }) {
 
       <div className="flex flex-col items-center justify-center px-4">
         <div className="pb-6 border-b border-gray-300 flex flex-col items-center justify-center">
-          <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px] mb-5">
+          <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-5">
             En <span className="text-color2 leading-52">Psicomed</span>,
             queremos que te sientas <span className="text-color2">en casa</span>
             .
           </h2>
-          <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
+          <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
             En nuestro espacio, la confianza y la comodidad son fundamentales.
             Aquí, te recibimos con los brazos abiertos, comprometidos no solo a
             ofrecer servicios de bienestar de calidad, sino a construir un
@@ -124,11 +124,11 @@ function HomeMobile({ features, experts, testimonials, settings }) {
         </div>
 
         <div className="pt-6 border-b border-gray-300 flex flex-col items-center justify-center pb-12">
-          <h2 className="text-36 font-[700] font-roboto  leading-52 max-w-[320px]">
+          <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px]">
             Estimulación Magnética{" "}
             <span className="text-color2 leading-52">Transcraneal</span>.
           </h2>
-          <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
+          <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
             En nuestro espacio, la confianza y la comodidad son fundamentales.
             Aquí, te recibimos con los brazos abiertos, comprometidos no solo a
             ofrecer servicios de bienestar de calidad, sino a construir un
@@ -156,7 +156,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
         </div>
 
         <div className="w-[328px] py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300">
-          <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+          <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
             Preguntas <span className="text-color2 leading-52">Frecuentes</span>
             .
           </h2>
@@ -170,7 +170,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
                   onClick={() => handleToggle(index)}
                   className="flex justify-between items-center w-full text-left"
                 >
-                  <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                  <span className="text-20 font-lato font-[700] leading-20 text-color7">
                     {pregunta.title}
                   </span>
                   {expandedIndex === index ? (
@@ -208,11 +208,11 @@ function HomeMobile({ features, experts, testimonials, settings }) {
           </div>
         </div>
         <div className="mt-12 max-w-[320px] pb-12 border-b border-gray-300">
-          <h2 className="text-36 font-[700] font-roboto text-color6 mb-6 max-w-[320px]">
+          <h2 className="text-36 font-[700] font-lato text-color6 mb-6 max-w-[320px]">
             ¿Por qué elegir a{" "}
             <span className="text-color2 leading-40">Psicomed</span>?
           </h2>
-          <p className="text-16 font-lato font-normal leading-20 text-color7 mb-12 max-w-[320px]">
+          <p className="text-16 font-lato leading-20 text-color7 mb-12 max-w-[320px]">
             Elegir el apoyo adecuado es esencial en el camino hacia el
             bienestar. En Psicomed, estamos comprometidos a ser ese aliado
             confiable y experto que buscas.
@@ -227,7 +227,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
                 <h3 className="font-[700] font-lato text-20 leading-20 ml-2 text-color6 mb-2">
                   {feature.title}
                 </h3>
-                <p className="font-lato font-normal text-16 leading-20 text-color7 mb-4">
+                <p className="font-lato text-16 leading-20 text-color7 mb-4">
                   {feature.description}
                 </p>
                 <p
@@ -249,7 +249,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
         </div>
 
         <div className="mt-12 max-w-[320px] mb-16">
-          <h2 className="text-36 font-[700] font-roboto text-color6 mb-12 max-w-[320px]">
+          <h2 className="text-36 font-[700] font-lato text-color6 mb-12 max-w-[320px]">
             Nuestros <span className="text-color2 leading-40">expertos</span>.
           </h2>
 
@@ -266,7 +266,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
               <h3 className="font-[700] font-lato text-20 leading-20 text-color6 text-center">
                 {expert.name}
               </h3>
-              <p className="font-lato font-normal text-16 leading-20 text-[#697077] text-center mt-1">
+              <p className="font-lato text-16 leading-20 text-[#697077] text-center mt-1">
                 {expert.title}
               </p>
             </div>
@@ -274,7 +274,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
         </div>
       </div>
       <div className="py-16 bg-[#FFF9ED] w-full flex flex-col items-center justify-center">
-        <h2 className="text-32 font-[700] font-roboto text-color6 mb-8 w-full max-w-[360px] text-center leading-32">
+        <h2 className="text-32 font-[700] font-lato text-color6 mb-8 w-full max-w-[360px] text-center leading-32">
           Lo que dicen nuestros{" "}
           <span className="text-color2 leading-32">pacientes</span>.
         </h2>
@@ -299,7 +299,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
-        <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+        <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
           ¿Cómo agendo mi cita?
         </h2>
         <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">

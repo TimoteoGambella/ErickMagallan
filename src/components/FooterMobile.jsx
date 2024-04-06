@@ -58,10 +58,10 @@ function FooterMobile () {
         <>
         <div className='flex flex-col items-center justify-center px-4'>
                 <div className="pb-6 flex flex-col items-center justify-center mt-16 max-w-[320px]">
-                    <h2 className="text-36 font-[700] font-roboto  leading-36 mb-4">
+                    <h2 className="text-36 font-[700] font-lato  leading-36 mb-4">
                         Da el primer paso hacia <span className="text-color2">tu bienestar</span>.
                     </h2>
-                    <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[320px]">
+                    <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
                         Agenda tu cita vía Whatsapp ó llama a nuestros números de contacto.
                     </p>
                 </div>
@@ -111,17 +111,16 @@ function FooterMobile () {
                 <img src={logo2} alt="LOGO" onClick={()=>scrollNav("/")}/>
                 <nav className="mb-4">
                     <ul className="flex space-x-4">
-                        <li><p onClick={()=>scrollNav("/")} className="hover:underline">Inicio</p></li>
-                        <li><p onClick={()=>scrollNav("/servicios/emt")} className="hover:underline">Servicios</p></li>
-                        <li><p onClick={()=>scrollNav("/nosotros")} className="hover:underline">Nosotros</p></li>
+                        <li><p onClick={()=>scrollNav("/")}>Inicio</p></li>
+                        <li><p onClick={()=>scrollNav("/servicios/emt")}>Servicios</p></li>
+                        <li><p onClick={()=>scrollNav("/nosotros")}>Nosotros</p></li>
                     </ul>
                 </nav>
                 <div className="flex space-x-4 mb-4">
                     <a href="https://www.facebook.com/C.B.I.Psicomed" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></a>
-                    <a href="https://w.app/psicomed" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={24} /></a>
                     <a href="mailto:drnogalesgalvan@gmail.com"><FaEnvelope size={24} /></a>
                 </div>
-                <p>Psicomed © 2023. All rights reserved.</p>
+                <p>Psicomed © 2023. Todos los derechos reservados.</p>
             </div>
         </>
     )

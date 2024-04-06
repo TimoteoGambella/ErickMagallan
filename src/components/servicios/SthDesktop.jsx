@@ -275,14 +275,14 @@ function SthDesktop({ tms, nav }) {
           <div className="flex flex-col items-center justify-between px-4">
             <div className="pt-12 flex items-center justify-between flex-wrap">
               <div className="flex flex-col max-w-[700px] max-h-[438px]">
-                <h2 className="text-48 font-[700] font-roboto leading-52 mb-5 text-center">
+                <h2 className="text-48 font-[700] font-lato leading-52 mb-5 text-center">
                   ¿Por qué elegir{" "}
                   <span className="text-color2 leading-52">
                     Terapias Holísticas
                   </span>
                   ?
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8 max-w-[700px] text-center">
+                <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[700px] text-center">
                   Las terapias holísticas adoptan un enfoque integral que
                   considera la conexión entre cuerpo, mente y espíritu, buscando
                   equilibrar y fortalecer todos los aspectos de la persona. Con
@@ -298,7 +298,7 @@ function SthDesktop({ tms, nav }) {
           </div>
           <div>
             <div className="flex flex-col items-center justify-center max-w-[1280px]">
-              <h2 className="text-[54px] font-[700] font-roboto leading-[60px] mb-12 mt-24 text-center">
+              <h2 className="text-[54px] font-[700] font-lato leading-[60px] mb-12 mt-24 text-center">
                 ¿Qué <span className="text-color2 leading-52">terapia</span> es
                 para mí?
               </h2>
@@ -306,11 +306,11 @@ function SthDesktop({ tms, nav }) {
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <div className="flex flex-col max-w-[600px] ">
-                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Terapia con{" "}
                   <span className="text-color2 leading-52">Terahercios</span>.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                <p className="text-16 font-lato leading-20 text-color7 my-8">
                   Terapia de frecuencia que utiliza tecnología de terahercios
                   para influir positivamente en la salud y el bienestar de tu
                   cuerpo. Emite ondas que interactúan con las células y huesos.
@@ -343,10 +343,10 @@ function SthDesktop({ tms, nav }) {
                 className="w-[600px] rounded-xl"
               />
               <div className="flex flex-col max-w-[600px] ">
-                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Aromaterapia.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                <p className="text-16 font-lato leading-20 text-color7 my-8">
                   Práctica terapéutica que utiliza aceites esenciales extraídos
                   de plantas para mejorar el bienestar físico, emocional y
                   mental. Estos aceites se inhalan o aplican sobre la piel. Sus
@@ -374,11 +374,11 @@ function SthDesktop({ tms, nav }) {
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <div className="flex flex-col max-w-[600px] ">
-                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Flores de <span className="text-color2 leading-52">Bach</span>
                   .
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                <p className="text-16 font-lato leading-20 text-color7 my-8">
                   Terapia complementaria con 38 esencias florales. Las
                   propiedades de las flores de Bach ayudan a armonizar y
                   corregir alteraciones mentales físicas y emocionales.
@@ -409,10 +409,10 @@ function SthDesktop({ tms, nav }) {
                 className="w-[600px] h-[600px] rounded-lg object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
-                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Thetahealing.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                <p className="text-16 font-lato leading-20 text-color7 my-8">
                   Técnica de meditación que se enfoca en llegar al estado Theta,
                   para conectar con el subconsciente, donde se retienen memorias
                   y sentimientos. ThetaHealing se utiliza para abordar una
@@ -440,10 +440,10 @@ function SthDesktop({ tms, nav }) {
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <div className="flex flex-col max-w-[600px] ">
-                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Reiki.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                <p className="text-16 font-lato leading-20 text-color7 my-8">
                   El Reiki es una terapia energética originaria de Japón que se
                   centra en canalizar la energía vital universal a través de la
                   imposición de manos para equilibrar y armonizar la energía en
@@ -477,10 +477,10 @@ function SthDesktop({ tms, nav }) {
                 className="w-[600px] h-[600px] rounded-lg object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
-                <h2 className="text-48 font-[700] font-roboto leading-52 text-start">
+                <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Numerología.
                 </h2>
-                <p className="text-16 font-lato font-normal leading-20 text-color7 my-8">
+                <p className="text-16 font-lato leading-20 text-color7 my-8">
                   La numerología es un sistema metafísico que estudia la
                   relación entre los números y diversos aspectos de la vida. Se
                   basa en la creencia de que los números tienen significados
@@ -507,19 +507,19 @@ function SthDesktop({ tms, nav }) {
           </div>
 
           <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-              <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[320px] mb-12 text-center">
+              <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
                 Tu terapeuta.
               </h2>
               <div className="flex justify-center items-center flex-wrap gap-20">
                 <img src={t1} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover object-top" />
                 <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                   <h3
-                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                     style={{ letterSpacing: "1px" }}
                   >
                     M.C. Rocío González Saucedo
                   </h3>
-                  <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                  <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                     Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
                     Educación en Diabetes, y Maestra en Ciencias Médicas y
                     Nutrición Clínica.
@@ -551,7 +551,7 @@ function SthDesktop({ tms, nav }) {
             </div>
 
           <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
-            <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+            <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
               Preguntas{" "}
               <span className="text-color2 leading-52">Frecuentes</span>.
             </h2>
@@ -565,7 +565,7 @@ function SthDesktop({ tms, nav }) {
                     onClick={() => handleToggle(index)}
                     className="flex justify-between items-center w-full text-left"
                   >
-                    <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                    <span className="text-20 font-lato font-[700] leading-20 text-color7">
                       {pregunta.title}
                     </span>
                     {expandedIndex === index ? (
@@ -596,7 +596,7 @@ function SthDesktop({ tms, nav }) {
             </div>
 
             <div className="flex flex-col justify-center items-center mt-16 w-full pt-16">
-              <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+              <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
                 ¿Cómo agendo mi cita?
               </h2>
               <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">

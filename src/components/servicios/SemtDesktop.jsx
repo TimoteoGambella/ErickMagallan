@@ -116,7 +116,7 @@ function SemtDesktop({ tms, nav }) {
     ];
 
     return (
-        <div >
+        <div>
             <div className="w-full flex flex-col items-center justify-center h-[540px] gap-8 text-center mb-20 relative"
                 style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
@@ -133,10 +133,10 @@ function SemtDesktop({ tms, nav }) {
                     <div className='flex flex-col items-center justify-center px-4'>
                         <div className="pb-12 border-b border-gray-300 flex items-center justify-center mb-12 w-full max-w-[1200px] gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[600px]">
-                                <h2 className="text-48 font-[700] font-roboto leading-52 mb-5">
+                                <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                                     ¿Qué es la <span className="text-color2 leading-52">Estimulación Magnética Transcraneal</span>?
                                 </h2>
-                                <p className="text-16 font-lato font-normal leading-20 text-color7 mb-8">
+                                <p className="text-16 font-lato leading-20 text-color7 mb-8">
                                     La Estimulación Magnética Transcraneal (EMT) es una técnica no invasiva que utiliza campos magnéticos para modular la actividad cerebral. <br /><br /> Se aplica a través de una bobina colocada en el cuero cabelludo, generando corrientes eléctricas que afectan las neuronas, siendo utilizada en investigaciones y tratamientos neuropsiquiátricos.
                                 </p>
                             </div>
@@ -146,7 +146,7 @@ function SemtDesktop({ tms, nav }) {
                         <div className="pb-36 border-b border-gray-300 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
                             <img src={emt2} alt="HOUSE" className='w-[328px] border-b-stone-600' />
                             <div className="flex flex-col max-w-[600px]">
-                                <h2 className="text-48 font-[700] font-roboto  leading-52 mb-12 text-center">
+                                <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
                                     ¿Cuáles son los <span className="text-color2 leading-52">beneficios</span>?
                                 </h2>
                                 <div className="flex items-center justify-center mb-4 gap-2">
@@ -185,7 +185,7 @@ function SemtDesktop({ tms, nav }) {
                         </div>
 
                         <div className="pb-20 border-b border-gray-300 flex flex-col items-center justify-center max-w-[1280px]">
-                            <h2 className="text-[54px] font-[700] font-roboto leading-[60px] mb-12 mt-24 text-center">
+                            <h2 className="text-[54px] font-[700] font-lato leading-[60px] mb-12 mt-24 text-center">
                                 Aplicación <span className="text-color2 leading-52">Clínica</span> del TMS.
                             </h2>
 
@@ -219,15 +219,15 @@ function SemtDesktop({ tms, nav }) {
                     </div>
 
                     <div className="pb-12 pt-20 border-b border-gray-300 flex flex-col items-center justify-center">
-                        <h2 className="text-[54px] font-[700] font-roboto  leading-[60px] mb-12 text-center">
+                        <h2 className="text-[54px] font-[700] font-lato  leading-[60px] mb-12 text-center">
                             Publicaciones <span className="text-color2 leading-40">científicas</span> sobre <span className="text-color2 leading-40">TMS</span>.
                         </h2>
                         <div className="flex flex-wrap items-center justify-center max-w-[1280px] gap-12 mt-6">
                             {publis_tms.slice(0, visiblePublications).map((publi, index) => (
                                 <div className="flex flex-col items-start justify-start pb-2 w-[394px]" key={index}>
                                     <img src={publi.photo} alt={publi.title} className="w-[394px] h-[300px]" />
-                                    <h3 className="font-[700] font-roboto text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
-                                    <p className='font-[400] font-roboto text-16 leading-20 text-color6'>{publi.description}</p>
+                                    <h3 className="font-[700] font-lato text-24 leading-24 text-color6 mb-4 mt-8">{publi.title}</h3>
+                                    <p className='font-[400] font-lato text-16 leading-20 text-color6'>{publi.description}</p>
                                     <div className="flex items-center justify-start mt-4 gap-5">
                                         <div className="flex items-center justify-center gap-1">
                                             <CgFileDocument />
@@ -253,19 +253,19 @@ function SemtDesktop({ tms, nav }) {
                         )}
                     </div>
                     <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 max-w-[360px] mb-12 text-center">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[360px] mb-12 text-center">
                             Tus terapeutas.
                         </h2>
                         <div className="flex justify-center items-center flex-wrap gap-20">
                             <img src={t2} alt="" className="w-[600px] h-[600px] mb-8  object-cover object-top rounded-xl" />
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                                 <h3
-                                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                                     style={{ letterSpacing: "1px" }}
                                 >
                                     M.C. Rocío González Saucedo
                                 </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                                <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                                     Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
                                     Educación en Diabetes, y Maestra en Ciencias Médicas y
                                     Nutrición Clínica.
@@ -300,12 +300,12 @@ function SemtDesktop({ tms, nav }) {
 
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                                 <h3
-                                    className="text-48 leading-52 text-color6 font-roboto font-[700] mb-6"
+                                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                                     style={{ letterSpacing: "1px" }}
                                 >
                                     Dr. José Luis Nogales Galván
                                 </h3>
-                                <h4 className="text-20 leading-22 text-color6 font-roboto font-[700] mb-8">
+                                <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                                     Médico Psiquiatra con Maestría y Doctorado en Psicoterapia Individual y de Pareja.
                                 </h4>
                                 <p className="text-16 font-[400] text-color7 font-lato mb-12">
@@ -325,14 +325,14 @@ function SemtDesktop({ tms, nav }) {
                     </div>
 
                     <div className='px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
-                        <h2 className="text-44 font-[700] font-roboto leading-44 mb-12 text-center">
+                        <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
                             Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
                         </h2>
                         <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
                             {preguntas.map((pregunta, index) => (
                                 <div key={index} className="py-6 px-4 border border-color8 rounded-md h-fit">
                                     <button onClick={() => handleToggle(index)} className="flex justify-between items-center w-full text-left">
-                                        <span className="text-20 font-roboto font-[700] leading-20 text-color7">
+                                        <span className="text-20 font-lato font-[700] leading-20 text-color7">
                                             {pregunta.title}
                                         </span>
                                         {expandedIndex === index ? <GoDash size={20} /> : <GoPlus size={20} />}
@@ -360,7 +360,7 @@ function SemtDesktop({ tms, nav }) {
                     </div>
 
                     <div className="flex flex-col justify-center items-center mt-16 w-full">
-                        <h2 className="text-48 font-[700] font-roboto  leading-40 mb-12 text-center">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
                             ¿Cómo agendo mi cita?
                         </h2>
                         <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[1280px]">
