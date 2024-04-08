@@ -8,18 +8,11 @@ import th5 from "../../assets/th/motoki-tonn-X00q3RXcyZ4-unsplash.jpg";
 import th6 from "../../assets/th/toa-heftiba-a9pFSC8dTlo-unsplash.jpg";
 import th7 from "../../assets/th/unseen-studio-s9CC2SKySJM-unsplash.jpg";
 
-import circleWhap from "../../assets/circle-whap.svg";
-import circleCheck from "../../assets/circle-check.svg";
-import circlePerson from "../../assets/circle-person.svg";
-import circleCalendar from "../../assets/circle-calendar.svg";
-import line from "../../assets/circle-line.svg";
-
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
 import uni from "../../assets/univa.svg";
 
-import { FaArrowRight } from "react-icons/fa";
 import { GoDash, GoPlus } from "react-icons/go";
 import FooterMobile from ".././FooterMobile";
 import { useState } from "react";
@@ -602,64 +595,6 @@ function SthMobil({ tms, settings }) {
             ))}
           </div>
         </div>
-
-        <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
-          <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
-            ¿Cómo agendo mi cita?
-          </h2>
-          <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">
-            <div className="flex flex-col w-full justify-evenly items-center gap-8">
-              <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                <img src={circleWhap} alt="" />
-                <h4 className="text-24 text-color6 font-[700] leading-24">
-                  Paso 1
-                </h4>
-                <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                  Contáctanos por teléfono o vía Whatsapp.
-                </p>
-              </div>
-              <img src={line} alt="" />
-              <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                <img src={circleCheck} alt="" />
-                <h4 className="text-24 text-color6 font-[700] leading-24">
-                  Paso 2
-                </h4>
-                <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                  Agenda una cita en el horario y día que más te convenga.
-                </p>
-              </div>
-              <img src={line} alt="" />
-              <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                <img src={circlePerson} alt="" />
-                <h4 className="text-24 text-color6 font-[700] leading-24">
-                  Paso 3
-                </h4>
-                <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                  Asiste a tu cita en el horario y día acordado.
-                </p>
-              </div>
-              <img src={line} alt="" />
-              <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-                <img src={circleCalendar} alt="" />
-                <h4 className="text-24 text-color6 font-[700] leading-24">
-                  Paso 4
-                </h4>
-                <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                  Realiza el pago y agenda tu siguiente cita.
-                </p>
-              </div>
-            </div>
-
-            <p
-              className="flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24"
-              onClick={() => window.open("https://w.app/psicomed", "_blank")}
-            >
-              Agenda una cita
-              <FaArrowRight />
-            </p>
-          </div>
-        </div>
-
         <FooterMobile />
       </div>
     </>

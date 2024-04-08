@@ -39,12 +39,12 @@ function Home () {
         {
             img: professuibak1,
             name: 'Dr. José Luis Nogales Galván',
-            title: 'Doctorado en Psicoterapia Individual y de Pareja.',
+            title: 'Médico Psiquiatra / Maestría y Doctorado en Psicoterapia Individual y de Pareja.',
         },
         {
             img: professuibak2,
             name: 'M.C. Rocío González Saucedo',
-            title: 'Maestría en Ciencias Médicas.',
+            title: 'Ingeniería Bioquímica / Diplomado en Nutrición Clínica y Educación en Diabetes / Maestría en Ciencias Médicas y Nutrición Clínica.',
         },
     ];
 
@@ -52,19 +52,20 @@ function Home () {
         {
             image: character1, 
             name: 'Ambar Ramírez',
-            feedback: 'Psicomed se ha convertido en mi lugar de paz, el Dr. Nogales me hizo sentir escuchada y apoyada en todo momento. Además, el lugar está muy bonito y las terapias me han ayudado a mejorar mi bienestar emocional. ¡Los recomiendo altamente!'
+            feedback: '"Psicomed se ha convertido en mi lugar de paz, el Dr. Nogales me hizo sentir escuchada y apoyada en todo momento. Además, el lugar está muy bonito y las terapias me han ayudado a mejorar mi bienestar emocional. ¡Los recomiendo altamente!"'
         },
         {
             image: character2, 
             name: 'Erick Magallán',
-            feedback: 'Mi experiencia en Psicomed fue excepcional. El enfoque integral en la salud mental y emocional me permitió encontrar equilibrio en mi vida. Además el personal es cálido y altamente capacitado, sin lugar a dudas lo recomiendo a mis amigos y familiares.'
+            feedback: '"Mi experiencia en Psicomed fue excepcional. El enfoque integral en la salud mental y emocional me permitió encontrar equilibrio en mi vida. Además el personal es cálido y altamente capacitado, sin lugar a dudas lo recomiendo a mis amigos y familiares."'
         },
         {
             image: character3, 
             name: 'Julieta González',
-            feedback: 'Psicomed ha sido mi guía en el viaje hacia el equilibrio emocional. La combinación de terapias innovadoras y un equipo amable me hizo sentir respaldado en todo momento. Este centro en Colima es la respuesta perfecta para quienes buscan mejorar su salud mental.'
+            feedback: '"Psicomed ha sido mi guía en el viaje hacia el equilibrio emocional. La combinación de terapias innovadoras y un equipo amable me hizo sentir respaldado en todo momento. Este centro en Colima es la respuesta perfecta para quienes buscan mejorar su salud mental."'
         },
     ];
+    
     const settings = {
         dots: false,
         infinite: true,
@@ -72,7 +73,7 @@ function Home () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 10000,
         cssEase: "linear",
     };
 

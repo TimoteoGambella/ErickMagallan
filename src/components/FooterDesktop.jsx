@@ -9,7 +9,6 @@ import { MdOutlineEmail } from "react-icons/md";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaHome } from 'react-icons/fa';
 
 
 function FooterDesktop() {
@@ -47,7 +46,7 @@ function FooterDesktop() {
             hour: '9am a 8pm'
         },
         {
-            icon: <FaHome className='w-9 h-9' />,
+            icon: <IoLocationOutline className='w-9 h-9' />,
             secondIcon: <IoLocationOutline className='w-6 h-6' />,
             method: 'Nuestro domicilio',
             details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
@@ -73,7 +72,7 @@ function FooterDesktop() {
                     </div>
                 </div>
 
-                <div className='flex items-center justify-center gap-8 flex-wrap mb-8'>
+                <div className='flex items-center justify-start gap-8 flex-wrap mb-8'>
                     {contactInfo.map((info, index) => (
                         <>
                             {info.method !== "Nuestro domicilio" &&
@@ -101,7 +100,7 @@ function FooterDesktop() {
                         </>
                     ))}
                 </div>
-                <div className="bg-white p-4 rounded-lg border border-gray-300 items-center justify-center flex flex-col gap-8 mb-24">
+                <div className="bg-white p-4 rounded-lg border border-gray-300 items-start justify-center flex flex-col gap-8 mb-24">
                     <p>
                         {contactInfo[3].icon}
                     </p>

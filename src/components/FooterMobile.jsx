@@ -9,7 +9,6 @@ import { MdOutlineEmail } from "react-icons/md";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaHome } from 'react-icons/fa';
 
 function FooterMobile () {
     const navigate = useNavigate();
@@ -46,7 +45,7 @@ function FooterMobile () {
             hour: '9am a 8pm'
         },
         {
-            icon: <FaHome className='w-9 h-9' />,
+            icon: <IoLocationOutline className='w-9 h-9' />,
             secondIcon: <IoLocationOutline className='w-6 h-6'/>,
             method: 'Nuestro domicilio',
             details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',

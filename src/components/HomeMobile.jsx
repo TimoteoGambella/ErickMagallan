@@ -5,12 +5,6 @@ import { FaArrowRight } from "react-icons/fa6";
 
 import Slider from "react-slick";
 
-import circleWhap from "../assets/circle-whap.svg";
-import circleCheck from "../assets/circle-check.svg";
-import circlePerson from "../assets/circle-person.svg";
-import circleCalendar from "../assets/circle-calendar.svg";
-import line from "../assets/circle-line.svg";
-
 import { useNavigate } from "react-router-dom";
 import banner from "../assets/home/banner-home.jpg";
 import FooterMobile from "./FooterMobile";
@@ -96,16 +90,16 @@ function HomeMobile({ features, experts, testimonials, settings }) {
         }}
       >
         <h1 className="font-[700] text-48 text-color5 leading-52 font-lato max-w-[328px]">
-          Tu espacio de salud mental y bienestar emocional.
+        Tu espacio de <span className="text-color1 leading-52">salud mental</span> y <span className="text-color1 leading-52">bienestar emocional</span>.
         </h1>
         <h2 className="font-[400] text-16 text-color5 leading-24 font-lato max-w-[328px]">
-          En Psicomed estamos para acompañarte en tu camino hacia una vida plena.
+        En Psicomed te apoyamos y acompañamos en tu camino hacia una vida plena.
         </h2>
       </div>
 
       <div className="flex flex-col items-center justify-center px-4">
         <div className="pb-6 border-b border-gray-300 flex flex-col items-center justify-center">
-          <h2 className="text-36 font-[700] font-lato  leading-52 max-w-[320px] mb-5">
+          <h2 className="text-36 font-[700] font-lato leading-52 max-w-[320px] mb-5">
             En <span className="text-color2 leading-52">Psicomed</span>,
             queremos que te sientas <span className="text-color2">en casa</span>
             .
@@ -296,62 +290,6 @@ function HomeMobile({ features, experts, testimonials, settings }) {
               </div>
             ))}
           </Slider>
-        </div>
-      </div>
-      <div className="flex flex-col justify-center items-center mt-16 w-full max-w-[360px] border-b border-gray">
-        <h2 className="text-48 font-[700] font-lato  leading-40 mb-12 text-center">
-          ¿Cómo agendo mi cita?
-        </h2>
-        <div className="flex flex-col justify-center items-center gap-8 w-full max-w-[360px]">
-          <div className="flex flex-col w-full justify-evenly items-center gap-8">
-            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-              <img src={circleWhap} alt="" />
-              <h4 className="text-24 text-color6 font-[700] leading-24">
-                Paso 1
-              </h4>
-              <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                Contáctanos por teléfono o vía Whatsapp.
-              </p>
-            </div>
-            <img src={line} alt="" />
-            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-              <img src={circleCheck} alt="" />
-              <h4 className="text-24 text-color6 font-[700] leading-24">
-                Paso 2
-              </h4>
-              <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                Agenda una cita en el horario y día que más te convenga.
-              </p>
-            </div>
-            <img src={line} alt="" />
-            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-              <img src={circlePerson} alt="" />
-              <h4 className="text-24 text-color6 font-[700] leading-24">
-                Paso 3
-              </h4>
-              <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                Asiste a tu cita en el horario y día acordado.
-              </p>
-            </div>
-            <img src={line} alt="" />
-            <div className="flex flex-col gap-4 justify-center items-center w-[213px]">
-              <img src={circleCalendar} alt="" />
-              <h4 className="text-24 text-color6 font-[700] leading-24">
-                Paso 4
-              </h4>
-              <p className="text-16 text-color7 font-[400] leading-16 text-center">
-                Realiza el pago y agenda tu siguiente cita.
-              </p>
-            </div>
-          </div>
-
-          <p
-            className="flex items-center justify-center cursor-pointer gap-2 text-20 text-color2 font-[700] leading-20 font-lato mt-12 mb-24"
-            onClick={() => window.open("https://w.app/psicomed", "_blank")}
-          >
-            Agenda una cita
-            <FaArrowRight />
-          </p>
         </div>
       </div>
       <FooterMobile />
