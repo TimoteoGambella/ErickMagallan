@@ -144,13 +144,10 @@ function SemtMobile({ tms, settings }) {
                 ?
               </h2>
               <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[320px]">
-                La Estimulación Magnética Transcraneal (EMT) es una técnica no
-                invasiva que utiliza campos magnéticos para modular la actividad
-                cerebral. <br />
-                <br /> Se aplica a través de una bobina colocada en el cuero
-                cabelludo, generando corrientes eléctricas que afectan las
-                neuronas, siendo utilizada en investigaciones y tratamientos
-                neuropsiquiátricos.
+                La Estimulación Magnética Transcraneal (EMT) es una técnica no invasiva que utiliza campos magnéticos para modular la actividad cerebral.
+                <br />
+                <br />
+                Se aplica a través de una bobina colocada en el cuero cabelludo, generando corrientes eléctricas que afectan las neuronas, siendo utilizada en investigaciones y tratamientos neuropsiquiátricos.
               </p>
               <img
                 src={emt1}
@@ -172,7 +169,7 @@ function SemtMobile({ tms, settings }) {
                   />
                 </div>
                 <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                  Tratamiento de trastornos mentales como la depresión, el TOC y
+                <span className="font-bold">Tratamiento de trastornos mentales</span> como la depresión, el TOC y
                   la esquizofrenia.
                 </p>
               </div>
@@ -184,7 +181,7 @@ function SemtMobile({ tms, settings }) {
                   />
                 </div>
                 <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                  Mejora de funciones cognitivas como la memoria y la atención.
+                <span className="font-bold">Mejora de funciones cognitivas</span> como la memoria y la atención.
                 </p>
               </div>
               <div className="flex items-center justify-center mb-4 gap-2">
@@ -195,7 +192,7 @@ function SemtMobile({ tms, settings }) {
                   />
                 </div>
                 <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                  Es una terapia no invasiva, por lo que no requiere romper la
+                <span className="font-bold">Es una terapia no invasiva</span>, por lo que no requiere romper la
                   piel ni provocar dolor de ningún tipo.
                 </p>
               </div>
@@ -207,7 +204,7 @@ function SemtMobile({ tms, settings }) {
                   />
                 </div>
                 <p className="text-16 font-lato font-[400] leading-20 text-color7 max-w-[320px]">
-                  Sin medicamentos ni efectos secundarios graves en los
+                <span className="font-bold">Sin medicamentos ni efectos secundarios graves</span> en los
                   pacientes.
                 </p>
               </div>
@@ -309,7 +306,7 @@ function SemtMobile({ tms, settings }) {
               {preguntas.map((pregunta, index) => (
                 <div
                   key={index}
-                  className="py-6 px-4 border border-color8 rounded-md h-fit"
+                  className="py-6 px-4 border border-color8 rounded-2xl h-fit"
                 >
                   <button
                     onClick={() => handleToggle(index)}
@@ -349,7 +346,7 @@ function SemtMobile({ tms, settings }) {
             <h2 className="text-36 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
               Tus terapeutas.
             </h2>
-            <img src={t2} alt="" className="w-[328px] h-[328px] object-cover object-top mb-8 rounded-xl" />
+            <img src={t2} alt="" className="w-[328px] h-[328px] object-cover object-top mb-8 rounded-[32px]" />
             <div className="w-[328px] flex flex-col items-start justify-center">
               <h3 className="text-36 leading-36 text-color6 font-lato font-[700] mb-6">
                 M.C. Rocío González Saucedo
@@ -384,7 +381,7 @@ function SemtMobile({ tms, settings }) {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <img src={t1} alt="" className="w-[328px] h-[328px] mb-8 object-cover object-top rounded-xl" />
+            <img src={t1} alt="" className="w-[328px] h-[328px] mb-8 object-cover object-top rounded-[32px]" />
             <div className="w-[328px] flex flex-col items-start justify-center">
               <h3 className="text-36 leading-36 text-color6 font-lato font-[700] mb-6">
                 Dr. José Luis Nogales Galván

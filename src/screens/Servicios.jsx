@@ -88,14 +88,14 @@ function Servicios () {
     return(
         <>
             <div className="bg-white flex items-center justify-center gap-4 py-4 flex-col md:flex-row text-center">
-                <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "pip" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
-                  navigate("/servicios/pip")
-                  setNav("pip")
-                }}>Psicoterapia Individual y de Pareja</p>
                 <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "emt" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
                   navigate("/servicios/emt")
                   setNav("emt")
                   }}>Estimulación Magnética Transcraneal</p>
+                  <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "pip" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
+                  navigate("/servicios/pip")
+                  setNav("pip")
+                }}>Psicoterapia Individual y de Pareja</p>
                 <p className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${nav === "an" ? 'text-color2' : 'text-color6'}`} onClick={()=>{
                   navigate("/servicios/an")
                   setNav("an")

@@ -5,7 +5,12 @@ import cat from "../assets/cat.svg";
 import logo2 from "../assets/logo-white.svg";
 import { FaFacebook, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { BsTelephone } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
+import mailIconOpen from "../assets/mail-open-outline.svg";
+import mailIcon from "../assets/mail-outline.svg";
+import timer from "../assets/timer-outline.svg";
+import today from "../assets/today-outline.svg";
+import viber from "../assets/viber-circle.svg";
+import location from "../assets/location-outline.svg";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
@@ -23,7 +28,7 @@ function FooterDesktop() {
     const contactInfo = [
         {
             icon: <FaWhatsapp className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4' />,
+            secondIcon: <img src={viber} alt="Correo electrónico" />,
             method: 'Vía Whatsapp',
             details: '(+52) 312 339 93 14',
             day: 'Lunes a Viernes',
@@ -31,23 +36,23 @@ function FooterDesktop() {
         },
         {
             icon: <BsTelephone className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4' />,
+            secondIcon: <img src={viber} alt="Correo electrónico" />,
             method: 'Vía telefónica',
             details: '(312) 312 33 50 75 / 312 312 98 93',
             day: 'Lunes a Viernes',
             hour: '9am a 8pm'
         },
         {
-            icon: <MdOutlineEmail className='w-9 h-9' />,
-            secondIcon: <MdOutlineMail className='w-4 h-4' />,
+            icon: <img src={mailIconOpen} alt="Correo electrónico" className='w-9 h-9' />,
+            secondIcon: <img src={mailIcon} alt="Correo electrónico" />,
             method: 'Vía email',
             details: 'drnogalesgalvan@gmail.com',
             day: 'Lunes a Viernes',
             hour: '9am a 8pm'
         },
         {
-            icon: <IoLocationOutline className='w-9 h-9' />,
-            secondIcon: <IoLocationOutline className='w-6 h-6' />,
+            icon: <img src={location} alt="location" className="w-9 h-9" />,
+            secondIcon: <img src={location} alt="location" className="w-6 h-6" />,
             method: 'Nuestro domicilio',
             details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
             day: 'Lunes a Viernes',
@@ -56,7 +61,7 @@ function FooterDesktop() {
     ];
 
     return (
-        <div className="w-full flex flex-col items-center">
+        <div id="footer" className="w-full flex flex-col items-center">
             <div className="w-[1280px] my-12">
                 <div className='flex flex-col items-center justify-center border-t'>
                     <div className="pb-6 flex items-center justify-center mt-16 gap-8">
@@ -87,12 +92,10 @@ function FooterDesktop() {
                                             {info.details}
                                         </p>
                                         <p className="text-gray-500 flex items-center justify-center gap-2">
-                                            <RiCalendarEventLine />
-                                            {info.day}
-                                        </p>
-                                        <p className="text-gray-500 flex items-center justify-center gap-2">
-                                            <IoIosTimer />
-                                            {info.hour}
+                                            <img src={today} alt="today" />
+                                            <p className="font-bold">{info.day}</p>
+                                            <img src={timer} alt="timer" />
+                                            <p className="font-bold">{info.hour}</p>
                                         </p>
                                     </div>
                                 </div>
@@ -100,22 +103,22 @@ function FooterDesktop() {
                         </>
                     ))}
                 </div>
-                <div className="bg-white p-4 rounded-lg border border-gray-300 items-start justify-center flex flex-col gap-8 mb-24">
-                    <p>
+                <div className="bg-white p-8 rounded-lg border border-gray-300 items-start justify-center flex flex-col gap-4">
+                    <p className="ml-[-2px]">
                         {contactInfo[3].icon}
                     </p>
                     <h3 className="font-[700] leading-24 text-24 mb-2">{contactInfo[3].method}</h3>
-                    <div className='flex flex-col items-start justify-center gap-4'>
-                        <p className="font-[700] text-lato text-16 leading-20 text-color6 flex items-center justify-center gap-2">
-                            {contactInfo[3].secondIcon}
+                    <div className='flex flex-col items-start justify-start'>
+                        <p className="font-[700] text-lato text-16 leading-20 text-color6 flex items-center justify-start gap-2 mb-2">
+                            <p className="ml-[-2px]">
+                                {contactInfo[3].secondIcon}
+                            </p>
                             {contactInfo[3].details}
                         </p>
-                        <p className="text-gray-500 flex items-center justify-center gap-2">
-                            <RiCalendarEventLine />
+                        <p className="text-gray-500 flex items-center justify-center gap-2 font-bold">
+                        <img src={today} alt="today" />
                             {contactInfo[3].day}
-                        </p>
-                        <p className="text-gray-500 flex items-center justify-center gap-2">
-                            <IoIosTimer />
+                            <img src={timer} alt="timer" />
                             {contactInfo[3].hour}
                         </p>
                     </div>
@@ -136,14 +139,14 @@ function FooterDesktop() {
             <div className='bg-color6 w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
                 <div className='flex items-center justify-between w-[1280px]'>
                     <div className="w-[300px]">
-                    <img onClick={() => scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]' />
+                        <img onClick={() => scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]' />
                     </div>
                     <nav className="mb-4 flex flex-col items-center justify-center w-full">
                         <ul className="flex space-x-4 items-center justify-center mb-4">
                             <li><p onClick={() => scrollNav("/")} className="hover:cursor-pointer">Inicio</p></li>
                             <li><p onClick={() => scrollNav("/nosotros")} className="hover:cursor-pointer">Nosotros</p></li>
                             <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Estimulación Magnética Transcraneal</p></li>
-                            </ul>
+                        </ul>
                         <ul className="flex space-x-4 items-center justify-center">
                             <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Psicoterapia Ind. y de Pareja</p></li>
                             <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Asesoría Nutricional</p></li>

@@ -178,28 +178,31 @@ function SpipDesktop({ tms, nav }) {
         <div
           className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
           style={{
-              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
-              backgroundPosition: "top -10px",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover"
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+            backgroundPosition: "top -10px",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"
           }}>
           <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
-                        Psicoterapia Individual y de Pareja
-                    </h1> 
+            Psicoterapia Individual y de Pareja
+          </h1>
         </div>
         <div className="flex flex-col items-center justify-center px-4">
-          <div className="pb-12 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">
-            <div className="flex flex-col max-w-[700px]">
+          <div className="pb-12 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="flex flex-col max-w-[700px] py-8">
               <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
-                ¿Por qué elegir la{" "}
+                ¿Por qué elegir la <br/>
                 <span className="text-color2 leading-52">psicoterapia</span>?
               </h2>
               <p className="text-16 font-lato leading-20 text-color7 mb-8">
-                En nuestro espacio, la confianza y la comodidad son
-                fundamentales. Aquí, te recibimos con los brazos abiertos,
-                comprometidos no solo a ofrecer servicios de bienestar de
-                calidad, sino a construir un refugio donde encuentres seguridad,
-                comprensión y apoyo.
+                Elegir la psicoterapia puede ser una decisión transformadora, ya que ofrece un <span className="font-bold">espacio seguro</span> para abordar problemas de salud mental, 
+                desarrollar habilidades de afrontamiento, <span className="font-bold">mejorar las relaciones</span>, explorar patrones de pensamiento 
+                y <span className="font-bold">recibir apoyo</span> durante momentos 
+                difíciles.
+                <br/>
+                <br/>
+                Además, puede proporcionar herramientas para el <span className="font-bold">crecimiento personal y de pareja</span>, aliviar el malestar emocional y prevenir problemas 
+                futuros, convirtiéndose en una inversión invaluable en el <span className="font-bold">bienestar emocional</span> y mental a largo plazo.
               </p>
             </div>
             <img
@@ -211,24 +214,18 @@ function SpipDesktop({ tms, nav }) {
 
           <div className="pb-36 border-b border-gray-300 flex items-center justify-center mb-12 w-full max-w-[1280px] gap-20 flex-wrap">
             <h2 className="text-48 font-[700] font-lato leading-52 mb-8 text-center">
-              ¿Qué <span className="text-color2 leading-52">terapia</span> es
+              ¿Qué <span className="text-color2 leading-52">psicoterapia</span> es
               para mí?
             </h2>
             <div className="flex flex-wrap gap-20 justify-between items-center">
-              <img src={pip5} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover"/>
+              <img src={pip5} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover" />
               <div className="flex flex-col w-[600px] items-start">
                 <h2 className="text-48 font-[700] font-lato leading-52 mb-8 text-center">
                   Psicoterapia{" "}
                   <span className="text-color2 leading-52">Individual</span>.
                 </h2>
                 <p className="text-16 font-lato leading-20 text-color7 mb-8">
-                  Proceso donde un profesional de la salud mental trabaja en
-                  privado con el paciente para abordar desafíos emocionales o
-                  mentales. Se exploran pensamientos y emociones para promover
-                  la comprensión, el crecimiento personal y estrategias para
-                  enfrentar dificultades.Este enfoque personalizado ofrece un
-                  espacio confidencial y de apoyo para expresar y manejar
-                  preocupaciones.
+                La psicoterapia individual es un proceso donde un profesional de la salud mental trabaja en privado con el paciente para abordar desafíos emocionales o mentales. Se exploran pensamientos y emociones para promover la comprensión, el crecimiento personal y estrategias para enfrentar dificultades.Este enfoque personalizado ofrece un espacio confidencial y de apoyo para expresar y manejar preocupaciones.
                 </p>
                 {beneficios.map((beneficio, index) => {
                   return (
@@ -254,11 +251,7 @@ function SpipDesktop({ tms, nav }) {
                   <span className="text-color2 leading-52">Pareja</span>.
                 </h2>
                 <p className="text-16 font-lato leading-20 text-color7 mb-8">
-                  Proceso terapéutico que busca fortalecer relaciones, resolver
-                  conflictos y mejorar la comunicación entre las parejas.
-                  Proporciona herramientas para abordar desafíos y construir una
-                  base más sólida, promoviendo un crecimiento mutuo en la
-                  relación.
+                Proceso terapéutico que busca fortalecer relaciones, resolver conflictos y mejorar la comunicación entre las parejas. Proporciona herramientas para abordar desafíos y construir una base más sólida, promoviendo un crecimiento mutuo en la relación.
                 </p>
                 {beneficios2.map((beneficio, index) => {
                   return (
@@ -276,7 +269,7 @@ function SpipDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={pip6} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover"/>
+              <img src={pip6} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover" />
             </div>
           </div>
         </div>
@@ -286,7 +279,7 @@ function SpipDesktop({ tms, nav }) {
             Tu terapeuta.
           </h2>
           <div className="flex justify-center items-center flex-wrap gap-20">
-            <img src={pip7} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover"/>
+            <img src={pip7} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover" />
             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
               <h3
                 className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
@@ -330,7 +323,7 @@ function SpipDesktop({ tms, nav }) {
             {preguntas.map((pregunta, index) => (
               <div
                 key={index}
-                className="py-6 px-4 border border-color8 rounded-md h-fit"
+                className="py-6 px-4 border border-color8 rounded-2xl h-fit"
               >
                 <button
                   onClick={() => handleToggle(index)}

@@ -253,37 +253,30 @@ function SthDesktop({ tms, nav }) {
   return (
     <>
       <div className="w-full">
-      <div className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
-                    style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover"
-                    }}>
+        <div className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner})`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"
+          }}>
           <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
-          Terapias Holísticas
-                    </h1>
+            Terapias Holísticas
+          </h1>
         </div>
         <div className="flex flex-col items-center justify-center mx-20">
           <div className="flex flex-col items-center justify-between px-4">
             <div className="pt-12 flex items-center justify-between flex-wrap">
               <div className="flex flex-col max-w-[700px] max-h-[438px]">
-                <h2 className="text-48 font-[700] font-lato leading-52 mb-5 text-center">
+                <h2 className="text-48 font-[700] font-lato leading-52 mb-5 text-start">
                   ¿Por qué elegir{" "}
                   <span className="text-color2 leading-52">
                     Terapias Holísticas
                   </span>
                   ?
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[700px] text-center">
-                  Las terapias holísticas adoptan un enfoque integral que
-                  considera la conexión entre cuerpo, mente y espíritu, buscando
-                  equilibrar y fortalecer todos los aspectos de la persona. Con
-                  énfasis en la prevención y el bienestar general, estas
-                  terapias identifican causas subyacentes de los problemas de
-                  salud. Utilizando enfoques naturales, buscan minimizar efectos
-                  secundarios y promover la autorresponsabilidad en el
-                  autocuidado.
+                <p className="text-16 font-lato font-[400] leading-20 text-color7 mb-8 max-w-[700px] text-start">
+                  Las terapias holísticas adoptan un enfoque integral que considera la conexión entre cuerpo, mente y espíritu, buscando equilibrar y fortalecer todos los aspectos de la persona. Con énfasis en la prevención y el bienestar general, estas terapias identifican causas subyacentes de los problemas de salud. Utilizando enfoques naturales, buscan minimizar efectos secundarios y promover la autorresponsabilidad en el autocuidado.
                 </p>
               </div>
               <img src={th1} alt="HOUSE" className="w-[500px] h-[500px]" />
@@ -304,11 +297,9 @@ function SthDesktop({ tms, nav }) {
                   <span className="text-color2 leading-52">Terahercios</span>.
                 </h2>
                 <p className="text-16 font-lato leading-20 text-color7 my-8">
-                  Terapia de frecuencia que utiliza tecnología de terahercios
-                  para influir positivamente en la salud y el bienestar de tu
-                  cuerpo. Emite ondas que interactúan con las células y huesos.
-                  Ayuda a restaurar y mantener el equilibrio bioenergético de tu
-                  organismo.
+                  Terapia de frecuencia que utiliza tecnología de terahercios para influir positivamente en la salud y el bienestar de tu cuerpo.
+                  Emite ondas que interactúan con las células y huesos.
+                  Ayuda a restaurar y mantener el equilibrio bioenergético de tu organismo.
                 </p>
                 {beneficios.map((beneficio, index) => {
                   return (
@@ -318,7 +309,7 @@ function SthDesktop({ tms, nav }) {
                         <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
                           {beneficio.title}
                         </h3>
-                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                        <p className="text-20 font-lato font-[400] leading-28 text-color9">
                           {beneficio.description}
                         </p>
                       </div>
@@ -326,14 +317,14 @@ function SthDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={th2} alt="HOUSE" className="w-[600px] rounded-xl" />
+              <img src={th2} alt="HOUSE" className="w-[600px] rounded-2xl" />
             </div>
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th3}
                 alt="HOUSE"
-                className="w-[600px] rounded-xl"
+                className="w-[600px] rounded-2xl"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
@@ -355,7 +346,7 @@ function SthDesktop({ tms, nav }) {
                         <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
                           {beneficio.title}
                         </h3>
-                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                        <p className="text-20 font-lato font-[400] leading-28 text-color9">
                           {beneficio.description}
                         </p>
                       </div>
@@ -372,9 +363,7 @@ function SthDesktop({ tms, nav }) {
                   .
                 </h2>
                 <p className="text-16 font-lato leading-20 text-color7 my-8">
-                  Terapia complementaria con 38 esencias florales. Las
-                  propiedades de las flores de Bach ayudan a armonizar y
-                  corregir alteraciones mentales físicas y emocionales.
+                  Terapia complementaria con 38 esencias florales. Las propiedades de las Flores de Bach ayudan a armonizar y corregir alteraciones mentales físicas y emocionales.
                 </p>
                 {beneficios3.map((beneficio, index) => {
                   return (
@@ -384,7 +373,7 @@ function SthDesktop({ tms, nav }) {
                         <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
                           {beneficio.title}
                         </h3>
-                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                        <p className="text-20 font-lato font-[400] leading-28 text-color9">
                           {beneficio.description}
                         </p>
                       </div>
@@ -392,14 +381,14 @@ function SthDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={th4} alt="HOUSE" className="w-[600px] rounded-lg" />
+              <img src={th4} alt="HOUSE" className="w-[600px] rounded-2xl" />
             </div>
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th5}
                 alt="HOUSE"
-                className="w-[600px] h-[600px] rounded-lg object-cover"
+                className="w-[600px] h-[600px] rounded-2xl object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
@@ -421,7 +410,7 @@ function SthDesktop({ tms, nav }) {
                         <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
                           {beneficio.title}
                         </h3>
-                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                        <p className="text-20 font-lato font-[400] leading-28 text-color9">
                           {beneficio.description}
                         </p>
                       </div>
@@ -452,7 +441,7 @@ function SthDesktop({ tms, nav }) {
                         <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
                           {beneficio.title}
                         </h3>
-                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                        <p className="text-20 font-lato font-[400] leading-28 text-color9">
                           {beneficio.description}
                         </p>
                       </div>
@@ -460,14 +449,14 @@ function SthDesktop({ tms, nav }) {
                   );
                 })}
               </div>
-              <img src={th6} alt="HOUSE" className="w-[600px] h-[600px] rounded-lg object-cover" />
+              <img src={th6} alt="HOUSE" className="w-[600px] h-[600px] rounded-2xl object-cover" />
             </div>
 
             <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th7}
                 alt="HOUSE"
-                className="w-[600px] h-[600px] rounded-lg object-cover"
+                className="w-[600px] h-[600px] rounded-2xl object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
@@ -488,7 +477,7 @@ function SthDesktop({ tms, nav }) {
                         <h3 className="text-20 font-lato font-[700] leading-28 text-color6">
                           {beneficio.title}
                         </h3>
-                        <p className="text-20 font-lato font-[400] leading-28 text-color7">
+                        <p className="text-20 font-lato font-[400] leading-28 text-color9">
                           {beneficio.description}
                         </p>
                       </div>
@@ -500,48 +489,48 @@ function SthDesktop({ tms, nav }) {
           </div>
 
           <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-              <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
-                Tu terapeuta.
-              </h2>
-              <div className="flex justify-center items-center flex-wrap gap-20">
-                <img src={t1} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover object-top" />
-                <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
-                  <h3
-                    className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
-                    style={{ letterSpacing: "1px" }}
-                  >
-                    M.C. Rocío González Saucedo
-                  </h3>
-                  <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
-                    Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
-                    Educación en Diabetes, y Maestra en Ciencias Médicas y
-                    Nutrición Clínica.
-                  </h4>
-                  <p className="text-16 font-[400] text-color7 font-lato mb-12">
-                    Ingeniera Bioquímica con especialidad en Medio Ambiente y
-                    Sustentabilidad quién, al percatarse de la relación entre el
-                    entorno y la salud humana, decide cursar la maestría en
-                    Ciencias Médicas. Su fascinación por la influencia directa
-                    de la nutrición en la salud la llevó a profundizar en el
-                    estudio de la Nutrición Clínica, con un enfoque particular
-                    en personas que viven con Diabetes.
-                    <br />
-                    <br />
-                    Gracias a su formación como Terapeuta Holística, ha
-                    estudiado diversas técnicas de autoconocimiento y gestión
-                    emocional que complementan su enfoque clínico y permiten
-                    abordar a cada persona de manera integral, reconociendo la
-                    interconexión entre cuerpo, mente y espíritu.
-                  </p>
-                  <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
-                    <img src={unam} alt="" />
-                    <img src={u_colima} alt="" />
-                    <img src={imp} alt="" />
-                    <img src={uni} alt="" />
-                  </div>
+            <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
+              Tu terapeuta.
+            </h2>
+            <div className="flex justify-center items-center flex-wrap gap-20">
+              <img src={t1} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-2xl object-cover object-top" />
+              <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
+                <h3
+                  className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
+                  style={{ letterSpacing: "1px" }}
+                >
+                  M.C. Rocío González Saucedo
+                </h3>
+                <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
+                  Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
+                  Educación en Diabetes, y Maestra en Ciencias Médicas y
+                  Nutrición Clínica.
+                </h4>
+                <p className="text-16 font-[400] text-color7 font-lato mb-12">
+                  Ingeniera Bioquímica con especialidad en Medio Ambiente y
+                  Sustentabilidad quién, al percatarse de la relación entre el
+                  entorno y la salud humana, decide cursar la maestría en
+                  Ciencias Médicas. Su fascinación por la influencia directa
+                  de la nutrición en la salud la llevó a profundizar en el
+                  estudio de la Nutrición Clínica, con un enfoque particular
+                  en personas que viven con Diabetes.
+                  <br />
+                  <br />
+                  Gracias a su formación como Terapeuta Holística, ha
+                  estudiado diversas técnicas de autoconocimiento y gestión
+                  emocional que complementan su enfoque clínico y permiten
+                  abordar a cada persona de manera integral, reconociendo la
+                  interconexión entre cuerpo, mente y espíritu.
+                </p>
+                <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
+                  <img src={unam} alt="" />
+                  <img src={u_colima} alt="" />
+                  <img src={imp} alt="" />
+                  <img src={uni} alt="" />
                 </div>
               </div>
             </div>
+          </div>
 
           <div className="w-full px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12">
             <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
@@ -552,7 +541,7 @@ function SthDesktop({ tms, nav }) {
               {preguntas.map((pregunta, index) => (
                 <div
                   key={index}
-                  className="py-6 px-4 border border-color8 rounded-md h-fit"
+                  className="py-6 px-4 border border-color8 rounded-2xl h-fit"
                 >
                   <button
                     onClick={() => handleToggle(index)}

@@ -197,11 +197,14 @@ function SpipMobile({ tms }) {
                 <span className="text-color2 leading-52">psicoterapia</span>?
               </h2>
               <p className="text-16 font-lato leading-20 text-color7 mb-8 text-center">
-                En nuestro espacio, la confianza y la comodidad son
-                fundamentales. Aquí, te recibimos con los brazos abiertos,
-                comprometidos no solo a ofrecer servicios de bienestar de
-                calidad, sino a construir un refugio donde encuentres seguridad,
-                comprensión y apoyo.
+              Elegir la psicoterapia puede ser una decisión transformadora, ya que ofrece un <span className="font-bold">espacio seguro</span> para abordar problemas de salud mental, 
+                desarrollar habilidades de afrontamiento, <span className="font-bold">mejorar las relaciones</span>, explorar patrones de pensamiento 
+                y <span className="font-bold">recibir apoyo</span> durante momentos 
+                difíciles.
+                <br/>
+                <br/>
+                Además, puede proporcionar herramientas para el <span className="font-bold">crecimiento personal y de pareja</span>, aliviar el malestar emocional y prevenir problemas 
+                futuros, convirtiéndose en una inversión invaluable en el <span className="font-bold">bienestar emocional</span> y mental a largo plazo.
               </p>
               <img
                 src={pip1}
@@ -212,7 +215,7 @@ function SpipMobile({ tms }) {
 
             <div className="border-b border-gray-300 flex items-center justify-center mb-12 w-[328px] gap-20 flex-wrap">
               <h2 className="text-36 font-[700] font-lato leading-40 text-center">
-                ¿Qué <span className="text-color2 leading-52">terapia</span> es
+                ¿Qué <span className="text-color2 leading-52">psicoterapia</span> es
                 para mí?
               </h2>
               <div className="flex flex-wrap gap-8 justify-center items-center">
@@ -223,14 +226,7 @@ function SpipMobile({ tms }) {
                     <span className="text-color2 leading-52">Individual</span>.
                   </h2>
                   <p className="text-16 font-lato leading-20 text-color7 mb-8 text-center">
-                    La psicoterapia individual es un proceso donde un
-                    profesional de la salud mental trabaja en privado con el
-                    paciente para abordar desafíos emocionales o mentales. Se
-                    exploran pensamientos y emociones para promover la
-                    comprensión, el crecimiento personal y estrategias para
-                    enfrentar dificultades. Este enfoque personalizado ofrece un
-                    espacio confidencial y de apoyo para expresar y manejar
-                    preocupaciones.
+                  La psicoterapia individual es un proceso donde un profesional de la salud mental trabaja en privado con el paciente para abordar desafíos emocionales o mentales. Se exploran pensamientos y emociones para promover la comprensión, el crecimiento personal y estrategias para enfrentar dificultades.Este enfoque personalizado ofrece un espacio confidencial y de apoyo para expresar y manejar preocupaciones.
                   </p>
                   {beneficios.map((beneficio, index) => {
                     return (
@@ -260,12 +256,7 @@ function SpipMobile({ tms }) {
                     <span className="text-color2 leading-9">Pareja</span>.
                   </h2>
                   <p className="text-16 font-lato leading-20 text-color7 mb-8 text-center">
-                    Lorem ipsum dolor sit amet consectetur. Pretium tellus leo
-                    elit et et amet. Tristique volutpat vel aenean lectus a
-                    dapibus euismod turpis amet. Tellus commodo sit quis feugiat
-                    dui et pellentesque quis. Gravida velit nunc mi aliquam.
-                    Nullam leo sit faucibus tincidunt velit. Tellus in porta
-                    ornare faucibus tempus vel amet sed faucibus.
+                  Proceso terapéutico que busca fortalecer relaciones, resolver conflictos y mejorar la comunicación entre las parejas. Proporciona herramientas para abordar desafíos y construir una base más sólida, promoviendo un crecimiento mutuo en la relación.
                   </p>
                   {beneficios2.map((beneficio, index) => {
                     return (
@@ -331,7 +322,7 @@ function SpipMobile({ tms }) {
               {preguntas.map((pregunta, index) => (
                 <div
                   key={index}
-                  className="py-6 px-4 border border-color8 rounded-md h-fit"
+                  className="py-6 px-4 border border-color8 rounded-2xl h-fit"
                 >
                   <button
                     onClick={() => handleToggle(index)}

@@ -113,7 +113,7 @@ function SanDesktop({ tms, nav }) {
                         backgroundSize: "cover"
                     }}>
                     <h1 className='font-[700] text-[64px] text-color5 leading-52 font-lato'>
-                        Asesoría nutricional y Educación en Diabetes
+                        Asesoría Nutricional y Educación en Diabetes
                     </h1>
                 </div>
                 <div className='flex flex-col items-center justify-center mx-20'>
@@ -121,11 +121,11 @@ function SanDesktop({ tms, nav }) {
                         <div className="pb-12 flex items-center justify-center mb-12 w-full gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[700px]">
                                 <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
-                                ¿Por qué tomar <span className="text-color2 leading-52">Educación en Diabetes</span>?
+                                    ¿Por qué tomar <span className="text-color2 leading-52">Educación en Diabetes</span>?
                                 </h2>
-                                <p className="text-16 font-lato leading-20 text-color7 mb-8 max-w-[600px]">
-                                La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar la diabetes de manera efectiva en la vida diaria.<br /><br />
-                                El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
+                                <p className="text-16 font-semibold font-lato leading-20 text-color7 mb-8 max-w-[600px]">
+                                    La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar la diabetes de manera efectiva en la vida diaria.<br /><br />
+                                    El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
                                 </p>
                             </div>
                             <img src={an1} alt="HOUSE" className='w-[500px] border-b-stone-600 rounded-xl' />
@@ -135,46 +135,46 @@ function SanDesktop({ tms, nav }) {
                             <img src={an2} alt="HOUSE" className='w-[520px] border-b-stone-600 rounded-xl' />
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
-                                ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
+                                    ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
                                 </h2>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Importancia del monitoreo regular de niveles de glucosa.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        Importancia del monitoreo regular de <span className="font-semibold">niveles de glucosa.</span>
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Administración adecuada de insulina.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        Administración adecuada de <span className="font-semibold">insulina.</span>
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Planificación de comidas saludables.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        Planificación de <span className="font-semibold">comidas saludables.</span>
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Factores de riesgo y complicaciones asociadas con la diabetes.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        <span className="font-semibold">Factores de riesgo y complicaciones</span> asociadas con la diabetes.
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Habitos para implementar en la vida diaria.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        <span className="font-semibold">Habitos</span> para implementar en la vida diaria.
                                     </p>
                                 </div>
                             </div>
@@ -183,10 +183,10 @@ function SanDesktop({ tms, nav }) {
                         <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
-                                ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
+                                    ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
                                 </h2>
-                                <p className="font-lato leading-20 text-color7 mb-8 max-w-[600px]">
-                                Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
+                                <p className="font-lato font-semibold leading-20 text-color7 mb-8 max-w-[600px]">
+                                    Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
                                 </p>
                             </div>
                             <img src={an3} alt="HOUSE" className='w-[520px] h-[520px] rounded-xl object-cover' />
@@ -196,38 +196,38 @@ function SanDesktop({ tms, nav }) {
                             <img src={an4} alt="HOUSE" className='w-[520px] h-[520px] rounded-xl object-cover' />
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
-                                ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
+                                    ¿Qué puedes <span className="text-color2 leading-52">aprender</span>?
                                 </h2>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Planificación de comidas equilibradas.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        Planificación de <span className="font-semibold">comidas equilibradas.</span>
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                        Mejora de funciones cognitivas como la memoria y la atención.Estrategias para implementar cambios positivos en tu estilo de vida
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        Estrategias para implementar <span className="font-semibold">cambios positivos</span> en tu estilo de vida.
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Entendimiento de etiquetas nutrimentales.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                        Entendimiento de <span className="font-semibold">etiquetas nutrimentales.</span>
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-start mb-4 gap-2">
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[700] leading-28 text-color7 max-w-[544px]">
-                                    Control de porciones para equilibrar la ingesta calórica.
+                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <span className="font-semibold">Control de porciones</span> para equilibrar la ingesta calórica.
                                     </p>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@ function SanDesktop({ tms, nav }) {
                         </h2>
                         <div className="flex flex-col md:grid md:grid-cols-2 gap-4 w-full max-w-[1280px]">
                             {preguntas.map((pregunta, index) => (
-                                <div key={index} className="py-6 px-4 border border-color8 rounded-md h-fit">
+                                <div key={index} className="py-6 px-4 border border-color8 rounded-2xl h-fit">
                                     <button onClick={() => handleToggle(index)} className="flex justify-between items-center w-full text-left">
                                         <span className="text-20 font-lato font-[700] leading-20 text-color7">
                                             {pregunta.title}
@@ -268,7 +268,7 @@ function SanDesktop({ tms, nav }) {
                             ))}
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+                    <div className="flex flex-col justify-center items-center pb-16 mt-32">
                         <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[360px] mb-12 text-center">
                             Tu terapeuta.
                         </h2>

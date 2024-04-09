@@ -6,12 +6,13 @@ module.exports = {
       colors: {
         color1: "#EBDFC7",
         color2: "#B18431",
-        color3: "#614035",
+        color3: "#21272A",
         color4: "#D9D9D9",
         color5: "#FFFFFF",
         color6: "#1E1E1E",
         color7: "#353738",
-        color8: "#DDE1E6"
+        color8: "#DDE1E6",
+        color9: "#6A6A6A"
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],

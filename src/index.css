@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .custom-arrow {
     z-index: 2;
     color: #000; /* Cambia al color del ícono que necesites */

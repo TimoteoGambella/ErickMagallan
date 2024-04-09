@@ -1,41 +1,17 @@
-import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.svg";
+// MobileNavbar.js
+import React, { useState } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import { AiOutlineMessage } from "react-icons/ai";
 import { FiChevronDown } from "react-icons/fi"; // Importar el ícono de la flecha hacia abajo
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 
-const Navbar = () => {
+const MobileNavbar = ({ menu, scrollToBottom, currentPath, isLinkActive, isInServicios }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPath, setCurrentPath] = useState("");
   const navigate = useNavigate();
-  const location = useLocation();
-  const menu = [
-    { name: "Inicio", link: "/" },
-    { name: "Servicios", link: "/servicios/emt" },
-    { name: "Nosotros", link: "/nosotros" },
-  ];
 
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    setCurrentPath(location.pathname);
-  }, [location.pathname]);
-
-  const isInServicios = (path) => {
-    return path.includes("/servicios/");
-  };
-
-  const isLinkActive = (link) => {
-    return (
-      currentPath === link ||
-      (link !== "/" && currentPath.startsWith(link))
-    );
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -54,7 +30,7 @@ const Navbar = () => {
         <button
           type="button"
           className="inline-flex items-center p-2 ml-3 text-gray-500 rounded-lg md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={toggleMenu}
         >
           <MdOutlineMenu className="w-6 h-6" />
         </button>
@@ -65,7 +41,10 @@ const Navbar = () => {
             {menu.map((item, index) => (
               <li key={index} className="md:mr-5">
                 <p
-                  onClick={() => navigate(item.link)}
+                  onClick={() => {
+                    navigate(item.link);
+                    toggleMenu(); // Cerrar menú al hacer clic en un enlace
+                  }}
                   className={`block py-2 pr-4 pl-3 cursor-pointer hover:color2 md:hover:bg-transparent text-16 ${
                     isLinkActive(item.link) ||
                     (item.name === "Servicios" && isInServicios(currentPath))
@@ -80,18 +59,24 @@ const Navbar = () => {
                 </p>
               </li>
             ))}
+            {/* Botón de Agenda una cita en el menú hamburguesa */}
+            <li className="md:hidden">
+              <button
+                onClick={() => {
+                  toggleMenu();
+                  scrollToBottom(); // Cerrar menú y desplazarse hacia abajo al hacer clic
+                }}
+                className="flex bg-color1 hover:bg-color2 text-color6 font-lato font-[700] py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 md:mt-0 gap-1 items-center justify-center text-16 leading-16"
+              >
+                <AiOutlineMessage className="w-4 h-4" />
+                Agenda una cita
+              </button>
+            </li>
           </ul>
         </div>
-        <button
-          onClick={scrollToBottom}
-          className="bg-color1 hover:bg-color2 text-color6 font-lato font-[700] py-3 px-4 rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 md:mt-0 flex gap-1 items-center justify-center text-16 leading-16"
-        >
-          <AiOutlineMessage className="w-4 h-4" />
-          Agenda una cita
-        </button>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default MobileNavbar;

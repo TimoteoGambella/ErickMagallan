@@ -5,10 +5,12 @@ import cat from "../assets/cat.svg";
 import logo2 from "../assets/logo-white.svg";
 import { FaFacebook, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { BsTelephone } from "react-icons/bs";
-import { MdOutlineEmail } from "react-icons/md";
-import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import { MdOutlineMail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
+import mailIconOpen from "../assets/mail-open-outline.svg";
+import mailIcon from "../assets/mail-outline.svg";
+import timer from "../assets/timer-outline.svg";
+import today from "../assets/today-outline.svg";
+import viber from "../assets/viber-circle.svg";
+import location from "../assets/location-outline.svg";
 
 function FooterMobile () {
     const navigate = useNavigate();
@@ -22,7 +24,7 @@ function FooterMobile () {
     const contactInfo = [
         {
             icon: <FaWhatsapp className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
+            secondIcon: <img src={viber} alt="Correo electrónico" />,
             method: 'Vía Whatsapp',
             details: '(+52) 312 339 93 14',
             day: 'Lunes a Viernes',
@@ -30,23 +32,23 @@ function FooterMobile () {
         },
         {
             icon: <BsTelephone className='w-9 h-9' />,
-            secondIcon: <LiaPhoneVolumeSolid className='w-4 h-4'/>,
+            secondIcon: <img src={viber} alt="Correo electrónico" />,
             method: 'Vía telefónica',
             details: '(312) 312 33 50 75 / 312 312 98 93',
             day: 'Lunes a Viernes',
             hour: '9am a 8pm'
         },
         {
-            icon: <MdOutlineEmail className='w-9 h-9' />,
-            secondIcon: <MdOutlineMail className='w-4 h-4'/>,
+            icon: <img src={mailIconOpen} alt="Correo electrónico" className='w-9 h-9' />,
+            secondIcon: <img src={mailIcon} alt="Correo electrónico" />,
             method: 'Vía email',
             details: 'drnogalesgalvan@gmail.com',
             day: 'Lunes a Viernes',
             hour: '9am a 8pm'
         },
         {
-            icon: <IoLocationOutline className='w-9 h-9' />,
-            secondIcon: <IoLocationOutline className='w-6 h-6'/>,
+            icon: <img src={location} alt="location" className="w-9 h-9" />,
+            secondIcon: <img src={location} alt="location" className="w-6 h-6" />,
             method: 'Nuestro domicilio',
             details: 'Calle Manuel Payno #550 Jardines Vista Hermosa, Colima, Col.',
             day: 'Lunes a Viernes',
@@ -54,7 +56,7 @@ function FooterMobile () {
         },
     ];
     return(
-        <>
+        <div id="footer">
         <div className='flex flex-col items-center justify-center px-4'>
                 <div className="pb-6 flex flex-col items-center justify-center mt-16 max-w-[320px]">
                     <h2 className="text-36 font-[700] font-lato  leading-36 mb-4">
@@ -68,7 +70,7 @@ function FooterMobile () {
             <div className='flex flex-col items-center justify-center gap-8'>
                 {contactInfo.map((info, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[328px] min-h-[292px] gap-8">
-                        <p>
+                        <p className="ml-[-2px]">
                             {info.icon}
                         </p>
                         <h3 className="font-[700] leading-24 text-24 mb-2">{info.method}</h3>
@@ -77,12 +79,12 @@ function FooterMobile () {
                                 {info.secondIcon}
                                 {info.details}
                             </p>
-                            <p className="text-gray-500 flex items-center justify-center gap-2">
-                                <RiCalendarEventLine/>
+                            <p className="text-gray-500 font-semibold flex items-center justify-center gap-2">
+                            <img src={today} alt="Correo electrónico" />
                                 {info.day}
                             </p>
-                            <p className="text-gray-500 flex items-center justify-center gap-2">
-                                <IoIosTimer/>
+                            <p className="text-gray-500 font-semibold flex items-center justify-center gap-2">
+                                <img src={timer} alt="Correo electrónico" />
                                 {info.hour}
                             </p>
                             {info.method === "Nuestro domicilio" && 
@@ -121,7 +123,7 @@ function FooterMobile () {
                 </div>
                 <p>Psicomed © 2023. Todos los derechos reservados.</p>
             </div>
-        </>
+        </div>
     )
 }
 
