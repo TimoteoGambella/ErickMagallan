@@ -5,13 +5,13 @@ import pip6 from "../../assets/pip/Psicoterapia de Pareja (1).jpg";
 import pip7 from "../../assets/professionals/Dr-José-Luis.jpg";
 import pip8 from "../../assets/pip/¿Por que asistir a una psicoterapia_ (1).jpg";
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterDesktop from ".././FooterDesktop";
+import FooterDesktop from "../Footer/FooterDesktop";
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
 import { useState } from "react";
 
-function SpipDesktop({ tms, nav }) {
+function SpipDesktop() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {

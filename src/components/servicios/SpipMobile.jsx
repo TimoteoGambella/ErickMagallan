@@ -5,14 +5,14 @@ import pip3 from "../../assets/pip/Psicoterapia individual (1).jpg";
 import heart from "../../assets/pip-4.svg";
 import pip7 from "../../assets/professionals/Dr-José-Luis.jpg";
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterMobile from ".././FooterMobile";
+import FooterMobile from "../Footer/FooterMobile";
 import { useState } from "react";
 
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
 
-function SpipMobile({ tms }) {
+function SpipMobile() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {

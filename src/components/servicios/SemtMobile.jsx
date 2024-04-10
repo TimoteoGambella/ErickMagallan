@@ -4,7 +4,7 @@ import emt2 from "../../assets/emt/02.png";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { FaCircle } from "react-icons/fa";
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterMobile from ".././FooterMobile";
+import FooterMobile from "../Footer/FooterMobile";
 import Slider from "react-slick";
 import { publis_tms } from "../../publis";
 import { CgFileDocument } from "react-icons/cg";
@@ -19,8 +19,9 @@ import uni from "../../assets/univa.svg";
 
 import t1 from "../../assets/professionals/Dr-José-Luis.jpg";
 import t2 from "../../assets/professionals/MC-Rocío-González.jpg";
+import { settings, tms } from "../../utils";
 
-function SemtMobile({ tms, settings }) {
+function SemtMobile() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {

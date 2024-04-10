@@ -12,13 +12,13 @@ import uni from "../../assets/univa.svg";
 
 import heart from "../../assets/pip-4.svg";
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterDesktop from "../FooterDesktop";
+import FooterDesktop from "../Footer/FooterDesktop";
 import unam from "../../assets/unam.svg";
 import u_colima from "../../assets/u-de-colima.svg";
 import imp from "../../assets/imp.svg";
 import { useState } from "react";
 
-function SthDesktop({ tms, nav }) {
+function SthDesktop() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {

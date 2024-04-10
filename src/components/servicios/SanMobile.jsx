@@ -12,10 +12,10 @@ import uni from "../../assets/univa.svg";
 
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterMobile from ".././FooterMobile";
+import FooterMobile from "../Footer/FooterMobile";
 import { useState } from "react";
 
-function SanMobile({ tms, settings }) {
+function SanMobile() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {

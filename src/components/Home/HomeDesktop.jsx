@@ -1,12 +1,12 @@
-import house from "../assets/home-1.svg";
-import service1 from "../assets/home/TMS.jpg";
-import services from "../assets/home/Nuestros servicios.jpeg";
+import house from "../../assets/home-1.svg";
+import service1 from "../../assets/home/TMS.jpg";
+import services from "../../assets/home/Nuestros servicios.jpeg";
 import { FaArrowRight } from "react-icons/fa6";
 
 import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
-import banner from "../assets/home/banner-home.jpg";
-import FooterDesktop from "./FooterDesktop";
+import banner from "../../assets/home/banner-home.jpg";
+import FooterDesktop from "../Footer/FooterDesktop";
 import { useState } from "react";
 import { GoDash, GoPlus } from "react-icons/go";
 
@@ -145,6 +145,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
   ];
 
   return (
+    <>
     <div className="flex flex-col items-center justify-center w-full">
       <div
         className="w-full flex flex-col items-center justify-center h-[480px] gap-8 text-center mb-20 relative"
@@ -385,6 +386,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
       </div>
       <FooterDesktop />
     </div>
+    </>
   );
 }
 

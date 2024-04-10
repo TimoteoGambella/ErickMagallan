@@ -4,7 +4,7 @@ import emt2 from "../../assets/emt/02.png";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { FaCircle, FaRegArrowAltCircleDown } from "react-icons/fa";
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterDesktop from ".././FooterDesktop";
+import FooterDesktop from "../Footer/FooterDesktop";
 import { publis_tms } from "../../publis";
 import { CgFileDocument } from "react-icons/cg";
 import { PiUserCircleFill } from "react-icons/pi";
@@ -17,10 +17,13 @@ import uni from "../../assets/univa.svg";
 
 import t1 from "../../assets/professionals/Dr-José-Luis.jpg";
 import t2 from "../../assets/professionals/MC-Rocío-González.jpg";
+import { tms } from "../../utils";
 
-function SemtDesktop({ tms, nav }) {
+function SemtDesktop() {
     const [expandedIndex, setExpandedIndex] = useState(null);
     const [visiblePublications, setVisiblePublications] = useState(6);
+
+    
 
     const handleLoadMore = () => {
         setVisiblePublications(prevCount => prevCount + 6);

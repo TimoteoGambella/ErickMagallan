@@ -14,11 +14,11 @@ import imp from "../../assets/imp.svg";
 import uni from "../../assets/univa.svg";
 
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterMobile from ".././FooterMobile";
+import FooterMobile from "../Footer/FooterMobile";
 import { useState } from "react";
 import heart from "../../assets/pip-4.svg";
 
-function SthMobil({ tms, settings }) {
+function SthMobil() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const handleToggle = (index) => {

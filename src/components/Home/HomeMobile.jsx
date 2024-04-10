@@ -1,13 +1,13 @@
-import house from "../assets/home-1.svg";
-import service1 from "../assets/home/TMS.jpg";
-import services from "../assets/home/Nuestros servicios.jpeg";
+import house from "../../assets/home-1.svg";
+import service1 from "../../assets/home/TMS.jpg";
+import services from "../../assets/home/Nuestros servicios.jpeg";
 import { FaArrowRight } from "react-icons/fa6";
 
 import Slider from "react-slick";
 
 import { useNavigate } from "react-router-dom";
-import banner from "../assets/home/banner-home.jpg";
-import FooterMobile from "./FooterMobile";
+import banner from "../../assets/home/banner-home.jpg";
+import FooterMobile from "../Footer/FooterMobile";
 import { useState } from "react";
 import { GoDash, GoPlus } from "react-icons/go";
 

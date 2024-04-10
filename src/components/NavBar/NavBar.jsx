@@ -1,42 +1,34 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
 import DesktopNavbar from "./DesktopNavBar";
 import { useMediaQuery } from "@react-hook/media-query";
 import MobileNavbar from "./MobilNavBar";
 
 const Navbar = () => {
-  const [currentPath, setCurrentPath] = useState("");
-  const location = useLocation();
-  const menu = [
-    { name: "Inicio", link: "/" },
-    { name: "Servicios", link: "/servicios/emt" },
-    { name: "Nosotros", link: "/nosotros" },
-  ];
 
-  const scrollToBottom = () => {
-    const footerElement = document.getElementById("footer");
-    if (footerElement) {
-      footerElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-  };
-
-  useEffect(() => {
-    setCurrentPath(location.pathname);
-  }, [location.pathname]);
-
-  const isInServicios = (path) => {
-    return path.includes("/servicios/");
-  };
-
-  const isLinkActive = (link) => {
-    return (
-      currentPath === link ||
-      (link !== "/" && currentPath.startsWith(link))
-    );
-  };
+    const menu = [
+      { name: "Inicio", link: "/" },
+      { name: "Servicios", link: "/servicios" },
+      { name: "Nosotros", link: "/nosotros" },
+    ];
+  
+    const subMenu = [
+      {
+        title: "Estimulación Magnética Transcraneal",
+        link: "/servicios/emt"
+      },
+      {
+        title: "Psicoterapia Individual y de Pareja",
+        link: "/servicios/pip"
+      },
+      {
+        title: "Asesoría Nutricional",
+        link: "/servicios/an"
+      },
+      {
+        title: "Terapia Holística",
+        link: "/servicios/th"
+      }
+    ];
 
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -45,18 +37,12 @@ const Navbar = () => {
       {isDesktop ? (
         <DesktopNavbar
           menu={menu}
-          scrollToBottom={scrollToBottom}
-          currentPath={currentPath}
-          isLinkActive={isLinkActive}
-          isInServicios={isInServicios}
+          subMenu={subMenu}
         />
       ) : (
         <MobileNavbar
           menu={menu}
-          scrollToBottom={scrollToBottom}
-          currentPath={currentPath}
-          isLinkActive={isLinkActive}
-          isInServicios={isInServicios}
+          subMenu={subMenu}
         />
       )}
     </div>

@@ -11,11 +11,11 @@ import uni from "../../assets/univa.svg";
 import t2 from "../../assets/professionals/MC-Rocío-González.jpg";
 
 import { GoDash, GoPlus } from "react-icons/go";
-import FooterDesktop from "../FooterDesktop";
+import FooterDesktop from "../Footer/FooterDesktop";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { useState } from "react";
 
-function SanDesktop({ tms, nav }) {
+function SanDesktop() {
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     const handleToggle = (index) => {

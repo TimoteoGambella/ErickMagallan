@@ -1,22 +1,22 @@
-import banner from "../assets/nosotros/11.jpg";
+import banner from "../../assets/nosotros/11.jpg";
 
-import unam from "../assets/unam.svg";
-import u_colima from "../assets/u-de-colima.svg";
-import imp from "../assets/imp.svg";
-import uni from "../assets/univa.svg";
+import unam from "../../assets/unam.svg";
+import u_colima from "../../assets/u-de-colima.svg";
+import imp from "../../assets/imp.svg";
+import uni from "../../assets/univa.svg";
 
-import t1 from "../assets/professionals/Dr-José-Luis.jpg";
-import t2 from "../assets/professionals/MC-Rocío-González.jpg";
+import t1 from "../../assets/professionals/Dr-José-Luis.jpg";
+import t2 from "../../assets/professionals/MC-Rocío-González.jpg";
 
-import ins1 from "../assets/nosotros/11.jpg"
-import ins2 from "../assets/nosotros/6.jpg"
-import ins3 from "../assets/nosotros/12.jpeg"
+import ins1 from "../../assets/nosotros/11.jpg"
+import ins2 from "../../assets/nosotros/6.jpg"
+import ins3 from "../../assets/nosotros/12.jpeg"
 
-import FooterDesktop from "./FooterDesktop";
+import FooterDesktop from "../Footer/FooterDesktop";
 import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
-function NosotrosDesktop ({features, experts}) {
+function NosotrosDesktop ({features}) {
     const navigate = useNavigate();
 
     return (
@@ -142,7 +142,7 @@ function NosotrosDesktop ({features, experts}) {
                     </div>
                     
 
-            <div className='flex flex-col items-center border-b border-gray-300 justify-center px-4 py-16'>
+            <div className='flex flex-col items-center justify-center px-4 py-16'>
                 <h2 className="text-48 font-[700] font-lato  leading-36 mb-12">
                     Conoce nuestras <span className="text-color2">instalaciones</span>.
                 </h2>

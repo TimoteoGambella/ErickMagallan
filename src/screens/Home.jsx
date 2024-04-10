@@ -7,27 +7,30 @@ import professuibak2 from '../assets/professionals/MC-Rocío-González.jpg';
 import character1 from "../assets/person1.svg"
 import character2 from "../assets/person2.svg"
 import character3 from "../assets/person3.svg"
-import HomeMobile from '../components/HomeMobile';
-import HomeDesktop from '../components/HomeDesktop';
+import HomeMobile from '../components/Home/HomeMobile';
+import HomeDesktop from '../components/Home/HomeDesktop';
+import { useMediaQuery } from '@react-hook/media-query';
 
-function Home () {
+function Home() {
+    const isDesktop = useMediaQuery("(min-width: 768px)");
+
     const features = [
         {
-            icon: <FaUserFriends className='w-12 h-12'/>,
+            icon: <FaUserFriends className='w-12 h-12' />,
             title: 'Equipo de expertos',
             description: 'Tenemos las herramientas para ofrecerte soluciones basadas en los más recientes hallazgos y metodologías en el ámbito psiquiátrico y terapéutico.',
             linkText: 'Conoce al equipo',
             link: '/nosotros'
         },
         {
-            icon: <IoChatbubblesSharp className='w-12 h-12'/>,
+            icon: <IoChatbubblesSharp className='w-12 h-12' />,
             title: 'Atención personalizada',
             description: 'Adaptamos nuestro enfoque y tratamiento según tus necesidades específicas, garantizando un cuidado a medida y centrado en ti.',
             linkText: 'Nuestros servicios',
             link: '/servicios/emt'
         },
         {
-            icon: <IoIosHeartHalf className='w-12 h-12'/>,
+            icon: <IoIosHeartHalf className='w-12 h-12' />,
             title: 'Entorno seguro y respetuoso',
             description: 'Te ofrecemos un espacio donde puedes sentirte seguro y escuchado, en un ambiente de total confidencialidad.',
             linkText: 'Conoce el espacio',
@@ -50,22 +53,22 @@ function Home () {
 
     const testimonials = [
         {
-            image: character1, 
+            image: character1,
             name: 'Ambar Ramírez',
             feedback: '"Psicomed se ha convertido en mi lugar de paz, el Dr. Nogales me hizo sentir escuchada y apoyada en todo momento. Además, el lugar está muy bonito y las terapias me han ayudado a mejorar mi bienestar emocional. ¡Los recomiendo altamente!"'
         },
         {
-            image: character2, 
+            image: character2,
             name: 'Erick Magallán',
             feedback: '"Mi experiencia en Psicomed fue excepcional. El enfoque integral en la salud mental y emocional me permitió encontrar equilibrio en mi vida. Además el personal es cálido y altamente capacitado, sin lugar a dudas lo recomiendo a mis amigos y familiares."'
         },
         {
-            image: character3, 
+            image: character3,
             name: 'Julieta González',
             feedback: '"Psicomed ha sido mi guía en el viaje hacia el equilibrio emocional. La combinación de terapias innovadoras y un equipo amable me hizo sentir respaldado en todo momento. Este centro en Colima es la respuesta perfecta para quienes buscan mejorar su salud mental."'
         },
     ];
-    
+
     const settings = {
         dots: false,
         infinite: true,
@@ -77,27 +80,26 @@ function Home () {
         cssEase: "linear",
     };
 
-      return (
-        <>
-            <div className="block md:hidden">
-                <HomeMobile 
+    return (
+        <div>
+            {isDesktop ? (
+                <HomeDesktop
                     features={features}
                     experts={experts}
                     testimonials={testimonials}
                     settings={settings}
                 />
-            </div>
-            <div className="hidden md:block">
-                <HomeDesktop 
+            ) : (
+                <HomeMobile
                     features={features}
                     experts={experts}
                     testimonials={testimonials}
                     settings={settings}
                 />
-            </div>
-        </>
+            )}
+        </div>
     )
-    
+
 }
 
 export default Home
