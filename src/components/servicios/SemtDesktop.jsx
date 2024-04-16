@@ -128,8 +128,8 @@ function SemtDesktop() {
             </div>
             <div className="flex flex-col items-center">
                 <div className='flex flex-col items-center justify-center w-full mx-20'>
-                    <div className='flex flex-col items-center justify-center px-4 w-[1280px]'>
-                        <div className="pb-12 border-b border-gray-300 flex items-center justify-between mb-12 gap-20 w-[1200px]">
+                    <div className='flex flex-col items-center justify-center px-4 w-full'>
+                        <div className="pb-12 border-b border-gray-300 flex flex-wrap items-center justify-evenly mb-12 gap-20 w-full">
                             <div className="flex flex-col max-w-[600px] flex-wrap">
                                 <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                                     ¿Qué es la <span className="text-color2 leading-52">Estimulación Magnética Transcraneal</span>?
@@ -144,7 +144,7 @@ function SemtDesktop() {
                             <img src={emt1} alt="HOUSE" className='h-[595px] border-b-stone-600' />
                         </div>
 
-                        <div className="pb-36 border-b text-lato border-gray-300 flex items-center justify-between mb-12 gap-20 w-[1200px]">
+                        <div className="pb-36 border-b text-lato border-gray-300 flex flex-wrap items-center justify-evenly mb-12 gap-20 w-full">
                             <img src={emt2} alt="HOUSE" className='h-[595px] border-b-stone-600' />
                             <div className="flex flex-col text-lato max-w-[600px] flex-wrap">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
