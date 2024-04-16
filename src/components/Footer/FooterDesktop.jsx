@@ -138,12 +138,12 @@ function FooterDesktop() {
                             <img onClick={() => scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]' />
                         </div>
                         <nav className="mb-4 flex flex-col items-center justify-center w-full">
-                            <ul className="flex space-x-4 items-center justify-center mb-4">
+                            <ul className="flex space-x-4 items-center justify-center mb-4 gap-1">
                                 <li><p onClick={() => scrollNav("/")} className="hover:cursor-pointer">Inicio</p></li>
                                 <li><p onClick={() => scrollNav("/nosotros")} className="hover:cursor-pointer">Nosotros</p></li>
                                 <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Estimulación Magnética Transcraneal</p></li>
                             </ul>
-                            <ul className="flex space-x-4 items-center justify-center">
+                            <ul className="flex space-x-4 items-center justify-center gap-1">
                                 <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Psicoterapia Ind. y de Pareja</p></li>
                                 <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Asesoría Nutricional</p></li>
                                 <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Terapia Holística</p></li>

@@ -109,7 +109,7 @@ function FooterMobile() {
             <div className='bg-color6 w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
                 <img src={logo2} alt="LOGO" onClick={() => scrollNav("/")} />
                 <nav className="mb-4">
-                    <ul className="flex space-x-4">
+                    <ul className="flex space-x-4 gap-2">
                         <li><p onClick={() => scrollNav("/")}>Inicio</p></li>
                         <li><p onClick={() => scrollNav("/servicios/emt")}>Servicios</p></li>
                         <li><p onClick={() => scrollNav("/nosotros")}>Nosotros</p></li>
