@@ -4,7 +4,22 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FiChevronDown } from "react-icons/fi";
 
-const DesktopNavbar = ({menu, subMenu}) => {
+/**
+ * @typedef {Object} MenuItemProps
+ * @property {Object} item
+ * @property {Object} location
+ * @property {Object} subMenu
+ * @property {Function} setDisplay
+ * @property {Function} handleItemClick
+ * @property {Boolean} isServiciosPage
+ * @property {String} display
+ */
+
+/**
+ * @summary Es la clase que contiene la fuente de la familia a utilizar
+ */
+
+const DesktopNavbar = ({ menu, subMenu }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [display, setDisplay] = useState("hidden");
@@ -26,10 +41,6 @@ const DesktopNavbar = ({menu, subMenu}) => {
     }
   };
 
-  const handleServiciosHover = (isHovering) => {
-    setDisplay(isHovering ? "flex" : "hidden");
-  };
-
   const isServiciosPage = location.pathname.startsWith("/servicios");
 
   return (
@@ -46,38 +57,18 @@ const DesktopNavbar = ({menu, subMenu}) => {
           />
         </div>
         <ul className="hidden md:flex flex-row space-x-8 md:mt-0 md:font-medium">
-        {menu.map((item, index) => {
-            const liProps = {};
-            if (item.name === "Servicios") {
-              liProps.onMouseEnter = () => handleServiciosHover(true);
-              liProps.onMouseLeave = () => handleServiciosHover(false);
-            }
-            return (
-              <li key={index} className="md:mr-5" {...liProps}>
-                <p
-                  onClick={() => handleItemClick(item)}
-                  className={`flex items-center py-2 pr-4 pl-3 cursor-pointer ${
-                    item.link === location.pathname ||
-                    (item.name === "Servicios" && isServiciosPage)
-                      ? "text-color2"
-                      : "text-color6"
-                  } ${item.name.toLowerCase()} md:hover:bg-transparent text-16`}
-                >
-                  {item.name}
-                  {item.name === "Servicios" && (
-                    <FiChevronDown className="w-4 h-4 ml-1" />
-                  )}
-                </p>
-                {item.name === "Servicios" && (
-                  <SubMenu
-                    subMenu={subMenu}
-                    display={display}
-                    setDisplay={setDisplay}
-                  />
-                )}
-              </li>
-            );
-          })}
+          {menu.map((item, index) => (
+            <MenuItem
+              handleItemClick={handleItemClick}
+              isServiciosPage={isServiciosPage}
+              setDisplay={setDisplay}
+              location={location}
+              display={display}
+              subMenu={subMenu}
+              item={item}
+              key={index}
+            />
+          ))}
         </ul>
         <button
           onClick={scrollToBottom}
@@ -91,7 +82,47 @@ const DesktopNavbar = ({menu, subMenu}) => {
   );
 };
 
-const SubMenu = ({ subMenu, display, setDisplay }) => {
+/**
+ *
+ * @param {MenuItemProps} props
+ * @returns
+ */
+const MenuItem = (props) => {
+  const { item, location, subMenu, setDisplay, display } = props;
+  const liProps = {};
+  if (item.name === "Servicios") {
+    liProps.onMouseEnter = () => handleServiciosHover(true);
+    liProps.onMouseLeave = () => handleServiciosHover(false);
+  }
+
+  const handleServiciosHover = (isHovering) => {
+    setDisplay(isHovering ? "flex" : "hidden");
+  };
+
+  return (
+    <li className={`md:mr-5 ${FONT_FAMILY_CLASS} font-semibold`} {...liProps}>
+      <p
+        onClick={() => props.handleItemClick(item)}
+        className={`flex items-center py-2 pr-4 pl-3 cursor-pointer ${
+          item.link === location.pathname ||
+          (item.name === "Servicios" && props.isServiciosPage)
+            ? "text-color2"
+            : "text-color6"
+        } ${item.name.toLowerCase()} md:hover:bg-transparent text-16`}
+      >
+        {item.name}
+        {item.name === "Servicios" && (
+          <FiChevronDown className="w-4 h-4 ml-1" />
+        )}
+      </p>
+      {item.name === "Servicios" && (
+        <SubMenu subMenu={subMenu} display={display} />
+      )}
+    </li>
+  );
+};
+
+const SubMenu = ({ subMenu, display }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
