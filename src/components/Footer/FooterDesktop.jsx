@@ -58,7 +58,7 @@ function FooterDesktop() {
     return (
         <div id="footer" className="w-full">
             <div className="w-full flex flex-col items-center">
-                <div className="w-[1280px] my-12">
+                <div className="w-full my-12 px-3">
                     <div className='flex flex-col items-center justify-center border-t'>
                         <div className="pb-6 flex items-center justify-center mt-16 gap-8">
                             <div className='flex flex-col mb-8'>
@@ -77,7 +77,7 @@ function FooterDesktop() {
                         {contactInfo.map((info, index) => (
                             <>
                                 {info.method !== "Nuestro domicilio" &&
-                                    <div key={index} className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[405px] min-h-[230px] gap-8">
+                                    <div key={index} className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[350px] min-h-[230px] gap-8">
                                         <p>
                                             {info.icon}
                                         </p>
@@ -132,12 +132,12 @@ function FooterDesktop() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-color6 font-lato w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
-                    <div className='flex items-center justify-between w-[1280px]'>
-                        <div className="w-[300px]">
+                <div className='bg-color6 font-lato w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8 px-3'>
+                    <div className='flex items-center justify-between gap-10 w-full'>
+                        <div className="w-auto min-w-36 max-w-[300px]">
                             <img onClick={() => scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]' />
                         </div>
-                        <nav className="mb-4 flex flex-col items-center justify-center w-full">
+                        <nav className="mb-4 flex flex-col items-center justify-center w-full flex-grow-0">
                             <ul className="flex space-x-4 items-center justify-center mb-4 gap-1">
                                 <li><p onClick={() => scrollNav("/")} className="hover:cursor-pointer">Inicio</p></li>
                                 <li><p onClick={() => scrollNav("/nosotros")} className="hover:cursor-pointer">Nosotros</p></li>
@@ -149,12 +149,12 @@ function FooterDesktop() {
                                 <li><p onClick={() => scrollNav("/servicios/emt")} className="hover:cursor-pointer">Terapia Holística</p></li>
                             </ul>
                         </nav>
-                        <div className="flex justify-end space-x-4 mb-4 w-[300px]">
+                        <div className="flex justify-end space-x-4 mb-4 w-auto">
                             <a href="https://www.facebook.com/C.B.I.Psicomed" target="_blank" rel="noopener noreferrer"><FaFacebook size={24} /></a>
                             <a href="mailto:drnogalesgalvan@gmail.com"><FaEnvelope size={24} /></a>
                         </div>
                     </div>
-                    <p className='w-[1280px] mx-auto text-center'>Psicomed © 2023. Todos los derechos reservados.</p>
+                    <p className='w-full mx-auto text-center'>Psicomed © 2023. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>

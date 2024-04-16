@@ -167,7 +167,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
         </h2>
       </div>
 
-      <div className="px-20">
+      <div className="w-full px-20">
         <div className="flex flex-col items-center justify-between">
           <div className="border-b border-gray-300 flex items-center justify-between flex-wrap w-full">
             <div className="flex flex-col gap-5">
@@ -329,7 +329,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
             <h2 className="text-48 font-[700] font-lato text-color6 mb-12 text-center">
               Nuestros <span className="text-color2 leading-40">expertos</span>.
             </h2>
-            <div className="flex items-top justify-center gap-24">
+            <div className="flex flex-wrap items-top justify-center gap-24">
               {experts.map((expert, index) => (
                 <div
                   key={index}
