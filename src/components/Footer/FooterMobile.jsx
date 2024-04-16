@@ -65,7 +65,7 @@ function FooterMobile() {
                     </p>
                 </div>
             </div>
-            <div className='flex flex-col items-center justify-center gap-8'>
+            <div className='font-lato flex flex-col items-center justify-center gap-8'>
                 {contactInfo.map((info, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[328px] min-h-[292px] gap-8">
                         <p className="ml-[-2px]">
@@ -106,7 +106,7 @@ function FooterMobile() {
                 <img src={cat} alt="CAT" className='mb-16' />
 
             </div>
-            <div className='bg-color6 w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
+            <div className='font-lato bg-color6 w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
                 <img src={logo2} alt="LOGO" onClick={() => scrollNav("/")} />
                 <nav className="mb-4">
                     <ul className="flex space-x-4 gap-2">

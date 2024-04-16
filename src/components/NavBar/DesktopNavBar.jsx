@@ -18,6 +18,7 @@ import { FiChevronDown } from "react-icons/fi";
 /**
  * @summary Es la clase que contiene la fuente de la familia a utilizar
  */
+const FONT_FAMILY_CLASS = "font-lato"
 
 const DesktopNavbar = ({ menu, subMenu }) => {
   const navigate = useNavigate();
@@ -138,7 +139,7 @@ const SubMenu = ({ subMenu, display }) => {
           onClick={() => {
             navigate(subItem.link);
           }}
-          className={`block font-[700] leading-16 font-lato py-2 pr-4 pl-3 cursor-pointer ${
+          className={`block font-semibold leading-16 ${FONT_FAMILY_CLASS} py-2 pr-4 pl-3 cursor-pointer ${
             subItem.link === location.pathname ? "text-color2" : "hover:color2"
           } md:hover:bg-transparent text-16`}
         >

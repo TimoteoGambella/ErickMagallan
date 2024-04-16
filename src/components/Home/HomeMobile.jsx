@@ -184,7 +184,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
                             ))}
                           </ul>
                         ) : (
-                          <p className="text-color7">{item}</p>
+                          <p className="font-lato text-color7">{item}</p>
                         )}
                       </div>
                     ))}

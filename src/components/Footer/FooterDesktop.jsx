@@ -73,7 +73,7 @@ function FooterDesktop() {
                         </div>
                     </div>
 
-                    <div className='flex items-center justify-start gap-8 flex-wrap mb-8'>
+                    <div className='font-lato flex items-center justify-start gap-8 flex-wrap mb-8'>
                         {contactInfo.map((info, index) => (
                             <>
                                 {info.method !== "Nuestro domicilio" &&
@@ -83,7 +83,7 @@ function FooterDesktop() {
                                         </p>
                                         <h3 className="font-[700] leading-24 text-24 mb-2">{info.method}</h3>
                                         <div className='flex flex-col items-start justify-center gap-4'>
-                                            <p className="font-[700] text-lato text-16 leading-20 text-color6 flex items-center justify-center gap-2">
+                                            <p className="font-[700] text-16 leading-20 text-color6 flex items-center justify-center gap-2">
                                                 {info.secondIcon}
                                                 {info.details}
                                             </p>
@@ -99,13 +99,13 @@ function FooterDesktop() {
                             </>
                         ))}
                     </div>
-                    <div className="bg-white p-8 rounded-lg border border-gray-300 items-start justify-center flex flex-col gap-4">
+                  <div className="font-lato bg-white p-8 rounded-lg border border-gray-300 items-start justify-center flex flex-col gap-4">
                         <p className="ml-[-2px]">
                             {contactInfo[3].icon}
                         </p>
                         <h3 className="font-[700] leading-24 text-24 mb-2">{contactInfo[3].method}</h3>
                         <div className='flex flex-col items-start justify-start'>
-                            <p className="font-[700] text-lato text-16 leading-20 text-color6 flex items-center justify-start gap-2 mb-2">
+                            <p className="font-[700] text-16 leading-20 text-color6 flex items-center justify-start gap-2 mb-2">
                                 <p className="ml-[-2px]">
                                     {contactInfo[3].secondIcon}
                                 </p>
@@ -132,7 +132,7 @@ function FooterDesktop() {
                         </div>
                     </div>
                 </div>
-                <div className='bg-color6 w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
+                <div className='bg-color6 font-lato w-full flex flex-col items-center justify-center pt-6 pb-12 text-color5 gap-8'>
                     <div className='flex items-center justify-between w-[1280px]'>
                         <div className="w-[300px]">
                             <img onClick={() => scrollNav("/")} src={logo2} alt="LOGO" className='w-[181px]' />
