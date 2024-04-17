@@ -54,12 +54,12 @@ function Home() {
     const testimonials = [
         {
             image: character1,
-            name: 'Ambar Ramírez',
+            name: 'Olivia Ramírez',
             feedback: '"Psicomed se ha convertido en mi lugar de paz, el Dr. Nogales me hizo sentir escuchada y apoyada en todo momento. Además, el lugar está muy bonito y las terapias me han ayudado a mejorar mi bienestar emocional. ¡Los recomiendo altamente!"'
         },
         {
             image: character2,
-            name: 'Erick Magallán',
+            name: 'Andrés Fuentes',
             feedback: '"Mi experiencia en Psicomed fue excepcional. El enfoque integral en la salud mental y emocional me permitió encontrar equilibrio en mi vida. Además el personal es cálido y altamente capacitado, sin lugar a dudas lo recomiendo a mis amigos y familiares."'
         },
         {
