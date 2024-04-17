@@ -169,7 +169,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
 
       <div className="w-full px-20">
         <div className="flex flex-col items-center justify-between">
-          <div className="border-b border-gray-300 flex items-center justify-between flex-wrap w-full">
+          <div className="border-b border-gray-300 flex items-center justify-evenly flex-wrap w-full">
             <div className="flex flex-col gap-5">
               <h2 className="text-48 font-[700] font-lato leading-52 max-w-[550px] mb-5 gap-20">
                 En <span className="text-color2 leading-52">Psicomed</span>,
@@ -191,7 +191,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
             />
           </div>
 
-          <div className="pt-20 border-b border-gray-300 flex w-full items-center justify-between pb-12 flex-wrap">
+          <div className="pt-20 border-b border-gray-300 flex w-full items-center justify-evenly pb-12 flex-wrap">
             <img
               src={service1}
               alt="HOUSE"
