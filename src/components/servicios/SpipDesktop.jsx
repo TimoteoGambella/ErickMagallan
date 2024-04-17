@@ -274,8 +274,8 @@ function SpipDesktop() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center pb-32 mt-32 border-b border-gray-300">
-          <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[320px] mb-12 text-center">
+        <div className="flex flex-col justify-center items-center pb-32 mt-20 border-b border-gray-300">
+          <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[320px] mb-24 text-center">
             Tu terapeuta.
           </h2>
           <div className="flex justify-center items-center flex-wrap gap-20">
