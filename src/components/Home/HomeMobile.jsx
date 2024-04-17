@@ -218,7 +218,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
                 className="bg-white rounded-lg pb-8 flex flex-col items-start gap-2"
               >
                 <p className="text-color2">{feature.icon}</p>
-                <h3 className="font-[700] font-lato text-20 leading-20 ml-2 text-color6 mb-2">
+                <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2">
                   {feature.title}
                 </h3>
                 <p className="font-lato text-16 leading-20 text-color7 mb-4">

@@ -296,33 +296,35 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 confiable y experto que buscas.
               </p>
             </div>
-            {features.map((feature, index) => (
-              <li
-                key={index}
-                className="bg-white rounded-lg flex flex-col items-start justify-between gap-2 max-w-[272px] mr-4"
-              >
-                <p className="text-color2 cursor-pointer">{feature.icon}</p>
-                <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2 pt-4">
-                  {feature.title}
-                </h3>
-                <p className="font-lato text-16 leading-20 text-color7 mb-4 max-w-[240px] cursor-pointer">
-                  {feature.description}
-                </p>
-                <p
-                  className="flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato cursor-pointer"
-                  onClick={() => {
-                    window.scrollTo({
-                      top: 0,
-                      behavior: "smooth",
-                    });
-                    navigate(feature.link);
-                  }}
+            <div className="flex gap-4">
+              {features.map((feature, index) => (
+                <li
+                  key={index}
+                  className="bg-white rounded-lg flex flex-col items-start justify-between gap-2 max-w-[272px] mr-4"
                 >
-                  {feature.linkText}
-                  <FaArrowRight />
-                </p>
-              </li>
-            ))}
+                  <p className="text-color2 cursor-pointer">{feature.icon}</p>
+                  <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2 pt-4">
+                    {feature.title}
+                  </h3>
+                  <p className="font-lato text-16 leading-20 text-color7 mb-4 max-w-[240px] cursor-pointer">
+                    {feature.description}
+                  </p>
+                  <p
+                    className="flex items-center justify-center gap-2 text-color2 font-[700] leading-20 font-lato cursor-pointer"
+                    onClick={() => {
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                      navigate(feature.link);
+                    }}
+                  >
+                    {feature.linkText}
+                    <FaArrowRight />
+                  </p>
+                </li>
+              ))}
+            </div>
           </div>
 
           <div className="mt-12 mb-16">
