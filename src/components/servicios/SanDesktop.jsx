@@ -131,7 +131,7 @@ function SanDesktop() {
                             <img src={an1} alt="HOUSE" className='w-[500px] border-b-stone-600 rounded-xl' />
                         </div>
 
-                        <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+                        <div className="pb-36 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
                             <img src={an2} alt="HOUSE" className='w-[520px] border-b-stone-600 rounded-xl' />
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
@@ -180,7 +180,7 @@ function SanDesktop() {
                             </div>
                         </div>
 
-                        <div className="pb-36 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+                        <div className="pb-36 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
                                     ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
@@ -192,7 +192,7 @@ function SanDesktop() {
                             <img src={an3} alt="HOUSE" className='w-[520px] h-[520px] rounded-xl object-cover' />
                         </div>
 
-                        <div className="pb-36 border-b border-gray-300 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+                        <div className="pb-36 border-b border-gray-300 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
                             <img src={an4} alt="HOUSE" className='w-[520px] h-[520px] rounded-xl object-cover' />
                             <div className="flex flex-col max-w-[600px]">
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
