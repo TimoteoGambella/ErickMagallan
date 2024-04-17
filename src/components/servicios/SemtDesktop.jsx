@@ -251,7 +251,7 @@ function SemtDesktop() {
                             </p>
                         )}
                     </div>
-                    <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+                    <div className="flex flex-col justify-center items-center pb-16 mt-32">
                         <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[360px] mb-12 text-center">
                             Tus terapeutas.
                         </h2>
@@ -294,7 +294,7 @@ function SemtDesktop() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+                    <div className="flex flex-col justify-center items-center pb-16 border-b border-gray">
                         <div className="flex justify-center items-center flex-wrap gap-20">
 
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
