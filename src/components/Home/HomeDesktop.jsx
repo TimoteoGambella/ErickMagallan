@@ -231,7 +231,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
               .
             </h2>
             <div className="flex gap-6 flex-wrap items-center justify-evenly w-full">
-              <div className="w-[630px]">
+              <div className="w-[600px]">
                 <ul className="space-y-4">
                   {preguntas.map((pregunta, index) => (
                     <div
@@ -276,8 +276,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 <img
                   src={services}
                   alt="SERVICES"
-                  className="max-w-96 h-auto object-cover"
-                  style={{ maxHeight: "none" }}
+                  className="max-w-96 min-w-[600px] max-h-[700px] object-cover"
                 />
               </div>
             </div>
