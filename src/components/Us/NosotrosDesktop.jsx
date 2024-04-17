@@ -68,9 +68,11 @@ function NosotrosDesktop ({features}) {
                         </li>
                     ))}
                 </div>
-                <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
+                <div className="flex flex-col justify-center items-center pb-16 mt-16 border-b border-gray">
+                        <h2 id="team" className="text-48 font-[700] font-lato  leading-40 max-w-[400px] mb-20 text-center">
+                          Conoce al <span className="text-color2 leading-52">equipo</span>.
+                        </h2>
                         <div className="flex justify-center items-center flex-wrap gap-20">
-
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">
                                 <h3
                                     className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
@@ -97,10 +99,7 @@ function NosotrosDesktop ({features}) {
                             <img src={t1} alt="" className="w-[600px] h-[600px] mb-8  object-cover object-top rounded-xl" />
                         </div>
                     </div>
-                <div className="flex flex-col justify-center items-center pb-16 mt-32 border-b border-gray">
-                        <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[400px] mb-12 text-center">
-                            Conoce al <span className="text-color2 leading-52">equipo</span>.
-                        </h2>
+                <div className="flex flex-col justify-center items-center pb-16 mt-24 border-b border-gray">
                         <div className="flex justify-center items-center flex-wrap gap-20">
                             <img src={t2} alt="" className="w-[600px] h-[600px] mb-8  object-cover object-top rounded-xl" />
                             <div className="w-full max-w-[600px] flex flex-col items-start justify-center">

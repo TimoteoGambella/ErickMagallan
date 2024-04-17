@@ -353,7 +353,13 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
             </div>
             <p
               className="flex items-center justify-center cursor-pointer gap-2 text-color2 text-lg font-[700] leading-20 font-lato"
-              onClick={() => navigate("/nosotros")}
+              onClick={() => {
+                navigate("/nosotros")
+                setTimeout(() => {
+                  const element = document.getElementById("team");
+                  element?.scrollIntoView({ behavior: "smooth" });
+                }, 50)
+              }}
             >
               Conoce al equipo
               <FaArrowRight />
