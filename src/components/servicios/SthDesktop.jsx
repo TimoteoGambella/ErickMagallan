@@ -266,7 +266,7 @@ function SthDesktop() {
         </div>
         <div className="flex flex-col items-center justify-center mx-20">
           <div className="flex flex-col items-center justify-between px-4">
-            <div className="pt-12 flex items-center justify-between flex-wrap">
+            <div className="pt-12 flex items-center justify-evenly flex-wrap">
               <div className="flex flex-col max-w-[700px] max-h-[438px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 mb-5 text-start">
                   ¿Por qué elegir{" "}
@@ -279,7 +279,7 @@ function SthDesktop() {
                   Las terapias holísticas adoptan un enfoque integral que considera la conexión entre cuerpo, mente y espíritu, buscando equilibrar y fortalecer todos los aspectos de la persona. Con énfasis en la prevención y el bienestar general, estas terapias identifican causas subyacentes de los problemas de salud. Utilizando enfoques naturales, buscan minimizar efectos secundarios y promover la autorresponsabilidad en el autocuidado.
                 </p>
               </div>
-              <img src={th1} alt="HOUSE" className="w-[500px] h-[500px]" />
+              <img src={th1} alt="HOUSE" className="h-[700px]" />
             </div>
           </div>
           <div>
@@ -290,7 +290,7 @@ function SthDesktop() {
               </h2>
             </div>
 
-            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Terapia con{" "}
@@ -317,14 +317,14 @@ function SthDesktop() {
                   );
                 })}
               </div>
-              <img src={th2} alt="HOUSE" className="w-[600px] rounded-2xl" />
+              <img src={th2} alt="HOUSE" className="w-[600px] h-[700px] rounded-2xl" />
             </div>
 
-            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th3}
                 alt="HOUSE"
-                className="w-[600px] rounded-2xl"
+                className="w-[600px] h-[700px] rounded-2xl"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
@@ -356,7 +356,7 @@ function SthDesktop() {
               </div>
             </div>
 
-            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Flores de <span className="text-color2 leading-52">Bach</span>
@@ -381,14 +381,14 @@ function SthDesktop() {
                   );
                 })}
               </div>
-              <img src={th4} alt="HOUSE" className="w-[600px] rounded-2xl" />
+              <img src={th4} alt="HOUSE" className="w-[600px] h-[700px] rounded-2xl" />
             </div>
 
-            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th5}
                 alt="HOUSE"
-                className="w-[600px] h-[600px] rounded-2xl object-cover"
+                className="w-[600px] h-[700px] rounded-2xl object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
@@ -420,7 +420,7 @@ function SthDesktop() {
               </div>
             </div>
 
-            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Reiki.
@@ -449,14 +449,14 @@ function SthDesktop() {
                   );
                 })}
               </div>
-              <img src={th6} alt="HOUSE" className="w-[600px] h-[600px] rounded-2xl object-cover" />
+              <img src={th6} alt="HOUSE" className="w-[600px] h-[700px] rounded-2xl object-cover" />
             </div>
 
-            <div className="pt-24 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
               <img
                 src={th7}
                 alt="HOUSE"
-                className="w-[600px] h-[600px] rounded-2xl object-cover"
+                className="w-[600px] h-[700px] rounded-2xl object-cover"
               />
               <div className="flex flex-col max-w-[600px] ">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
