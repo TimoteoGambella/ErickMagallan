@@ -188,7 +188,7 @@ function SpipDesktop() {
           </h1>
         </div>
         <div className="flex flex-col items-center justify-center px-4">
-          <div className="pb-12 flex items-center justify-between mb-12 w-full gap-20 flex-wrap">
+          <div className="pb-12 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
             <div className="flex flex-col max-w-[700px] py-8">
               <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                 ¿Por qué elegir la <br/>
@@ -217,7 +217,7 @@ function SpipDesktop() {
               ¿Qué <span className="text-color2 leading-52">psicoterapia</span> es
               para mí?
             </h2>
-            <div className="flex flex-wrap gap-20 justify-between items-center">
+            <div className="flex flex-wrap gap-20 justify-evenly items-center">
               <img src={pip5} alt="" className="w-[600px] h-[700px] border-b-stone-600 rounded-xl object-cover" />
               <div className="flex flex-col w-[600px] items-start">
                 <h2 className="text-48 font-[700] font-lato leading-52 mb-8 text-center">
