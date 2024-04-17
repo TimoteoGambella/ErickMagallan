@@ -230,7 +230,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
               Nuestros <span className="text-color2 leading-40">servicios</span>
               .
             </h2>
-            <div className="flex items-center justify-between w-full h-[645px]">
+            <div className="flex gap-6 flex-wrap items-center justify-evenly w-full">
               <div className="w-[630px]">
                 <ul className="space-y-4">
                   {preguntas.map((pregunta, index) => (
@@ -272,11 +272,11 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                   ))}
                 </ul>
               </div>
-              <div className="w-[630px] h-[630px] overflow-hidden rounded-xl">
+              <div className="max-w-[630px] overflow-hidden rounded-xl">
                 <img
                   src={services}
                   alt="SERVICES"
-                  className="w-full h-auto object-cover"
+                  className="max-w-96 h-auto object-cover"
                   style={{ maxHeight: "none" }}
                 />
               </div>
