@@ -58,7 +58,7 @@ function FooterDesktop() {
     return (
         <div id="footer" className="w-full">
             <div className="w-full flex flex-col items-center">
-                <div className="w-full my-12 px-3">
+                <div className="w-full my-12 px-20">
                     <div className='flex flex-col items-center justify-center border-t'>
                         <div className="pb-6 flex items-center justify-center mt-16 gap-8">
                             <div className='flex flex-col mb-8'>
