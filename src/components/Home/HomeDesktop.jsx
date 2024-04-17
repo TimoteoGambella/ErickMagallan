@@ -331,7 +331,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
             <h2 className="text-48 font-[700] font-lato text-color6 mb-12 text-center">
               Nuestros <span className="text-color2 leading-40">expertos</span>.
             </h2>
-            <div className="flex flex-wrap items-top justify-center gap-24">
+            <div className="flex flex-wrap items-top justify-center mb-10 gap-24">
               {experts.map((expert, index) => (
                 <div
                   key={index}
@@ -352,7 +352,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
               ))}
             </div>
             <p
-              className="flex items-center justify-center cursor-pointer gap-2 text-color2 font-[700] leading-20 font-lato"
+              className="flex items-center justify-center cursor-pointer gap-2 text-color2 text-lg font-[700] leading-20 font-lato"
               onClick={() => navigate("/nosotros")}
             >
               Conoce al equipo
