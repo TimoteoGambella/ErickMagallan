@@ -134,11 +134,9 @@ function SemtDesktop() {
                                 <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                                     ¿Qué es la <span className="text-color2 leading-52">Estimulación Magnética Transcraneal</span>?
                                 </h2>
-                                <p className="text-16 font-lato leading-20 text-color7 mb-8">
-                                    La Estimulación Magnética Transcraneal (EMT) es una técnica no invasiva que utiliza campos magnéticos para modular la actividad cerebral.
-                                    <br />
-                                    <br />
-                                    Se aplica a través de una bobina colocada en el cuero cabelludo, generando corrientes eléctricas que afectan las neuronas, siendo utilizada en investigaciones y tratamientos neuropsiquiátricos.
+                                <p className="flex flex-col gap-[24px] text-16 font-lato leading-20 text-color7 mb-8">
+                                    <span>La Estimulación Magnética Transcraneal (EMT) es una técnica no invasiva que utiliza campos magnéticos para modular la actividad cerebral.</span>
+                                    <span>Se aplica a través de una bobina colocada en el cuero cabelludo, generando corrientes eléctricas que afectan las neuronas, siendo utilizada en investigaciones y tratamientos neuropsiquiátricos.</span>
                                 </p>
                             </div>
                             <img src={emt1} alt="HOUSE" className='h-[595px] border-b-stone-600' />
