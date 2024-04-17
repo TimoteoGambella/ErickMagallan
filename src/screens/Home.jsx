@@ -4,9 +4,9 @@ import { IoChatbubblesSharp } from "react-icons/io5";
 import professuibak1 from '../assets/professionals/Dr-José-Luis.jpg';
 import professuibak2 from '../assets/professionals/MC-Rocío-González.jpg';
 
-import character1 from "../assets/person1.svg"
-import character2 from "../assets/person2.svg"
-import character3 from "../assets/person3.svg"
+import character1 from "../assets/testimonio/Olivia-Ramirez.webp"
+import character2 from "../assets/testimonio/Andres-Fuentes.webp"
+import character3 from "../assets/testimonio/Julieta-Gonzalez.webp"
 import HomeMobile from '../components/Home/HomeMobile';
 import HomeDesktop from '../components/Home/HomeDesktop';
 import { useMediaQuery } from '@react-hook/media-query';
