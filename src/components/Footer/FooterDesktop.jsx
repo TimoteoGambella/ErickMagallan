@@ -9,6 +9,7 @@ import timer from "../../assets/timer-outline.svg";
 import today from "../../assets/today-outline.svg";
 import viber from "../../assets/viber-circle.svg";
 import location from "../../assets/location-outline.svg";
+import { Fragment } from "react";
 
 
 function FooterDesktop() {
@@ -75,9 +76,9 @@ function FooterDesktop() {
 
                     <div className='font-lato flex items-center justify-start gap-8 flex-wrap mb-8'>
                         {contactInfo.map((info, index) => (
-                            <>
+                            <Fragment key={index}>
                                 {info.method !== "Nuestro domicilio" &&
-                                    <div key={index} className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[350px] min-h-[230px] gap-8">
+                                    <div className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[350px] min-h-[230px] gap-8">
                                         <p>
                                             {info.icon}
                                         </p>
