@@ -283,7 +283,7 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
             <div className="my-12 pt-12 border-b border-gray-300 flex items-top justify-center flex-wrap"></div>
           </div>
 
-          <div className="mt-12 pb-12 border-b border-gray-300 flex w-full items-top justify-between flex-wrap">
+          <div className="mt-12 pb-12 border-b border-gray-300 flex w-full items-top justify-between">
             <div className="flex flex-col mr-20">
               <h2 className="text-48 font-[700] font-lato leading-52 mb-8 max-w-[400px]">
                 ¿Por qué elegir a{" "}
@@ -295,11 +295,11 @@ function HomeDesktop({ features, experts, testimonials, settings }) {
                 confiable y experto que buscas.
               </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-wrap">
               {features.map((feature, index) => (
                 <li
                   key={index}
-                  className="bg-white rounded-lg flex flex-col items-start justify-between gap-2 max-w-[272px] mr-4"
+                  className="bg-white rounded-lg flex flex-col items-start justify-between gap-2 max-w-[272px]"
                 >
                   <p className="text-color2 cursor-pointer">{feature.icon}</p>
                   <h3 className="font-[700] font-lato text-20 leading-20 text-color6 mb-2 pt-4">
