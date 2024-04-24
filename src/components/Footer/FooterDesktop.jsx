@@ -88,16 +88,16 @@ function FooterDesktop() {
                                                 {info.secondIcon}
                                                 {info.details}
                                             </p>
-                                            <p className="text-gray-500 flex items-center justify-center gap-2">
+                                            <div className="text-gray-500 flex items-center justify-center gap-2">
                                                 <img src={today} alt="today" />
                                                 <p className="font-bold">{info.day}</p>
                                                 <img src={timer} alt="timer" />
                                                 <p className="font-bold">{info.hour}</p>
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 }
-                            </>
+                            </Fragment>
                         ))}
                     </div>
                   <div className="font-lato bg-white p-8 rounded-lg border border-gray-300 items-start justify-center flex flex-col gap-4">
@@ -106,12 +106,12 @@ function FooterDesktop() {
                         </p>
                         <h3 className="font-[700] leading-24 text-24 mb-2">{contactInfo[3].method}</h3>
                         <div className='flex flex-col items-start justify-start'>
-                            <p className="font-[700] text-16 leading-20 text-color6 flex items-center justify-start gap-2 mb-2">
+                            <div className="font-[700] text-16 leading-20 text-color6 flex items-center justify-start gap-2 mb-2">
                                 <p className="ml-[-2px]">
                                     {contactInfo[3].secondIcon}
                                 </p>
                                 {contactInfo[3].details}
-                            </p>
+                            </div>
                             <p className="text-gray-500 flex items-center justify-center gap-2 font-bold">
                                 <img src={today} alt="today" />
                                 {contactInfo[3].day}
