@@ -190,7 +190,7 @@ function SemtDesktop() {
 
                             <div className="flex flex-wrap items-center justify-center gap-8">
                                 {tms.map((tms, index) => (
-                                    <div className="border border-color2 flex flex-col w-full h-[294px] max-w-[600px] p-8 items-start" style={{ borderRadius: "20px" }}>
+                                    <div key={index} className="border border-color2 flex flex-col w-full h-[294px] max-w-[600px] p-8 items-start" style={{ borderRadius: "20px" }}>
                                         <img src={tms.icon} alt="Logo" className="w-[40px] mb-5 mt-4" />
                                         <h3 className="text-28 font-[700] font-lato leading-32 mb-4">
                                             {tms.title}
