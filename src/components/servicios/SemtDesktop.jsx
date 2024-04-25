@@ -323,7 +323,7 @@ function SemtDesktop() {
                         </div>
                     </div>
 
-                    <div className='px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
+                    <div className='px-4 py-8 pt-20 mb-6 flex flex-col items-center justify-center'>
                         <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
                             Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
                         </h2>
