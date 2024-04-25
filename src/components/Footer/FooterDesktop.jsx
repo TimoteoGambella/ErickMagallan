@@ -78,7 +78,7 @@ function FooterDesktop() {
                         {contactInfo.map((info, index) => (
                             <Fragment key={index}>
                                 {info.method !== "Nuestro domicilio" &&
-                                    <div className="bg-white p-4 rounded-lg border border-gray-300 items-start flex flex-col w-full max-w-[350px] min-h-[230px] gap-8">
+                                    <div className="bg-white p-8 rounded-lg border border-gray-300 items-start flex flex-col flex-grow min-h-[230px] gap-8">
                                         <p>
                                             {info.icon}
                                         </p>
