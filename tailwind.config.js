@@ -52,6 +52,9 @@ module.exports = {
         '48': '3rem',       // 48px
         '52': '3.25rem',    // 52px
       },
+      screens: {
+        '2md': '960px',
+      }
     },
   },
   plugins: [],
