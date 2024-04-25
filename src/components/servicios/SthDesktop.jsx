@@ -266,8 +266,8 @@ function SthDesktop() {
         </div>
         <div className="flex flex-col items-center justify-center mx-20">
           <div className="flex flex-col items-center justify-between px-4">
-            <div className="pt-12 flex items-center justify-evenly flex-wrap">
-              <div className="flex flex-col max-w-[700px] max-h-[438px]">
+            <div className="pb-16 flex items-center justify-center w-full flex-wrap 2md:flex-nowrap">
+              <div className="flex flex-col max-w-[700px] min-w-[300px] max-h-[438px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 mb-5 text-start">
                   ¿Por qué elegir{" "}
                   <span className="text-color2 leading-52">
@@ -275,28 +275,28 @@ function SthDesktop() {
                   </span>
                   ?
                 </h2>
-                <p className="text-16 font-lato font-[400] leading-20 text-color7 mb-8 max-w-[700px] text-start">
+                <p className="text-20 leading-24 font-lato font-[400] text-color7 mb-8 max-w-[700px] text-start">
                   Las terapias holísticas adoptan un enfoque integral que considera la conexión entre cuerpo, mente y espíritu, buscando equilibrar y fortalecer todos los aspectos de la persona. Con énfasis en la prevención y el bienestar general, estas terapias identifican causas subyacentes de los problemas de salud. Utilizando enfoques naturales, buscan minimizar efectos secundarios y promover la autorresponsabilidad en el autocuidado.
                 </p>
               </div>
-              <img src={th1} alt="HOUSE" className="h-[700px]" />
+              <img src={th1} alt="HOUSE" className="h-[500px]" />
             </div>
           </div>
           <div>
             <div className="flex flex-col items-center justify-center max-w-[1280px]">
-              <h2 className="text-[54px] font-[700] font-lato leading-[60px] mb-12 mt-24 text-center">
+              <h2 className="text-[54px] font-[700] font-lato leading-[60px] mb-36 mt-24 text-center">
                 ¿Qué <span className="text-color2 leading-52">terapia</span> es
                 para mí?
               </h2>
             </div>
 
-            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
-              <div className="flex flex-col max-w-[600px] ">
+            <div className="flex items-center justify-evenly mb-24 w-full gap-8 flex-wrap 2md:flex-nowrap 2md:gap-20">
+              <div className="flex flex-col max-w-[600px] min-w-[300px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Terapia con{" "}
                   <span className="text-color2 leading-52">Terahercios</span>.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 my-8">
+                <p className="text-20 leading-24 font-lato text-color7 my-8">
                   Terapia de frecuencia que utiliza tecnología de terahercios para influir positivamente en la salud y el bienestar de tu cuerpo.
                   Emite ondas que interactúan con las células y huesos.
                   Ayuda a restaurar y mantener el equilibrio bioenergético de tu organismo.
@@ -317,20 +317,20 @@ function SthDesktop() {
                   );
                 })}
               </div>
-              <img src={th2} alt="HOUSE" className="w-[600px] h-[700px] rounded-2xl" />
+              <img src={th2} alt="HOUSE" className="w-[522.7px] h-[595px] object-cover rounded-2xl" />
             </div>
 
-            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
+            <div className="py-24 flex items-center justify-evenly w-full gap-8 flex-wrap-reverse 2md:flex-nowrap 2md:gap-20">
               <img
                 src={th3}
                 alt="HOUSE"
-                className="w-[600px] h-[700px] rounded-2xl"
+                className="w-[522.7px] h-[595px] object-cover rounded-2xl"
               />
-              <div className="flex flex-col max-w-[600px] ">
+              <div className="flex flex-col max-w-[600px] min-w-[300px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Aromaterapia.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 my-8">
+                <p className="text-20 leading-24 font-lato text-color7 my-8">
                   Práctica terapéutica que utiliza aceites esenciales extraídos
                   de plantas para mejorar el bienestar físico, emocional y
                   mental. Estos aceites se inhalan o aplican sobre la piel. Sus
@@ -356,13 +356,13 @@ function SthDesktop() {
               </div>
             </div>
 
-            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
-              <div className="flex flex-col max-w-[600px] ">
+            <div className="py-24 flex items-center justify-evenly w-full gap-8 flex-wrap 2md:flex-nowrap 2md:gap-20">
+              <div className="flex flex-col max-w-[600px] min-w-[300px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Flores de <span className="text-color2 leading-52">Bach</span>
                   .
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 my-8">
+                <p className="text-20 font-lato leading-24 text-color7 my-8">
                   Terapia complementaria con 38 esencias florales. Las propiedades de las Flores de Bach ayudan a armonizar y corregir alteraciones mentales físicas y emocionales.
                 </p>
                 {beneficios3.map((beneficio, index) => {
@@ -381,20 +381,20 @@ function SthDesktop() {
                   );
                 })}
               </div>
-              <img src={th4} alt="HOUSE" className="w-[600px] h-[700px] rounded-2xl" />
+              <img src={th4} alt="HOUSE" className="w-[522.7px] h-[595px] object-cover rounded-2xl" />
             </div>
 
-            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
+            <div className="py-24 flex items-center justify-evenly w-full gap-8 flex-wrap-reverse 2md:flex-nowrap 2md:gap-20">
               <img
                 src={th5}
                 alt="HOUSE"
-                className="w-[600px] h-[700px] rounded-2xl object-cover"
+                className="w-[522.7px] h-[595px] object-cover rounded-2xl flex-shrink-0"
               />
-              <div className="flex flex-col max-w-[600px] ">
+              <div className="flex flex-col max-w-[600px] min-w-[300px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Thetahealing.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 my-8">
+                <p className="text-20 font-lato leading-24 text-color7 my-8">
                   Técnica de meditación que se enfoca en llegar al estado Theta,
                   para conectar con el subconsciente, donde se retienen memorias
                   y sentimientos. ThetaHealing se utiliza para abordar una
@@ -420,12 +420,12 @@ function SthDesktop() {
               </div>
             </div>
 
-            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
-              <div className="flex flex-col max-w-[600px] ">
+            <div className="py-24 flex items-center justify-evenly w-full gap-8 flex-wrap 2md:flex-nowrap 2md:gap-20">
+              <div className="flex flex-col max-w-[600px] min-w-[300px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Reiki.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 my-8">
+                <p className="text-20 font-lato leading-24 text-color7 my-8">
                   El Reiki es una terapia energética originaria de Japón que se
                   centra en canalizar la energía vital universal a través de la
                   imposición de manos para equilibrar y armonizar la energía en
@@ -449,20 +449,20 @@ function SthDesktop() {
                   );
                 })}
               </div>
-              <img src={th6} alt="HOUSE" className="w-[600px] h-[700px] rounded-2xl object-cover" />
+              <img src={th6} alt="HOUSE" className="w-[522.7px] h-[595px] object-cover rounded-2xl flex-shrink-0" />
             </div>
 
-            <div className="pt-24 flex items-center justify-evenly mb-12 w-full gap-20 flex-wrap">
+            <div className="py-24 flex items-center justify-evenly w-full gap-8 flex-wrap-reverse 2md:flex-nowrap 2md:gap-20">
               <img
                 src={th7}
                 alt="HOUSE"
-                className="w-[600px] h-[700px] rounded-2xl object-cover"
+                className="w-[522.7px] h-[595px] object-cover rounded-2xl"
               />
-              <div className="flex flex-col max-w-[600px] ">
+              <div className="flex flex-col max-w-[600px] min-w-[300px]">
                 <h2 className="text-48 font-[700] font-lato leading-52 text-start">
                   Numerología.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 my-8">
+                <p className="text-20 font-lato leading-24 text-color7 my-8">
                   La numerología es un sistema metafísico que estudia la
                   relación entre los números y diversos aspectos de la vida. Se
                   basa en la creencia de que los números tienen significados
