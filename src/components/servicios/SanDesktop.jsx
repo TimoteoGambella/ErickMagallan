@@ -123,7 +123,7 @@ function SanDesktop() {
                                 <h2 className="text-48 font-[700] font-lato leading-52 mb-5">
                                     ¿Por qué tomar <span className="text-color2 leading-52">Educación en Diabetes</span>?
                                 </h2>
-                                <p className="text-16 font-semibold font-lato leading-20 text-color7 mb-8 max-w-[600px]">
+                                <p className="text-[20px] font-lato leading-24 text-color7 mb-8 max-w-[600px]">
                                     La Educación en Diabetes es un elemento crucial para el manejo efectivo de esta enfermedad. Proporciona los conocimientos y habilidades para comprender, prevenir y controlar la diabetes de manera efectiva en la vida diaria.<br /><br />
                                     El objetivo es que los pacientes tomen el control de su salud, y mejoren su calidad de vida.
                                 </p>
@@ -141,7 +141,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         Importancia del monitoreo regular de <span className="font-semibold">niveles de glucosa.</span>
                                     </p>
                                 </div>
@@ -149,7 +149,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         Administración adecuada de <span className="font-semibold">insulina.</span>
                                     </p>
                                 </div>
@@ -157,7 +157,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         Planificación de <span className="font-semibold">comidas saludables.</span>
                                     </p>
                                 </div>
@@ -165,7 +165,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         <span className="font-semibold">Factores de riesgo y complicaciones</span> asociadas con la diabetes.
                                     </p>
                                 </div>
@@ -173,7 +173,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         <span className="font-semibold">Habitos</span> para implementar en la vida diaria.
                                     </p>
                                 </div>
@@ -185,7 +185,7 @@ function SanDesktop() {
                                 <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
                                     ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
                                 </h2>
-                                <p className="font-lato font-semibold leading-20 text-color7 mb-8 max-w-[600px]">
+                                <p className="font-lato text-[20px] leading-24 text-color7 mb-8 max-w-[600px]">
                                     Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
                                 </p>
                             </div>
@@ -202,7 +202,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         Planificación de <span className="font-semibold">comidas equilibradas.</span>
                                     </p>
                                 </div>
@@ -210,7 +210,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         Estrategias para implementar <span className="font-semibold">cambios positivos</span> en tu estilo de vida.
                                     </p>
                                 </div>
@@ -218,7 +218,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                         Entendimiento de <span className="font-semibold">etiquetas nutrimentales.</span>
                                     </p>
                                 </div>
@@ -226,7 +226,7 @@ function SanDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
+                                    <p className="text-[20px] font-lato font-[400] leading-28 text-color7 max-w-[544px]">
                                     <span className="font-semibold">Control de porciones</span> para equilibrar la ingesta calórica.
                                     </p>
                                 </div>
@@ -234,7 +234,7 @@ function SanDesktop() {
                         </div>
                     </div>
 
-                    <div className='px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-12 border-b border-gray-300'>
+                    <div className='px-4 py-8 pt-20 mb-12 flex flex-col items-center justify-center pb-28 border-b border-gray-300'>
                         <h2 className="text-44 font-[700] font-lato leading-44 mb-12 text-center">
                             Preguntas <span className="text-color2 leading-52">Frecuentes</span>.
                         </h2>
@@ -268,8 +268,8 @@ function SanDesktop() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center pb-16 mt-32">
-                        <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[360px] mb-12 text-center">
+                    <div className="flex flex-col justify-center items-center pb-16 mt-20">
+                        <h2 className="text-48 font-[700] font-lato  leading-40 max-w-[360px] mb-20 text-center">
                             Tu terapeuta.
                         </h2>
                         <div className="flex justify-center items-center flex-wrap gap-20">

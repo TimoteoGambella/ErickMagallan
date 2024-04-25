@@ -30,6 +30,7 @@ module.exports = {
         '8': '0.5rem',      // 8px
         '12': '0.75rem',    // 12px
         '16': '1rem',       // 16px (esto es el tamaño base en Tailwind)
+        '18': '1.125rem',   // 18px
         '20': '1.25rem',    // 20px
         '24': '1.5rem',     // 24px
         '28': '1.75rem',    // 28px
