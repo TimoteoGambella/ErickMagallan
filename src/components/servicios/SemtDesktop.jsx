@@ -152,7 +152,7 @@ function SemtDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[500] leading-28 max-w-[544px]">
+                                    <p className="text-20 font-lato font-[500] leading-28 max-w-[544px]">
                                         <span className="font-bold">Tratamiento de trastornos mentales</span> como la depresión, el TOC y la esquizofrenia.
                                     </p>
                                 </div>
@@ -160,7 +160,7 @@ function SemtDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[500] leading-28 max-w-[544px]">
+                                    <p className="text-20 font-lato font-[500] leading-28 max-w-[544px]">
                                         <span className="font-bold">Mejora de funciones cognitivas</span> como la memoria y la atención.
                                     </p>
                                 </div>
@@ -168,7 +168,7 @@ function SemtDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[500] leading-28 max-w-[544px]">
+                                    <p className="text-20 font-lato font-[500] leading-28 max-w-[544px]">
                                         <span className="font-bold">Es una terapia no invasiva</span>, por lo que no requiere romper la piel ni provocar dolor de ningún tipo.
                                     </p>
                                 </div>
@@ -176,7 +176,7 @@ function SemtDesktop() {
                                     <div className="w-[40px]">
                                         <IoHeartCircleOutline style={{ height: "40px", width: "40px" }} color="#B18431" />
                                     </div>
-                                    <p className="text-[22px] font-lato font-[500] leading-28 max-w-[544px]">
+                                    <p className="text-20 font-lato font-[500] leading-28 max-w-[544px]">
                                         <span className="font-bold">Sin medicamentos ni efectos secundarios graves</span> en los pacientes.
                                     </p>
                                 </div>
