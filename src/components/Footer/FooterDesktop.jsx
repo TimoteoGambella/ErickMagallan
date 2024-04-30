@@ -61,7 +61,7 @@ function FooterDesktop() {
             <div className="w-full flex flex-col items-center">
                 <div className="w-full my-12 px-20">
                     <div className='flex flex-col items-center justify-center border-t'>
-                        <div className="pb-6 flex items-center justify-center mt-16 gap-8">
+                        <div className="pb-6 w-full flex items-center justify-between mt-16 gap-8">
                             <div className='flex flex-col mb-8'>
                                 <h2 className="text-48 font-[700] font-lato leading-52 mb-8">
                                     Da el primer paso hacia <span className="text-color2">tu bienestar</span>.
