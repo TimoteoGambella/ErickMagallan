@@ -182,10 +182,10 @@ function SanDesktop() {
 
                         <div className="px-10 pb-24 flex items-center justify-evenly mb-12 w-full gap-0 flex-wrap 2md:flex-nowrap 2md:gap-20 pt-10 border-b border-b-gray-300">
                             <div className="flex flex-col max-w-[600px]">
-                                <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-center">
+                                <h2 className="text-48 font-[700] font-lato  leading-52 mb-12 text-start">
                                     ¿Por qué tomar <span className="text-color2 leading-52">Asesoría Nutricional</span>?
                                 </h2>
-                                <p className="font-lato text-[20px] leading-24 text-color7 mb-8 max-w-[600px]">
+                                <p className="font-lato text-[20px] leading-28 text-color7 mb-8 max-w-[600px]">
                                     Tomar una asesoría nutricional es fundamental para obtener un plan de alimentación personalizado que se ajuste a tus necesidades y objetivos de salud, proporcionándote educación, estableciendo metas realistas, ayudando en el manejo de condiciones médicas, previniendo enfermedades, corrigiendo desequilibrios nutricionales y brindando apoyo y motivación a lo largo del proceso, lo que en conjunto te permite mejorar tu salud y bienestar general de manera efectiva y sostenible.
                                 </p>
                             </div>
