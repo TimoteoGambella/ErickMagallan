@@ -291,7 +291,7 @@ function SpipDesktop() {
                 Médico Psiquiatra, Maestro y Doctor en Psicoterapia Individual y
                 de Pareja.
               </h4>
-              <p className="text-16 font-[400] text-color7 font-lato mb-12">
+              <p className="text-20 leading-28 font-[400] text-color7 font-lato mb-12">
                 Médico con especialidad en Psiquiatría, egresado de la
                 Universidad Nacional Autónoma de México, así como Maestría y
                 Doctorado en Psicoterapia Inidividual y de Pareja, se ha
