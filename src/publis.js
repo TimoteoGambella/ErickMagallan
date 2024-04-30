@@ -8,6 +8,7 @@ import photo7 from "./assets/publis/picture-7.svg";
 import photo8 from "./assets/publis/picture-8.svg";
 import photo9 from "./assets/publis/picture-9.svg";
 import photo10 from "./assets/publis/picture-10.svg";
+//import photo11 from "./assets/publis/picture-11.svg";
 
 export const publis_tms = [
     {
@@ -16,7 +17,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo1,
-        problem: "Parkinson"
+        problem: "Parkinson",
+        author: "Actipulse"
     },
     {
         title: "Retardo en la progresión de la enfermedad de Parkinson",
@@ -24,7 +26,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo2,
-        problem: "Parkinson"
+        problem: "Parkinson",
+        author: "Actipulse"
     },
     {
         title: "Remisión de síntomas depresivos con EMT",
@@ -32,7 +35,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo3,
-        problem: "Depresión"
+        problem: "Depresión",
+        author: "Actipulse"
     },
     {
         title: "Efectos visibles de la EMT en Ansiedad",
@@ -40,7 +44,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo4,
-        problem: "Ansiedad"
+        problem: "Ansiedad",
+        author: "Actipulse"
     },
     {
         title: "Reducción de síntomas en el TDAH en adultos",
@@ -48,7 +53,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo5,
-        problem: "TDAH"
+        problem: "TDAH",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -56,7 +62,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Incremento de la actividad motora: Parkinson",
@@ -64,7 +71,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo7,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Mejora en discinesia por Evento Vascular Cerebral",
@@ -72,7 +80,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo8,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Eficacia para la función de las extremidades superiores: EVC",
@@ -80,7 +89,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo9,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Mejora en memoria cotidiana",
@@ -88,7 +98,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo10,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Efectos en Deterioro Cognitivo Leve",
@@ -96,7 +107,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo8,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Eficacia en depresión mayor",
@@ -104,7 +116,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo10,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -112,7 +125,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -120,7 +134,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -128,7 +143,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -136,7 +152,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -144,7 +161,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -152,7 +170,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -160,7 +179,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -168,7 +188,8 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
-        problem: "EVC"
+        problem: "EVC",
+        author: "Actipulse"
     },
     {
         title: "Cambios significativos en disfagia por EVC",
@@ -176,6 +197,15 @@ export const publis_tms = [
         description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
         language: "Inglés",
         photo: photo6,
+        problem: "EVC",
+        author: "Actipulse"
+    },
+    /*{
+        title: "Cambios significativos en disfagia por EVC",
+        link: "https://www.ncbi.nlm.nih.gov/pubmed/25237116",
+        description: "Lorem ipsum dolor sit amet consectetur. Quisque consectetur in amet nunc vitae at enim feugiat. Vestibulum a suspendisse praesent aliquam at lacus.",
+        language: "Inglés",
+        photo: photo6,
         problem: "EVC"
-    }
+    }*/
 ]

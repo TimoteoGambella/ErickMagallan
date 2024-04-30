@@ -234,7 +234,7 @@ function SemtDesktop() {
                                         </div>
                                         <div className="flex items-center justify-center gap-1">
                                             <PiUserCircleFill />
-                                            <p>Actipulse</p>
+                                            <p>{publi.author}</p>
                                         </div>
                                         <div className="flex items-center justify-center gap-1">
                                             <LuLanguages />
