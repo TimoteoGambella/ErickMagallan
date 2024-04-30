@@ -194,7 +194,7 @@ function SpipDesktop() {
                 ¿Por qué elegir la <br/>
                 <span className="text-color2 leading-52">psicoterapia</span>?
               </h2>
-              <p className="text-16 font-lato leading-20 text-color7 mb-8">
+              <p className="text-20 font-lato leading-28 text-color7 mb-8">
                 Elegir la psicoterapia puede ser una decisión transformadora, ya que ofrece un <span className="font-bold">espacio seguro</span> para abordar problemas de salud mental, 
                 desarrollar habilidades de afrontamiento, <span className="font-bold">mejorar las relaciones</span>, explorar patrones de pensamiento 
                 y <span className="font-bold">recibir apoyo</span> durante momentos 
@@ -224,7 +224,7 @@ function SpipDesktop() {
                   Psicoterapia{" "}
                   <span className="text-color2 leading-52">Individual</span>.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 mb-8">
+                <p className="text-20 font-lato leading-28 text-color7 mb-8">
                 La psicoterapia individual es un proceso donde un profesional de la salud mental trabaja en privado con el paciente para abordar desafíos emocionales o mentales. Se exploran pensamientos y emociones para promover la comprensión, el crecimiento personal y estrategias para enfrentar dificultades.Este enfoque personalizado ofrece un espacio confidencial y de apoyo para expresar y manejar preocupaciones.
                 </p>
                 {beneficios.map((beneficio, index) => {
@@ -250,7 +250,7 @@ function SpipDesktop() {
                   Psicoterapia de{" "}
                   <span className="text-color2 leading-52">Pareja</span>.
                 </h2>
-                <p className="text-16 font-lato leading-20 text-color7 mb-8">
+                <p className="text-20 font-lato leading-28 text-color7 mb-8">
                 Proceso terapéutico que busca fortalecer relaciones, resolver conflictos y mejorar la comunicación entre las parejas. Proporciona herramientas para abordar desafíos y construir una base más sólida, promoviendo un crecimiento mutuo en la relación.
                 </p>
                 {beneficios2.map((beneficio, index) => {
