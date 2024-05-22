@@ -67,7 +67,7 @@ function HomeMobile({ features, experts, testimonials, settings }) {
     {
       title: "¿A partir de cuánto tiempo empiezan a observarse las mejoras?",
       description: [
-        "Las mejoras obtenidas con el uso de la estimulación magnética transcraneal pueden presentarse a partir de las sesión 5. No obstante para que las mejoras sean totalmente visibles y se mantenga el efecto terapéutico se requiere en promedio entre 15 y 20 sesiones.",
+        "Las mejoras obtenidas con el uso de la estimulación magnética transcraneal pueden presentarse a partir de la 5ta sesión. No obstante para que las mejoras sean totalmente visibles y se mantenga el efecto terapéutico se requiere en promedio entre 15 y 20 sesiones.",
       ],
     },
     {

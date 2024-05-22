@@ -42,7 +42,7 @@ function SemtDesktop() {
             title: "¿Cuáles son las contraindicaciones?",
             description: [
                 "Existen 3 contraindicaciones definitivas al uso de estimulación transcraneal:",
-                ['Antecedentes de epilepsia (de cualquier tipo, incluyendo crisis de ausencia', 'Dispositivos de metal en el cráneo como placas o clips en el cerebro', 'Existencia de implantes cocleares o marcapasos']
+                ['Antecedentes de epilepsia (de cualquier tipo, incluyendo crisis de ausencia)', 'Dispositivos de metal en el cráneo como placas o clips en el cerebro', 'Existencia de implantes cocleares o marcapasos']
             ]
         },
         {
@@ -71,7 +71,7 @@ function SemtDesktop() {
             ]
         },
         {
-            title: "¿A partir de cuánto tiempo empiezan a observarse las mejoras?",
+            title: "o tiempo empiezan a observarse las mejoras?",
             description: [
                 "Las mejoras obtenidas con el uso de la estimulación magnética transcraneal pueden presentarse a partir de las sesión 5. No obstante para que las mejoras sean totalmente visibles y se mantenga el efecto terapéutico se requiere en promedio entre 15 y 20 sesiones."
             ]
@@ -85,7 +85,7 @@ function SemtDesktop() {
         {
             title: "¿Cuál es el seguimiento que un paciente requiere?",
             description: [
-                "Dependiendo de la respuesta clínica de cada paciente se considera que una buena estrategía de seguimiento a mediano o largo plazo es continuar aplicando sesiones de estimulación transcraneal periódicas de mantenimiento con la frecuencia que la revaluación de paciente requiera para mantener o modificar los efectos terapéuticos obtenidos."
+                "Dependiendo de la respuesta clínica de cada paciente se considera que una buena estrategía de seguimiento a mediano o largo plazo es continuar aplicando sesiones de estimulación transcraneal periódicas de mantenimiento con la frecuencia que la reevaluación de paciente requiera para mantener o modificar los efectos terapéuticos obtenidos."
             ]
         },
         {

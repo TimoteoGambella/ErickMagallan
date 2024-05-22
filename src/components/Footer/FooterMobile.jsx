@@ -32,7 +32,7 @@ function FooterMobile() {
             icon: <BsTelephone className='w-9 h-9' />,
             secondIcon: <img src={viber} alt="Correo electrónico" />,
             method: 'Vía telefónica',
-            details: '(312) 312 33 50 75 / 312 312 98 93',
+            details: '(312) 313 50 75 / (312) 312 98 93',
             day: 'Lunes a Viernes',
             hour: '9am a 8pm'
         },
