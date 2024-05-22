@@ -133,7 +133,6 @@ function NosotrosDesktop ({features}) {
                                 <div className="flex flex-wrap gap-4 gap-y-8 justify-center items-center">
                                     <img src={unam} alt="" />
                                     <img src={u_colima} alt="" />
-                                    <img src={imp} alt="" />
                                     <img src={uni} alt="" />
                                 </div>
                             </div>
