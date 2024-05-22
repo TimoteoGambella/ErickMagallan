@@ -262,7 +262,7 @@ function SemtDesktop() {
                                     className="text-48 leading-52 text-color6 font-lato font-[700] mb-6"
                                     style={{ letterSpacing: "1px" }}
                                 >
-                                    M.C. zález Saucedo
+                                    M.C. Rocío González Saucedo
                                 </h3>
                                 <h4 className="text-20 leading-22 text-color6 font-lato font-[700] mb-8">
                                     Ingeniera Bioquímica, Diplomada en Nutrición Clínica y
